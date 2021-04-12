@@ -43,7 +43,7 @@ nav {
   color :#636e72;
   text-decoration: none;
   font-family: 'oumgouleh';
-  font-size: 1.2em;
+  font-size: 1.4em;
 }
 
 .linkC a:hover{
@@ -170,12 +170,12 @@ position: absolute;
 
 
 }
-.text{
+.titre{
   text-align: center;
   font-family: B612;
   font-size: 22px;
 }
-.text2 {
+.text {
   text-align: center;
   font-family: Arial;
   font-size: 16px;
