@@ -1,5 +1,6 @@
 body{
     margin : 0;
+    border: solid blue 2px;
 }
 /* Style of the top navigation bar */
 @font-face {
@@ -20,6 +21,7 @@ nav {
     width: 100%;
     box-shadow: 0px 0px 10px #636e72;
     z-index: 3;
+    border: solid red 2px;
 }
 
 
@@ -122,52 +124,7 @@ nav {
     visibility: visible;
 }
 
-.parallaxC{
-    height: 48em;
-    width: 100%;
-    overflow: hidden;
-    position:relative;
-}
-.parallax{
-    background-image: url("Ressources/Images/L.jpg");
-    filter: blur(5px);
-    transform: scale(1.1);
-    height:100%;
-    width: 100%;
-    z-index: -2;
-    position: absolute;
 
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.parallaxColor{
-    background-color: rgba(34, 47, 62,0.5);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-
-
-}
-.textParaC{
-    height: 100%;
-    width: 100%;
-    z-index:2;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.textParaC p{
-    font-size: 5em;
-    color: white;
-    position: absolute;
-
-
-}
 .titre{
     text-align: center;
     font-family: B612;
@@ -228,8 +185,6 @@ form{
     align-items: center;
     margin-left:15%;
     margin-right: 15%;
-    margin-top: 5%;
-    padding: 50px;
 }
 
 .button{
@@ -241,5 +196,8 @@ form{
     content: "";
     display: table;
     clear: both;
+}
 
+header{
+    height: 0%;
 }
