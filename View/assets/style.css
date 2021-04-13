@@ -1,0 +1,214 @@
+body{
+  margin : 0;
+}
+/* Style of the top navigation bar */
+@font-face {
+  font-family: 'oumgouleh';
+  src: url('Ressources/Font/Avenir.ttc');
+}
+p,h3{
+  font-family: 'oumgouleh';
+}
+p{
+  font-weight: 400%;
+}
+nav {
+  position: fixed;
+  background-color: white;
+  display: flex;
+  height: 4em;
+  width: 100%;
+  box-shadow: 0px 0px 10px #636e72;
+  z-index: 3;
+}
+
+
+/* Style of the topnav links */
+.logoC{
+  width: 70%;
+  display: flex;
+  align-items: center;
+  padding-left: 4%;
+}
+.linkC {
+  padding-right:2em;
+  width: 20%;
+  text-align: right;
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+
+}
+.linkC a{
+  color :#636e72;
+  text-decoration: none;
+  font-family: 'oumgouleh';
+  font-size: 1.4em;
+}
+
+.linkC a:hover{
+  color: red;
+}
+
+.connexionC{
+  height: 4em;
+  width: 14%;
+  text-align: center;
+  margin-right: 1em;
+}
+.IMGC {
+  width: 100%;
+  height: 4em;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.IMGC img{
+  width: 2em;
+  height: 2em;
+  margin: auto;
+  z-index: 4;
+
+
+}
+.menuD {
+  height: 6em;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom-left-radius: 1.05em;
+  border-bottom-right-radius: 1.05em;
+  visibility: hidden;
+  box-shadow: 0px 3px 10px -7px #636e72;
+
+
+}
+
+.bt1{
+  height: 2.1em;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.05em;
+
+}
+.bt1:nth-child(1){
+  background:white;
+  box-shadow: 0px 0px 10px #bdc3c7;
+}
+.bt1:nth-child(2){
+  background-color: #54a0ff;
+  color: white;
+}
+
+
+
+.bt1:nth-child(1):hover{
+  box-shadow: inset 0px 0px 10px #d1d8e0;
+}
+
+.bt1:nth-child(2):hover{
+  box-shadow: inset 0px 0px 25px #4180ce;
+}
+
+
+
+
+.connexionC:hover .menuD{
+  visibility: visible;
+}
+
+.parallaxC{
+  height: 48em;
+  width: 100%;
+  overflow: hidden;
+  position:relative;
+}
+.parallax{
+  background-image: url("Ressources/Images/L.jpg");
+  filter: blur(5px);
+  transform: scale(1.1);
+  height:100%;
+  width: 100%;
+  z-index: -2;
+  position: absolute;
+
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallaxColor{
+  background-color: rgba(34, 47, 62,0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+
+
+}
+.textParaC{
+  height: 100%;
+  width: 100%;
+  z-index:2;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+.textParaC p{
+  font-size: 5em;
+  color: white;
+  position: absolute;
+
+
+}
+.titre{
+  text-align: center;
+  font-family: B612;
+  font-size: 22px;
+}
+.text {
+  text-align: center;
+  font-family: Arial;
+  font-size: 16px;
+}
+
+
+/* Style the footer */
+.footer {
+  background-color: #74B2E1;
+  color:white;
+  padding: 14px 160px ;
+  text-align: center;
+
+}
+
+.confidentialites {
+  overflow: hidden;
+  background-color: #74B2E1;
+  align:center;
+}
+
+/* Style the topnav links */
+.confidentialites a {
+  float: left;
+  display: block;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.confidentialites a:hover {
+  background-color: #FFFFFF;
+  color:#74B2E1;
+}
