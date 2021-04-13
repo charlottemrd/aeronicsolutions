@@ -184,15 +184,13 @@ nav {
 }
 .bloc2{
   width: 100%;
-  height: 23em;
+  height: 100%;
   display: flex;
   flex-direction: row;
   font-family: 'oumgouleh';
 
 }
-.b2{
-  width: 50%;
-}
+
 .left{
   background-color: #74B2E1;
   color:white;
@@ -207,7 +205,7 @@ nav {
 }
 .right{
   width: 100%;
-  margin: none;
+  height: 100%;
 }
 .right video{
   width: 100%;
