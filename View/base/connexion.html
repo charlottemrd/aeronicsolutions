@@ -36,13 +36,26 @@
 </nav>
 
 <div class="bloc1connexion">
-    <div class="titre 1">
-        <h3>Connexion</h3>
-    </div>
-    <div class="boxformulaire">
+    <form action="/ma-page-de-traitement" method="post">
+        <div class="titre">
+            <h3>Connexion</h3>
+        </div>
+        <div>
+            <label for="idconnexion"><p>Identifiant :</p></label>
+            <input type="email" id="idconnexion" name="user_idconnexion">
+        </div>
+        <div>
+            <label for="password"> <p>Mot de passe:</p></label>
+            <input type="password" id="password" name="user_password">
+        </div>
+        <br>
+        <div class="button">
+            <button type="submit"><p>Connexion</p></button>
+        </div>
 
-    </div>
+    </form>
 </div>
+
 
 <div class="footer">
     <p> (c) Copyright tous droits réservés Aeronic Solutions Corporation 2021 </p>

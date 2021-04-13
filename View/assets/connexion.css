@@ -213,10 +213,33 @@ nav {
 
 
 .bloc1connexion{
-padding:50px;
+    border-radius: 50px;
+    border: 10px;
+    border-style: double;
+    border-color: red;
 }
 
-.boxformulaire{
 
+
+form{
+    border-radius: 4em;
     box-shadow: 0px 0px 10px #636e72;
+    width: 70%;
+    align-items: center;
+    margin-left:15%;
+    margin-right: 15%;
+    margin-top: 5%;
+    padding: 50px;
+}
+
+.button{
+    border-radius: 4em;
+    align-items: center;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+
 }
