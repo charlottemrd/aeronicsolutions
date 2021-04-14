@@ -1,6 +1,6 @@
 body{
     margin : 0;
-    border: solid blue 2px;
+    border: solid  1px white;
 }
 /* Style of the top navigation bar */
 @font-face {
@@ -21,7 +21,7 @@ nav {
     width: 100%;
     box-shadow: 0px 0px 10px #636e72;
     z-index: 3;
-    border: solid red 2px;
+    border: solid  1px white;
 }
 
 
@@ -143,7 +143,6 @@ nav {
     color:white;
     padding: 14px 160px ;
     text-align: center;
-
 }
 
 .confidentialites {
@@ -176,40 +175,72 @@ nav {
     border-color: red;
 }
 
-.titreconnexion1{
+.titreconnexion{
     text-align: center;
+}
+h3{
     font-family: 'oumgouleh';
     font-size: 22px;
-
 }
 
+p{
+    font-family: 'oumgouleh';
+    font-size: 16px;
+}
 .contentconnexion{
-    margin-top: 5em;
-}
-
-
-form{
+    margin-top: 10em;
+    margin-bottom: 5em;
     border-radius: 4em;
     box-shadow: 0px 0px 10px #636e72;
-    width: 70%;
-
-    margin-left: 15%;
-    margin-right: 15%;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
     font-family: "oumgouleh";
     font-size: 16px;
 }
 
+form{
+    font-family: "oumgouleh";
+    font-size: 16px;
+}
+.centerelements, .centerelementlinks {
+    display: flex;
+    justify-content: center;
+
+}
+.centerelementlinks {
+   text-align: center;
+}
+
+
+.centerelementlinks a{
+    color: black;
+    text-decoration: none;
+}
+
+.centerelementlinks a:hover{
+    color: #74B2E1;
+}
+.espace{
+    margin-left: 2em;
+}
+
 button{
-    align-items: center;
-    text-align: center;
+    width: 7em ;
+    height: 4.5em;
+    border-radius: 1.05em;
     background-color: #74B2E1;
     color: white;
     font-family: "oumgouleh";
     font-size: 16px;
+    border: 1px #74B2E1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
-.informationconnexion{
-    text-align: center;
-    font-family: "oumgouleh";
-    font-size: 16px;
+button:hover{
+    cursor: pointer;
 }
