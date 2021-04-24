@@ -177,13 +177,13 @@ nav {
   text-align: center;
   justify-content: center;
   font-family: 'oumgouleh';
-  font-size: 22px;
+  font-size: 1.7em;
 }
 .text {
   justify-content: center;
   text-align: center;
   font-family: 'oumgouleh';
-  font-size: 16px;
+  font-size: 1.4em;;
 }
 .bloc2{
   width: 90%;
@@ -191,11 +191,12 @@ nav {
   flex-direction: row;
   font-family: 'oumgouleh';
   margin-left: 5%;
-
+  height: 25em;
 }
 
 .b2{
   width: 50%;
+  align-content: center;
 }
 
 .left{
@@ -204,22 +205,74 @@ nav {
   text-align: justify;
   align-items: center;
   justify-content: center;
-  width: 100%;
   line-height: 2;
-  padding: 2em;
+  border-top-left-radius:2em;
+  border-bottom-left-radius:2em;
+  box-shadow: 0px 0px 10px #636e72;
+  height: 26.2em;
+
+
+
 
 }
-.right{
-  width: 100%;
-  border: solid green 2px;
+
+.left p {
+  padding-left:2em;
+  padding-right:2em;
+  font-size: 1.4em;
+
 }
+.left h1 {
+  padding-left:1.3em;
+}
+
 .right video{
   width: 100%;
-  height: auto;
+  border-top-right-radius:2em;
+  border-bottom-right-radius:2em;
+  box-shadow: 0px 0px 10px #636e72;
+
 }
 
 .bloc3{
+  height: 200em;
+}
+@media screen and (max-width: 1500px) {
+
+.bloc2{
+  flex-direction: column;
+  width: 90%;
+  margin-right: 5%;
+  margin-left: 5%;
+  height: 50;
+}
+.b2{
+  width: 100%;
+}
+.left{
   height: 20em;
+  border-top-right-radius:2em;
+  border-top-left-radius:2em;
+  border-bottom-right-radius:0em;
+  border-bottom-left-radius:0em;
+
+}
+.left h1{
+  padding-left: 0em;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.right video{
+  border-bottom-right-radius:2em;
+  border-bottom-left-radius:2em;
+  border-top-left-radius: 0em;
+  border-top-right-radius: 0em;
+
+}
+
 }
 /* Style the footer */
 .footer {
