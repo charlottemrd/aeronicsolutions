@@ -47,7 +47,8 @@ nav {
 }
 
 .linkC a:hover{
-  color: red;
+  color: #74B2E1;
+  border-bottom: #636e72 3px solid;
 }
 
 .connexionC{
@@ -191,95 +192,70 @@ nav {
   flex-direction: row;
   font-family: 'oumgouleh';
   margin-left: 5%;
-  height: 25em;
+  background-color: #74B2E1;
+  position: absolute;
+  height: inherit;
+  border: green 2px solid;
 }
 
 .b2{
-  width: 50%;
-  align-content: center;
+ width: 100%;
 }
-
-.left{
-  background-color: #74B2E1;
-  color:white;
+.b2 text{
+ width: 3%;
+}
+.b2 p{
+  font-family: 'oumgouleh';
+  color : white;
   text-align: justify;
-  align-items: center;
-  justify-content: center;
-  line-height: 2;
-  border-top-left-radius:2em;
-  border-bottom-left-radius:2em;
-  box-shadow: 0px 0px 10px #636e72;
-  height: 26.2em;
-
-
-
+  padding-right: 1em;
+  padding-left: 1em;
 
 }
-
-.left p {
-  padding-left:2em;
-  padding-right:2em;
-  font-size: 1.4em;
-
-}
-.left h1 {
-  padding-left:1.3em;
+.b2 h1{
+  font-family: 'oumgouleh';
+  color : white;
+  text-align: left;
+  padding: 0.6em;
 }
 
-.right video{
-  width: 100%;
-  border-top-right-radius:2em;
-  border-bottom-right-radius:2em;
-  box-shadow: 0px 0px 10px #636e72;
-
+.b2 video{
+  max-width: 100%;
+  height: auto;
 }
 
 .bloc3{
-  height: 200em;
+  height: 90em;
+  border: red 2px solid;
 }
-@media screen and (max-width: 1500px) {
 
+
+@media screen and (max-width: 1500px) {
 .bloc2{
   flex-direction: column;
-  width: 90%;
-  margin-right: 5%;
-  margin-left: 5%;
-  height: 50;
-}
-.b2{
-  width: 100%;
-}
-.left{
-  height: 20em;
-  border-top-right-radius:2em;
   border-top-left-radius:2em;
-  border-bottom-right-radius:0em;
-  border-bottom-left-radius:0em;
-
+  border-top-right-radius:2em;
 }
-.left h1{
-  padding-left: 0em;
+.b2 h1{
+  font-family: 'oumgouleh';
+  color : white;
   text-align: center;
-  justify-content: center;
-  align-items: center;
-
-}
-
-.right video{
-  border-bottom-right-radius:2em;
-  border-bottom-left-radius:2em;
-  border-top-left-radius: 0em;
-  border-top-right-radius: 0em;
-
 }
 
 }
-/* Style the footer */
+
+
+
 .footer {
   background-color: #74B2E1;
   color:white;
-  padding: 14px 160px ;
   text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+  position: absolute;
+  width: 100%;
+
 
 }
 
@@ -287,6 +263,10 @@ nav {
   overflow: hidden;
   background-color: #74B2E1;
   align:center;
+  text-align: middle;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 
 /* Style the topnav links */
@@ -297,6 +277,7 @@ nav {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  border-radius: 1em;
 }
 
 /* Change color on hover */
