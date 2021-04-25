@@ -1,5 +1,5 @@
 .footer {
-  background-color: #74B2E1;
+  background-color: #54a0ff;
   color:white;
   text-align: center;
   align-items: center;
@@ -14,7 +14,7 @@
 
 .confidentialites {
   overflow: hidden;
-  background-color: #74B2E1;
+  background-color: #54a0ff;
   align:center;
   text-align: middle;
   align-items: center;
@@ -41,4 +41,6 @@
 .bottom{
   position: absolute;
   bottom: 0;
+  left:0;
+  right: 0;
 }
