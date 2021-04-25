@@ -136,38 +136,6 @@ nav {
     font-size: 16px;
 }
 
-
-/* Style the footer */
-.footer {
-    background-color: #74B2E1;
-    color:white;
-    padding: 14px 160px ;
-    text-align: center;
-}
-
-.confidentialites {
-    overflow: hidden;
-    background-color: #74B2E1;
-    align:center;
-}
-
-/* Style the topnav links */
-.confidentialites a {
-    float: left;
-    display: block;
-    color: #FFFFFF;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-/* Change color on hover */
-.confidentialites a:hover {
-    background-color: #FFFFFF;
-    color:#74B2E1;
-}
-
-
 .bloc1connexion{
     border-radius: 50px;
     border: 10px;
