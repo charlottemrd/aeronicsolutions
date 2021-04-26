@@ -46,17 +46,19 @@
 }
 
 .barreimage{
-  width:600px;
+  width:100%;
   height:200px;
   float: left;
   display: flex;
   align-items: center;
-justify-items: center;
+justify-content: center;
+
 }
 
 .reseaux img{
-  width:100%;
+  width:7em;
   height: 100%;
+  margin : 6px;
 }
 
 
