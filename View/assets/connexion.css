@@ -185,7 +185,7 @@ margin-top: 1em;
 .form_container input{
   height: 6vh;
   width: 100%;
-  font-family: sans-serif;
+  font-family: "oumgouleh";
     font-size: 100%;
     line-height: 1.15;
     margin: 0;
@@ -196,6 +196,7 @@ margin-top: 1em;
     border-bottom-style: hidden;
     box-shadow: rgba(99, 99, 99, 0.5) 0px 0px 8px 0px;
      padding-left: 15px;
+
 }
 input:focus{
   border: 1.5px solid #54a0ff;
@@ -212,6 +213,7 @@ input:active{
   width: 100%;
 }
 .mdp_oublié a{
+  font-family: "oumgouleh";
   color:#54a0ff;
 }
 
@@ -248,6 +250,7 @@ input:active{
   font-size: 1.3em;
   color: white;
   transition: all 0.3s;
+  font-family: "oumgouleh";
 }
 .log:hover{
   background-color: #4585d5;
