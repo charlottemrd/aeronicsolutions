@@ -12,7 +12,7 @@
 
 }
 
-.confidentialites {
+.confidentialites{
   overflow: hidden;
   background-color: #54a0ff;
   align:center;
@@ -23,7 +23,7 @@
 }
 
 /* Style the topnav links */
-.confidentialites a {
+.confidentialites a , .reseaux a{
   float: left;
   display: block;
   color: #FFFFFF;
@@ -44,3 +44,19 @@
   left:0;
   right: 0;
 }
+
+.barreimage{
+  width:600px;
+  height:200px;
+  float: left;
+  display: flex;
+  align-items: center;
+justify-items: center;
+}
+
+.reseaux img{
+  width:100%;
+  height: 100%;
+}
+
+
