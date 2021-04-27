@@ -1,0 +1,35 @@
+
+
+.Cook{
+	border-radius: 1.5em;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    padding: 15px;
+    margin: 50px;
+    margin-top: 50px;
+    background-color:#54a0ff; 
+  
+}
+
+ h1,h2{
+    font-family: 'oumgouleh';
+    text-align: center;
+}
+.Cook p{
+  margin-top: 50px;
+  font-family: 'oumgouleh';
+  justify-content:center;
+  padding-right: 1em;
+  padding-left: 1em;
+  font-size: 1.5vw;
+}
+
+
+.Cookdonnes{
+	margin-top: 100px;
+
+}
+.Cookdonnes p {
+	margin: 70px;
+	font-size: 1vw;
+
+}
