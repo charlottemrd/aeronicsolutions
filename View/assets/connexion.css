@@ -185,7 +185,8 @@ margin-top: 1em;
 .form_container input{
   height: 6vh;
   width: 100%;
-  font-family: "oumgouleh";
+  font-family: sans-serif;
+  outline: none;
     font-size: 100%;
     line-height: 1.15;
     margin: 0;
@@ -239,11 +240,10 @@ input:active{
 }
 .log{
   background-color: #54a0ff;
-  position: absolute;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border-style: none;
   display: flex;
   align-items: center;
   justify-content: center;
