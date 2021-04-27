@@ -43,25 +43,42 @@
         <h3>FAQ - foire aux questions</h3>
     </div>
     <div class="faq_container">
-    <h3>Comment puis-je m'inscrire aux programme Aeronic Solutions ?</h3>
-    <p> Nous vous invitons à prendre contact avec nous</p>
-    <h3>Comment puis-je m'inscrire aux programme Aeronic Solutions ?</h3>
-    <p> Nous vous invitons à prendre contact avec nous</p>
-    <h3>Comment puis-je m'inscrire aux programme Aeronic Solutions ?</h3>
-    <p> Nous vous invitons à prendre contact avec nous</p>
-    <h3>Comment puis-je m'inscrire aux programme Aeronic Solutions ?</h3>
-    <p> Nous vous invitons à prendre contact avec nous</p>
-    <h3>Comment puis-je m'inscrire aux programme Aeronic Solutions ?</h3>
-    <p> Nous vous invitons à prendre contact avec nous</p>
-    <h3>Comment puis-je m'inscrire aux programme Aeronic Solutions ?</h3>
-    <p> Nous vous invitons à prendre contact avec nous</p>
-    <h3>Comment puis-je m'inscrire aux programme Aeronic Solutions ?</h3>
-    <p> Nous vous invitons à prendre contact avec nous</p>
-    <h3>Comment puis-je m'inscrire aux programme Aeronic Solutions ?</h3>
-    <p> Nous vous invitons à prendre contact avec nous</p>
-</div>
+    <div class="questions">
+            <button class="bouton" id="buttonr1" onclick="changeVisibility('reponse1')"  >Question 1</button>
+    </div>
+        <div id="reponse1" >
+            <h3>reponse 1</h3>
+        </div>
+
+        <div class="questions">
+            <button class="bouton" id="buttonr2" onclick="changeVisibility('reponse2')"  >Question 2</button>
+        </div>
+        <div id="reponse2" >
+            <h3>reponse 2</h3>
+        </div>
+
+        <div class="questions">
+            <button class="bouton" id="buttonr3" onclick="changeVisibility('reponse3')"  >Question 3</button>
+        </div>
+        <div id="reponse3" >
+            <h3>reponse 3</h3>
+        </div>
+
+        <div class="questions">
+            <button class="bouton" id="buttonr4" onclick="changeVisibility('reponse4')"  >Question 4</button>
+        </div>
+        <div id="reponse4" >
+            <h3>reponse 4</h3>
+        </div>
 
 
+
+
+
+
+
+
+    </div>
 
 
 
@@ -91,3 +108,17 @@
 </div>
 </body>
 </html>
+
+
+<script>
+    function changeVisibility(reponse) {
+
+        if(document.getElementById(reponse).style.display !== "block") {
+            document.getElementById(reponse).style.display = "block";
+        }
+
+        else{
+            document.getElementById(reponse).style.display = "none";
+        }
+    }
+</script>
