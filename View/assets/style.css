@@ -175,72 +175,70 @@ html{
   color: white;
   position: absolute;
 }
-
-.bloc1{
-  height: auto;
-  margin: 2em;
-}
-.titre{
-  text-align: center;
-  justify-content: center;
-  font-family: 'oumgouleh';
-  font-size: 1.7em;
-}
-.text {
-  justify-content: center;
-  text-align: center;
-  font-family: 'oumgouleh';
-  font-size: 1.4vw;
-}
-.bloc2{
-  width: 90%;
+.grosBloc{
   display: flex;
-  flex-direction: row;
-  font-family: 'oumgouleh';
-  margin-left: 5%;
-  background-color: white;
-  position: relative;
+  flex-direction: column;
+  width: 45%;
   box-shadow: 0px 0px 10px #636e72;
   border-radius: 1em;
   overflow: hidden;
+  margin-left: 5%;
+  margin-top: 5%;
+
+}
+
+.bloc1{
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.b2{
+  font-family: 'oumgouleh';
+  background-color: white;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1em;
 }
 
 .text_container{
-  width: 50%;
+  width: 100%;
 }
-.b2 p{
+.b2 p,.text p{
   font-family: 'oumgouleh';
   color : #black;
   text-align: justify;
-  padding-right: 1em;
-  padding-left: 1em;
+  margin-right: 1em;
   font-size: 1.5vw;
+  margin-left:1em;
+}
+
+
+.b2 h1, .titre h1{
+
+  font-family: 'oumgouleh';
+  color : black;
+  text-align: center;
+  font-size:3vw;
+  border-bottom: grey 1px solid;
+  padding-bottom: 0.4em;
 }
 
 .b2 h1{
-  font-family: 'oumgouleh';
-  color : #74B2E1;
-  text-align: left;
-  padding-left: 0.6em;
-  font-size:3vw;
-}
-.video_container{
   width: 50%;
-  height: 100%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-
 }
-.b2 video{
-  height:100%;
-  max-height: 30em;
+.titre h1{
   width: 100%;
 }
 .bloc3{
   height: 90em;
 }
-
 
 @media screen and (max-width: 500px) {
 .bloc2{
