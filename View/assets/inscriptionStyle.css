@@ -168,34 +168,34 @@ z-index: -100;
   align-items: center;
   transition: all 0.3s ease;
   opacity: 0.9;
-  
+
 }
 .contentInscription:hover{
 transform: scale(1.02);
 }
 
 .CondUtilisations{
-  
+
   flex-direction: row;
   width: 100%;
   justify-content: left;
   padding-left: -0px;
-  
+
 }
 .cbx {
   margin: auto;
   -webkit-user-select: none;
   user-select: none;
   cursor: pointer;
-  
+
 }
 .cbx span {
   display: inline-block;
   vertical-align: middle;
   transform: translate3d(0, 0, 0);
   width: 90%;
-  
-  
+
+
 }
 .cbx span:first-child {
   position: relative;
@@ -222,7 +222,7 @@ transform: scale(1.02);
   transition: all 0.3s ease;
   transition-delay: 0.1s;
   transform: translate3d(0, 0, 0);
-  
+
 }
 .cbx span:first-child:before {
   content: "";
@@ -291,6 +291,7 @@ font-family: "oumgouleh";
   border-bottom-style: hidden;
   box-shadow: rgba(99, 99, 99, 0.5) 0px 0px 8px 0px;
    padding-left: 15px;
+   outline: none;
 }
 input:focus{
 border: 1.5px solid #54a0ff;
@@ -332,11 +333,9 @@ position: relative;
 }
 .log{
 background-color: #54a0ff;
-position: absolute;
-top:0;
-left:0;
-right:0;
-bottom:0;
+width: 100%;
+border-style: none;
+height: 100%;
 display: flex;
 align-items: center;
 justify-content: center;

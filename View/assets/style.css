@@ -90,6 +90,10 @@ nav {
   text-decoration: none;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 .bt1{
   height: 2.1em;
   width: 90%;
