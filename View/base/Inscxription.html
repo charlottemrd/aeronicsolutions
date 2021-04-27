@@ -78,18 +78,18 @@
     </form>
 
 </div> -->
-<div class="contentInscription">
+<form action="inscription.php" method="POST" class="contentInscription">
   <div class="title_container">
     <h3>Inscrivez-vous</h3>
   </div>
     <div class="form_container">
-          <input type="text" placeholder="Prénom" autofocus/>
-          <input type="text" placeholder="Nom" autofocus/>
-          <input type="date" placeholder="Date de naissance" autofocus/>
-          <input type="text" placeholder="Adresse-mail" autofocus/>
-          <input type="password" placeholder="Mot de passe" />
-          <input type="password" placeholder="Confirmer mot de passe" />
-          <input type="code" placeholder="I-C" />
+          <input name= "prenom" type="text" placeholder="Prénom" autofocus/>
+          <input name= "nom" type="text" placeholder="Nom" autofocus/>
+          <input name= "dateDeNaissance" type="date" placeholder="Date de naissance" autofocus/>
+          <input name= "mail" type="text" placeholder="Adresse-mail" autofocus/>
+          <input name= "mdp" type="password" placeholder="Mot de passe" />
+          <input name= "cofrimemdp" type="password" placeholder="Confirmer mot de passe" />
+          <input name= "code" type="code" placeholder="I-C" />
 
           <div class="CondUtilisations">
             <input class="inp-cbx" id="cbx" type="checkbox" style="display: none"/>
@@ -102,9 +102,9 @@
           </div>
     </div>
     <div class="logC">
-        <a class="log" href="#">Inscription</a>
+        <button  class="log" type="submit">Connexion</button>
       </div>
-</div>
+</form>
 
 
 <div class="footer bottom">
