@@ -181,7 +181,7 @@ nav {
     align-items: center;
     border-bottom: solid 1px #b2bec3;
 }
-.title_container h3{
+.title_container h3 ,.title_partie h3{
     color:#444444;
     font-size: 1.5em;
 }
@@ -189,22 +189,38 @@ nav {
 .faq_container{
     height:75%;
     width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scrollbar-base-color: #9098A9;
+
 }
 
-.faq_container h3,p{
+.faq_container h3,p {
     color:#444444;
-    font-size: 1.25em;
 
 }
 
-
-.questions{
+.bouton,.reponses{
+    width: 100%;
+    font-family: oumgouleh;
+    color:#444444;
+    text-align: justify;
+}
+.bouton{
+    font-size: 1.3em;
+    margin-top: 5px;
 }
 
 .reponses{
-
-}
-
-#reponse1, #reponse2, #reponse3, #reponse4, #reponse5, #reponse6, #reponse6, #reponse7, #reponse8 {
     display: none;
+    font-size:1em;
 }
+
+
+
+
+
+
+
+
