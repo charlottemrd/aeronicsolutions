@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Profil</title>
+    <title>Modifier Profil</title>
 
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="../assets/profil.css" />
+    <link rel="stylesheet" href="../assets/modifierProfil.css" />
     <link rel="stylesheet" href="../assets/footer.css" />
 
 </head>
@@ -36,17 +36,17 @@
 
 <form action="connexion.php" method="POST" class="contentconnexion">
   <div class="title_container">
-    <h3>Données personnelles</h3>
+    <h3>Modification des Données personnelles</h3>
   </div class>
     <div class="superform_container">
       <div class="form_container">
         <div class="information">
           <h4>Nom</h4>
-          <p>Dupont</p>
+          <input name= "nom" type="text" placeholder="Dupont" autofocus/>
         </div>
         <div class="information">
           <h4>Prenom</h4>
-          <p>George</p>
+          <input name= "prenom" type="text" placeholder="George" autofocus/>
         </div>
         <div class="information">
           <h4>E-mail</h4>
@@ -56,11 +56,11 @@
       <div class="form_container">
         <div class="information">
           <h4>Compagnie aérienne</h4>
-          <p>Aire isep</p>
+          <input name= "CompagnieAérienne" type="text" placeholder="Aire isep" autofocus/>
         </div>
         <div class="information">
           <h4>Médecin</h4>
-          <p>Dr. Themedic</p>
+          <input name= "medecin" type="text" placeholder="Dr. Themedic" autofocus/>
         </div>
         <div class="information">
           <h4> I-C</h4>
@@ -70,10 +70,10 @@
     </div>
     <div class= "changement">
           <div class="bt1">
-            <a href="modifierMDP.html">Modifier mot de passe</a>
+            <a href="#">Annuler</a>
           </div>
           <div class="bt1">
-            <p><a href="modifierProfil.html">Modifier le profil</a></p>
+            <p><a href="#">Confirmer</a></p>
            </div>
     </div>
 

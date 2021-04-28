@@ -221,6 +221,22 @@ column-count: 2;
 .information h4{
     padding-bottom:5px;
 }
+.information input{
+    height: 2vh;
+    width: 100%;
+    font-family: "oumgouleh";
+    outline: none;
+      font-size: 100%;
+      line-height: 1.15;
+      margin: 0;
+      border-radius:0.4em;
+      border-top-style: hidden;
+      border-right-style: hidden;
+      border-left-style: hidden;
+      border-bottom-style: hidden;
+      box-shadow: rgba(99, 99, 99, 0.5) 0px 0px 8px 0px;
+       padding-left: 15px;
+}
 .changement{
     height: 10%;
     width: 60%;
