@@ -175,16 +175,29 @@ html{
   color: white;
   position: absolute;
 }
+.tresgrosbloc{
+  display: flex;
+  justify-content: space-around;
+}
+.grosBloc2{
+  display: flex;
+  flex-direction: column;
+  width: 42%;
+  box-shadow: 0px 0px 10px #636e72;
+  border-radius: 1em;
+  overflow: hidden;
+  margin-right: 5%;
+  margin-top: 5%;
+}
 .grosBloc{
   display: flex;
   flex-direction: column;
-  width: 45%;
+  width: 42%;
   box-shadow: 0px 0px 10px #636e72;
   border-radius: 1em;
   overflow: hidden;
   margin-left: 5%;
   margin-top: 5%;
-
 }
 
 .bloc1{
@@ -195,28 +208,34 @@ html{
   align-items: center;
 }
 
+.bloc3{
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
 
 .b2{
-  font-family: 'oumgouleh';
   background-color: white;
   height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 1em;
 }
 
 .text_container{
   width: 100%;
 }
-.b2 p,.text p{
+.b2 p,.text p, .grosBloc2 p{
   font-family: 'oumgouleh';
   color : black;
   text-align: justify;
-  margin-right: 1em;
+  margin-right: 1.5em;
   font-size: 1.5vw;
-  margin-left:1em;
+  margin-left:1.5em;
 }
 
 
@@ -224,21 +243,41 @@ html{
 
   font-family: 'oumgouleh';
   color : black;
-  text-align: center;
   font-size:3vw;
-  border-bottom: grey 1px solid;
-  padding-bottom: 0.4em;
+  border-bottom: 1px black solid;
 }
 
+.grosBloc2 h1{
+  font-family: 'oumgouleh';
+  color : black;
+  text-align: center;
+  font-size:2.3vw;
+}
+.grosBloc2 h2{
+  font-family: 'oumgouleh';
+  color : black;
+  text-align: center;
+  font-size:3vw;
+}
+.grosBloc2:hover{
+  transform: scale(1.02);
+  transition: all 0.3s ease;
+
+}
+.grosBloc:hover{
+  transform: scale(1.02);
+  transition: all 0.3s ease;
+}
 .b2 h1{
   width: 50%;
 }
 .titre h1{
   width: 100%;
 }
-.bloc3{
-  height: 90em;
+.suite{
+  height: 5em;
 }
+
 
 @media screen and (max-width: 500px) {
 .bloc2{
