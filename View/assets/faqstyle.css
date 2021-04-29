@@ -176,14 +176,20 @@ nav {
 
 .title_container{
     height:15%;
-    width: 80%;
+    width: 90%;
     display: flex;
     align-items: center;
+    justify-content: center;
     border-bottom: solid 1px #b2bec3;
 }
 .title_container h3 ,.title_partie h3{
     color:#444444;
     font-size: 1.5em;
+
+
+}
+.title_partie h3{
+    margin-left: 5%;
 }
 
 .faq_container{
@@ -201,26 +207,43 @@ nav {
 
 }
 
+.questions{
+width: 90%;
+margin-left: 5%;
+margin-bottom: 5px;
+}
+
+
 .bouton,.reponses{
     width: 100%;
     font-family: oumgouleh;
     color:#444444;
-    text-align: justify;
+    display: flex;
+    justify-content: center;
+
 }
 .bouton{
+    width: 100%;
     font-size: 1.3em;
-    margin-top: 5px;
+    outline: none;
+    border-radius: 1em;
+    border-style: none;
+    padding-bottom:0.2em;
+    padding-top:0.2em;
+    text-align:center;
+
 }
 
+.bouton:hover{
+  background-color: #54a0ff;
+  color: white;
+}
 .reponses{
-    display: none;
-    font-size:1em;
+  width: 90%;
+  margin-left: 5%;
+  display: none;
 }
-
-
-
-
-
-
-
-
+.reponses h3{
+    font-size:1em;
+    text-align: justify;
+}

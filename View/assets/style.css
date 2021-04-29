@@ -88,6 +88,7 @@ nav {
 
 .menuD a{
   text-decoration: none;
+
 }
 
 html{
@@ -102,28 +103,37 @@ html{
   justify-content: center;
   border-radius: 1.05em;
 }
+.bt2{
+  height: 2.1em;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.05em;
+}
 
-.bt1:nth-child(1){
+.bt1{
   background:white;
   box-shadow: 0px 0px 10px #bdc3c7;
 }
-.bt1:nth-child(2){
+.bt2{
   background-color: #54a0ff;
+}
+.bt1 a{
+  color:black;
+}
+.bt2 a{
   color: white;
 }
 
 
-
-.bt1:nth-child(1):hover{
+.bt1:hover{
   box-shadow: inset 0px 0px 10px #d1d8e0;
 }
 
-.bt1:nth-child(2):hover{
+.bt2:hover{
   box-shadow: inset 0px 0px 25px #4180ce;
 }
-
-
-
 
 .connexionC:hover .menuD{
   visibility: visible;
@@ -167,13 +177,16 @@ html{
   display: flex;
   align-items: center;
   justify-content: center;
-
-
 }
+
 .textParaC p{
   font-size: 5em;
   color: white;
   position: absolute;
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+
 }
 .tresgrosbloc{
   display: flex;
@@ -189,6 +202,11 @@ html{
   margin-right: 5%;
   margin-top: 5%;
 }
+.title{
+background-color:#54a0ff;
+}
+
+
 .grosBloc{
   display: flex;
   flex-direction: column;
@@ -216,16 +234,19 @@ html{
   align-items: center;
   height: auto;
 }
-
-.b2{
-  background-color: white;
-  height: auto;
+.date1,.date2,.date3{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items:center;
 }
-
+.text a {
+  color: #54a0ff;
+  text-decoration: none;
+}
+.text a:hover{
+  color: #2c578d;
+}
 .text_container{
   width: 100%;
 }
@@ -243,17 +264,25 @@ html{
 
   font-family: 'oumgouleh';
   color : black;
-  font-size:3vw;
-  border-bottom: 1px black solid;
+  font-size:2.3vw;
+  font-weight: bold;
+  border-bottom: black 1px solid;
 }
 
 .grosBloc2 h1{
   font-family: 'oumgouleh';
   color : black;
-  text-align: center;
   font-size:2.3vw;
+  font-weight: bold;
+  border-bottom: black 1px solid;
 }
 .grosBloc2 h2{
+  font-family: 'oumgouleh';
+  color : black;
+  text-align: center;
+  font-size:3vw;
+}
+.title h2{
   font-family: 'oumgouleh';
   color : black;
   text-align: center;
@@ -262,7 +291,6 @@ html{
 .grosBloc2:hover{
   transform: scale(1.02);
   transition: all 0.3s ease;
-
 }
 .grosBloc:hover{
   transform: scale(1.02);
@@ -273,6 +301,15 @@ html{
 }
 .titre h1{
   width: 100%;
+}
+.date1 h1{
+  width:49%;
+}
+.date2 h1{
+  width:35%;
+}
+.date3 h1{
+  width:38%;
 }
 .suite{
   height: 5em;
