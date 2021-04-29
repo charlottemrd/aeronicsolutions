@@ -176,74 +176,31 @@ nav {
 
 .title_container{
     height:15%;
-    width: 90%;
+    width: 80%;
     display: flex;
     align-items: center;
-    justify-content: center;
     border-bottom: solid 1px #b2bec3;
 }
-.title_container h3 ,.title_partie h3{
+.title_container h3{
     color:#444444;
     font-size: 1.5em;
-
-
-}
-.title_partie h3{
-    margin-left: 5%;
 }
 
 .faq_container{
     height:75%;
     width: 100%;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-    scrollbar-base-color: #9098A9;
-
 }
 
-.faq_container h3,p {
+.faq_container h3{
     color:#444444;
+    font-size: 1.25em;
+    text-align: left;
 
 }
 
-.questions{
-width: 90%;
-margin-left: 5%;
-margin-bottom: 5px;
-}
 
-
-.bouton,.reponses{
-    width: 100%;
-    font-family: oumgouleh;
+.faq_container p{
     color:#444444;
-    display: flex;
-    justify-content: center;
-
-}
-.bouton{
-    width: 100%;
-    font-size: 1.3em;
-    outline: none;
-    border-radius: 1em;
-    border-style: none;
-    padding-bottom:0.2em;
-    padding-top:0.2em;
-    text-align:center;
-
-}
-
-.bouton:hover{
-  background-color: #54a0ff;
-  color: white;
-}
-.reponses{
-  width: 90%;
-  margin-left: 5%;
-  display: none;
-}
-.reponses h3{
-    font-size:1em;
-    text-align: justify;
+    font-size: 1.25em;
+    text-align: right;
 }
