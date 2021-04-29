@@ -4,6 +4,7 @@
     <title>Connexion</title>
 
     <meta charset="utf-8" />
+    <link rel="stylesheet" href="../assets/header.css" />
     <link rel="stylesheet" href="../assets/connexion.css" />
     <link rel="stylesheet" href="../assets/footer.css" />
 
@@ -12,14 +13,15 @@
 <body>
 
 <?php include 'header.php'; ?>
+<?php include 'footer.php'; ?>
 
-<form action="connexion.php" method="post" class="contentconnexion">
+<form method="post" class="contentconnexion">
   <div class="title_container">
     <h3>Connectez-vous</h3>
   </div>
     <div class="form_container">
         <input type="text" name="identifiant" id="identifiant" placeholder="Identifiant" required>
-        <input type="password" name="password" id="password" placeholder="Mot de passe" required>
+        <input type="password" name="lpassword" id="lpassword" placeholder="Mot de passe" required>
         <div class="mdp_oublié">
             <a href="#">Mot de passe oublié</a>
         </div>
@@ -33,17 +35,20 @@
 <?php 
     if(isset($_POST['log'])){
         
-        $identifiant = $_POST['identifiant'];
-        $password = $_POST['password'];
+        extract($_POST);
+        
+        include 'includes/database.php';
+        $q = $db->prepare("SELECT * FROM clients WHERE mail =:mail");
+        $q->execute(['mail' => $identifiant]);
+        $result = $q->fetch();
 
-        if(!empty($identifiant) && !empty($password)){
-            echo "Votre identifiant : ".$identifiant;
-            echo "Votre password : ".$password;
+        if($result == true){
+            if(password_verify($lpassword, $result['password'])){
+                header('Location: index.php'); 
+            }
         }
     }
 ?>
-
-<?php include 'footer.php'; ?>
 
 </body>
 </html>

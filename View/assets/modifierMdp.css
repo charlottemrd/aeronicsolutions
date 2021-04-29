@@ -16,7 +16,11 @@ body{
     font-family: 'oumgouleh';
     src: url('Ressources/Font/Avenir.ttc');
 }
-p,h3{
+*{
+    margin: 0;
+    padding: 0;
+}
+p,h3,h4{
     font-family: 'oumgouleh';
 }
 p{
@@ -61,8 +65,8 @@ nav {
 }
 
 .linkC a:hover{
-    color: #74B2E1;
-    border-bottom: #636e72 3px solid;
+  color: #74B2E1;
+  border-bottom: #636e72 3px solid;
 }
 
 .connexionC{
@@ -86,10 +90,10 @@ nav {
 }
 
 .background_image{
-    position: absolute;
-    top: 0;
-    height: 100vh;
-    z-index: -100;
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  z-index: -100;
 }
 .menuD {
     height: 6em;
@@ -114,17 +118,23 @@ nav {
     align-items: center;
     justify-content: center;
     border-radius: 1.05em;
+    margin:5px;
 
 }
 .bt1:nth-child(1){
     background:white;
     box-shadow: 0px 0px 10px #bdc3c7;
 }
+.bt1:nth-child(1) a{
+  color: black;
+}
 .bt1:nth-child(2){
     background-color: #54a0ff;
     color: white;
 }
-
+.bt1:nth-child(2) a {
+  color: white;
+}
 
 
 .bt1:nth-child(1):hover{
@@ -152,98 +162,130 @@ nav {
     font-size: 16px;
 }
 
-.contentfaq{
+.contentconnexion{
     margin-top: -5em;
     border-radius: 1.5em;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-    width: 100%;
-    height: 70vh;
+    width: 80%;
+    height: 50vh;
     font-family: "oumgouleh";
     font-size: 16px;
     background-color: white;
-    max-width: 38em;
+    max-width: 30em;
+    max-height: 100vh;
     display: flex;
     flex-direction: column;
     overflow: hidden;
     align-items: center;
     transition: all 0.3s ease;
     opacity: 0.9;
+}
+.contentconnexion:hover{
+  transform: scale(1.02);
+}
+.superform_container{
+height: 60%;
+width: 80%;
+display: flex;
+align-items: center;
+justify-content: space-around;
+margin-top: 1em;
+column-count: 2;
 
 }
-.contentfaq:hover{
-    transform: scale(1.02);
-}
 
-.title_container{
-    height:15%;
-    width: 90%;
+.form_container input{
+
+  height: 4vh;
+  width: 100%;
+  font-family: 'oumgouleh';
+  outline: none;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+    border-radius:0.4em;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+    box-shadow: rgba(99, 99, 99, 0.5) 0px 0px 8px 0px;
+     padding-left: 15px;
+     
+
+}
+.information{
+    padding-top: 20px;
+    padding-bottom: 15px;
+    
+}
+.information h4{
+    padding-bottom:5px;
+}
+.changement{
+    height: 10%;
+    width: 60%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    border-bottom: solid 1px #b2bec3;
-}
-.title_container h3 ,.title_partie h3{
-    color:#444444;
-    font-size: 1.5em;
-
+    justify-content: space-between;
+    margin-top: 1em;
+    column-count: 2;
 
 }
-.title_partie h3{
-    margin-left: 5%;
-}
-
-.faq_container{
-    height:75%;
-    width: 100%;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-    scrollbar-base-color: #9098A9;
+input:focus{
+  border: 1.5px solid #54a0ff;
 
 }
 
-.faq_container h3,p {
-    color:#444444;
-
+input:hover{
+  border: 1.5px solid #54a0ff;
+}
+input:active{
+  border: 1.5px solid #54a0ff;
+}
+.mdp_oublié{
+  width: 100%;
+}
+.mdp_oublié a{
+  font-family: "oumgouleh";
+  color:#54a0ff;
 }
 
-.questions{
-width: 90%;
-margin-left: 5%;
-margin-bottom: 5px;
+.mdp_oublié a:hover{
+  color:#2c578d;
 }
-
-
-.bouton,.reponses{
-    width: 100%;
-    font-family: oumgouleh;
-    color:#444444;
-    display: flex;
-    justify-content: center;
-
-}
-.bouton{
-    width: 100%;
-    font-size: 1.3em;
-    outline: none;
-    border-radius: 1em;
-    border-style: none;
-    padding-bottom:0.2em;
-    padding-top:0.2em;
-    text-align:center;
-
-}
-
-.bouton:hover{
+.title_container{
+  height:20%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: solid 1px #b2bec3;
   background-color: #54a0ff;
+  justify-content: center;
+}
+.title_container h3{
+  color:white;
+  font-size: 1.5em;
+
+
+}
+
+.log{
+  background-color: #54a0ff;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3em;
   color: white;
+  transition: all 0.3s;
+  font-family: "oumgouleh";
 }
-.reponses{
-  width: 90%;
-  margin-left: 5%;
-  display: none;
+.log:hover{
+  background-color: #4585d5;
 }
-.reponses h3{
-    font-size:1em;
-    text-align: justify;
+a{
+  text-decoration: none;
 }

@@ -16,7 +16,7 @@ body{
   font-family: 'oumgouleh';
   src: url('Ressources/Font/Avenir.ttc');
 }
-p,h3{
+p,h3,.bt1,.bt2{
   font-family: 'oumgouleh';
 }
 p{
@@ -168,11 +168,8 @@ z-index: -100;
   align-items: center;
   transition: all 0.3s ease;
   opacity: 0.9;
+}
 
-}
-.contentInscription:hover{
-transform: scale(1.02);
-}
 
 .CondUtilisations{
 
@@ -291,7 +288,8 @@ font-family: "oumgouleh";
   border-bottom-style: hidden;
   box-shadow: rgba(99, 99, 99, 0.5) 0px 0px 8px 0px;
    padding-left: 15px;
-   outline: none;
+   outline-color:#54a0ff;
+
 }
 input:focus{
 border: 1.5px solid #54a0ff;

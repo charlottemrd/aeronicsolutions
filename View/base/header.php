@@ -1,6 +1,7 @@
+<link rel="stylesheet" href="../assets/header.css" />
 <nav>
     <div class="logoC">
-        <a href="index.html">
+        <a href="index.php">
             <img src="../assets/Ressources/Images/Logo3.png" width="150" alt="logo" class="logo-image">
         </a>
     </div>
@@ -10,14 +11,14 @@
     </div>
     <div class="connexionC">
         <div class="IMGC">
-            <img class="Bcon" href="index.html" src="../assets/Ressources/Images/account.png" width=30 alt="##"/>
+            <img class="Bcon" href="index.html" src="../assets/Ressources/Images/account.png" width=30 alt="##" />
         </div>
         <div class="menuD">
             <div class="bt1">
-                <p>Inscription</p>
+                <a href="inscription.php">Inscription</a>
             </div>
             <div class="bt1">
-                <p>Connexion</p>
+                <a href="connexion.php">Connexion</a>
             </div>
         </div>
     </div>

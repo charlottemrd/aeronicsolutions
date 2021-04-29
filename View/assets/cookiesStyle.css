@@ -13,6 +13,7 @@
  h1,h2{
     font-family: 'oumgouleh';
     text-align: center;
+     margin: 2em;
 }
 .Cook p{
   margin-top: 50px;
@@ -23,13 +24,42 @@
   font-size: 1.5vw;
 }
 
+ul{
+    padding-left: 10em;
+    margin-top: 3em;
+    margin-bottom: 5em;
+
+}
+li{
+    margin: 10px;
+    font-family: 'oumgouleh';
+    padding-right: 1em;
+    padding-left: 1em;
+    font-size: 1vw;
+}
 
 .Cookdonnes{
 	margin-top: 100px;
-
 }
 .Cookdonnes p {
-	margin: 70px;
-	font-size: 1vw;
+    margin-right:3em;
+    margin-left:3em;
+    margin-top:3em;
+    font-size: 1vw;
 
+}
+.retour{
+    width: 100%;
+    height: 5em;
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 2em;
+    margin-top: 3em;
+}
+.retour img {
+    width: 3em;
+    height: 3em;
+    margin: auto;
+    z-index: 4;
 }
