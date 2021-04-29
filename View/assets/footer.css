@@ -8,8 +8,9 @@
   width: 100%;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
-
-
+  bottom: 0;
+  left:0;
+  right: 0;
 }
 
 .confidentialites{
@@ -38,12 +39,6 @@
   background-color: #FFFFFF;
   color:#74B2E1;
 }
-.bottom{
-  position: absolute;
-  bottom: 0;
-  left:0;
-  right: 0;
-}
 
 .barreimage{
   width:100%;
@@ -60,5 +55,3 @@ justify-content: center;
   height: 100%;
   margin : 6px;
 }
-
-
