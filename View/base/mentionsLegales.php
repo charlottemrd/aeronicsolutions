@@ -3,13 +3,14 @@
 <head>
   <title>Mentions légales</title>
   <meta charset="utf-8" />
-  <link rel="stylesheet" href="../assets/footer.css" />
+  
   <link rel="stylesheet" href="../assets/confidentialiteStyle.css" />
+  <link rel="stylesheet" href="../assets/footer.css" />
 </head>
 <body>
 <div class="Conf">
 
-  <h1> Mention Légale</h1>
+  <h1> Mentions Légales</h1>
   <p >
     Dans un souci de transparence, les mentions légales englobent les renseignements à faire figurer obligatoirement sur le site Web pour être mis à la connaissance du public.</br>
     Mises en place afin de protéger les internautes, ces mentions légales doivent leur permettre de s’adresser directement et d’entrer facilement en contact avec les créateurs du site, notamment en cas de contestation de litiges. Grâce aux informations à leur disposition, les visiteurs sont ainsi en mesure de savoir auprès de qui déclarer un non-respect des droits de propriété intellectuelle, signaler un contenu illicite et bien d’autres encore.
@@ -50,11 +51,14 @@
     <a href="mentionsLegales.php">Mentions légales</a>
   </div>
   <div class="barreimage">
-    <div class="reseaux "> <img src="../assets/Ressources/Images/logo-twitter-noir-et-blanc-png.png" ></a></div>
-    <div class="reseaux"><img src="../assets/Ressources/Images/instagram.png "></a></div>
-    <div class="reseaux"> <img src="../assets/Ressources/Images/snapchat.png"></a></div>
+      <div class="reseaux "> <a href=" https://twitter.com/AeronicSolution "><img
+            src="../assets/Ressources/Images/logo-twitter-noir-et-blanc-png.png"></a></div>
 
-  </div>
+      <div class="reseaux"><a href="https://www.instagram.com/aeronicsolutions_/"><img
+            src="../assets/Ressources/Images/instagram.png "></a></div>
+      <div class="reseaux"><a href="https://www.snapchat.com/add/aeronicsolution"><img
+            src="../assets/Ressources/Images/snapchat.png"></a></div>
+    </div>
 </div>
 </body>
 </html>

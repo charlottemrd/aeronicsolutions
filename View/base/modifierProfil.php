@@ -5,13 +5,12 @@
 
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../assets/modifierProfil.css" />
-    <link rel="stylesheet" href="../assets/footer.css" />
 
 </head>
 <body>
 
-<?php include "header.php" ?>
-<?php include "footer.php" ?>
+<?php include "header.php"; ?>
+<?php include "footer.php"; ?>
 
 <form method="POST" class="contentconnexion">
   <div class="title_container">
@@ -63,24 +62,14 @@
     </div>
     <div class= "changement">
           <div class="bt1">
-            <a href="#">Confirmer</a>
+            <a href="profil.php">Confirmer</a>
           </div>
           <div class="bt1">
-            <a href="#">Annuler</a>
+            <a href="profil.php">Annuler</a>
            </div>
     </div>
 
 
 </form>
-
-<div class="footer bottom">
-    <p> (c) Copyright tous droits réservés Aeronic Solutions Corporation 2021 </p>
-    <div class="confidentialites">
-      <a href="confidentialite.php">Engagement de confidentialité</a>
-      <a href="cookies.php">Utilisation de cookies</a>
-      <a href="conditionsUtilisation.php">Conditions d'utilisations</a>
-      <a href="mentionsLegales.php">Mentions légales</a>
-    </div>
-</div>
 </body>
 </html>

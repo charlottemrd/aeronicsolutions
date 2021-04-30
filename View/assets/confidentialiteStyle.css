@@ -1,4 +1,11 @@
+@font-face {
+    font-family: 'oumgouleh';
+    src: url('Ressources/Font/Avenir.ttc');
+  }
 
+* {
+    font-family:'oumgouleh';
+}
 
 .Conf{
 	border-radius: 1.5em;
@@ -22,6 +29,7 @@
   padding-right: 1em;
   padding-left: 1em;
   font-size: 1.5vw;
+  text-align:justify;
 }
 ul{
     padding-left: 10em;

@@ -21,7 +21,6 @@ si cela s’avère nécessaire, nous communiquerons des informations supplément
 AERONIC SOLUTIONS s’engage à respecter votre confidentialité. </br>
 Lisez notre Engagement de confidentialité vis-à-vis de notre clientèle pour obtenir des informations détaillées sur la façon dont nous collectons, utilisons, divulguons, transférons et conservons vos données.
 </p>
-
 </div>
 
 <div class="Confdonnees">
@@ -56,12 +55,14 @@ Lisez notre Engagement de confidentialité vis-à-vis de notre clientèle pour o
 		<a href="mentionsLegales.php">Mentions légales</a>
 	</div>
 	<div class="barreimage">
-		<div class="reseaux "> <img src="../assets/Ressources/Images/logo-twitter-noir-et-blanc-png.png" ></a></div>
+      <div class="reseaux "> <a href=" https://twitter.com/AeronicSolution "><img
+            src="../assets/Ressources/Images/logo-twitter-noir-et-blanc-png.png"></a></div>
 
-		<div class="reseaux"><img src="../assets/Ressources/Images/instagram.png "></a></div>
-		<div class="reseaux"> <img src="../assets/Ressources/Images/snapchat.png"></a></div>
-
-	</div>
+      <div class="reseaux"><a href="https://www.instagram.com/aeronicsolutions_/"><img
+            src="../assets/Ressources/Images/instagram.png "></a></div>
+      <div class="reseaux"><a href="https://www.snapchat.com/add/aeronicsolution"><img
+            src="../assets/Ressources/Images/snapchat.png"></a></div>
+    </div>
 </div>
 
 </body>

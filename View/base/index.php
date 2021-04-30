@@ -5,9 +5,10 @@
     <title>Aeronic solutions </title>
 
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="../assets/header.css" />
+    
     <link rel="stylesheet" href="../assets/style.css" />
     <link rel="stylesheet" href="../assets/footer.css" />
+    
 </head>
 
 <body>
@@ -17,7 +18,7 @@
     </nav>
     <div class="parallaxC">
         <div class="textParaC">
-            <p>Un pilote vit dans un monde de perfection ou ne vit pas.</p>
+            <p>Ensemble, toujours plus haut.</p>
         </div>
         <div class="parallax">
             <div class="parallaxColor">
@@ -85,10 +86,10 @@
     <div class="footer">
     <p> (c) Copyright tous droits réservés Aeronic Solutions Corporation 2021 </p>
     <div class="confidentialites">
-      <a href="confidentialite.html">Engagement de confidentialité</a>
-      <a href="cookies.html">Utilisation de cookies</a>
-      <a href="conditionsUtilisations.html">Conditions d'utilisations</a>
-      <a href="mentionsLegales.html">Mentions légales</a>
+      <a href="confidentialite.php">Engagement de confidentialité</a>
+      <a href="cookies.php">Utilisation de cookies</a>
+      <a href="conditionsUtilisation.php">Conditions d'utilisations</a>
+      <a href="mentionsLegales.php">Mentions légales</a>
     </div>
     <div class="barreimage">
       <div class="reseaux "> <a href=" https://twitter.com/AeronicSolution "><img

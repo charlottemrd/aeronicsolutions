@@ -7,7 +7,6 @@
     <meta charset="utf-8" />
     
     <link rel="stylesheet" href="../assets/inscriptionStyle.css" />
-    <link rel="stylesheet" href="../assets/footer.css" />
 
 </head>
 
@@ -97,12 +96,20 @@
         }
         */
         }
-        /*else {
-        faire un message pour l'utilisateur
-    }*/
+        else { ?>
+        <script>
+            alert("Les mots de passe ne correspondent pas");
+        </script>
+    <?php }
     }
     ?>
 
 </body>
-
 </html>
+
+<script>
+    function alert(texte){
+        windows.alert(texte);
+        return false;
+    }
+</script>

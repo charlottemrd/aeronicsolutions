@@ -4,7 +4,7 @@
   <title>Politique des cookies</title>
    <meta charset="utf-8" />
    <link rel="stylesheet" href="../assets/footer.css" />
-   <link rel="stylesheet" href="../assets/cookiesStyle.css" />
+   <link rel="stylesheet" href="../assets/confidentialiteStyle.css" />
 </head>
 <body>
 	
@@ -16,7 +16,6 @@ Les cookies sont de petits fichiers qui stockent des informations sur votre ordi
 L’organisme qui place un cookie sur votre appareil peut ainsi vous reconnaître, à travers les différents sites internet, services et appareils que vous utilisez ou visitez, ainsi que d’une session de navigation à l’autre. Les cookies sont très utiles. </br>
 </p>
 
-</div>
 
 <div class="Cookdonnes">
 	<h2> A quoi ils servent  ?</h2>
@@ -41,6 +40,7 @@ L’organisme qui place un cookie sur votre appareil peut ainsi vous reconnaîtr
 	</p>
 	
 </div>
+</div>
 
 <div class="retour"><a href="index.php"><img src="../assets/Ressources/Images/accueil.png"> </a></div>
 
@@ -52,12 +52,15 @@ L’organisme qui place un cookie sur votre appareil peut ainsi vous reconnaîtr
     <a href="conditionsUtilisation.php">Conditions d'utilisations</a>
     <a href="mentionsLegales.php">Mentions légales</a>
   </div>
-	<div class="barreimage">
-		<div class="reseaux "> <img src="../assets/Ressources/Images/logo-twitter-noir-et-blanc-png.png" ></a></div>
-		<div class="reseaux"><img src="../assets/Ressources/Images/instagram.png "></a></div>
-		<div class="reseaux"> <img src="../assets/Ressources/Images/snapchat.png"></a></div>
+  <div class="barreimage">
+      <div class="reseaux "> <a href=" https://twitter.com/AeronicSolution "><img
+            src="../assets/Ressources/Images/logo-twitter-noir-et-blanc-png.png"></a></div>
 
-	</div>
+      <div class="reseaux"><a href="https://www.instagram.com/aeronicsolutions_/"><img
+            src="../assets/Ressources/Images/instagram.png "></a></div>
+      <div class="reseaux"><a href="https://www.snapchat.com/add/aeronicsolution"><img
+            src="../assets/Ressources/Images/snapchat.png"></a></div>
+    </div>
 </div>
 
 </body>

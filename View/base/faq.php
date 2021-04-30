@@ -5,7 +5,6 @@
 
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../assets/faqstyle.css" />
-    <link rel="stylesheet" href="../assets/footer.css" />
 
 </head>
 <body>

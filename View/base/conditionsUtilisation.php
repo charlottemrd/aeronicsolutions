@@ -99,11 +99,14 @@
 		<a href="mentionsLegales.php">Mentions légales</a>
 	</div>
 	<div class="barreimage">
-		<div class="reseaux "> <img src="../assets/Ressources/Images/logo-twitter-noir-et-blanc-png.png" ></a></div>
-		<div class="reseaux"><img src="../assets/Ressources/Images/instagram.png "></a></div>
-		<div class="reseaux"> <img src="../assets/Ressources/Images/snapchat.png"></a></div>
+      <div class="reseaux "> <a href=" https://twitter.com/AeronicSolution "><img
+            src="../assets/Ressources/Images/logo-twitter-noir-et-blanc-png.png"></a></div>
 
-	</div>
+      <div class="reseaux"><a href="https://www.instagram.com/aeronicsolutions_/"><img
+            src="../assets/Ressources/Images/instagram.png "></a></div>
+      <div class="reseaux"><a href="https://www.snapchat.com/add/aeronicsolution"><img
+            src="../assets/Ressources/Images/snapchat.png"></a></div>
+    </div>
 </div>
 
 </body>

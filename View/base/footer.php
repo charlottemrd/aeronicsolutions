@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="../assets/footer.css" />
+
 <div class="footer bottom">
     <p> (c) Copyright tous droits réservés Aeronic Solutions Corporation 2021 </p>
     <div class="confidentialites">
