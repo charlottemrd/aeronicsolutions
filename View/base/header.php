@@ -11,8 +11,10 @@
     </div>
     <div class="connexionC">
         <div class="IMGC">
-            <img class="Bcon" href="index.html" src="../assets/Ressources/Images/account.png" width=30 alt="##" />
-        </div>
+          <a href="profil.html">
+            <img class="Bcon" href="index.html" src="../assets/Ressources/Images/account.png" width=30 alt="##"/>
+            </a>
+          </div>
         <div class="menuD">
             <div class="bt1">
                 <a href="inscription.php">Inscription</a>
