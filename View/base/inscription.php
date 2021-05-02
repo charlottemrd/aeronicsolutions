@@ -20,12 +20,13 @@
             <h3>Inscrivez-vous</h3>
         </div>
         <div class="form_container">
-            <input name="prenom" type="text" id="prenom" placeholder="Prénom" required>
-            <input name="nom" type="text" id="nom" placeholder="Nom" required>
-            <input name="birthDate" type="date" id="birthDate" placeholder="Date de naissance" required>
-            <input name="mail" type="text" id="mail" placeholder="Adresse-mail" required>
-            <input name="password" type="password" id="password" placeholder="Mot de passe" required>
-            <input name="cpassword" type="password" id="cpassword" placeholder="Confirmer mot de passe" required>
+
+            <input name="prenom" type="text" id="prenom" placeholder="Prénom" required pattern=".{3,}" title="Le champ doit contenir au moins 3 lettres">
+            <input name="nom" type="text" id="nom" placeholder="Nom" required pattern=".{3,}" title="Le champ doit contenir au moins 3 lettres">
+            <input name="birthDate" type="date" id="birthDate" placeholder="Date de naissance" >
+            <input name="mail" type="text" id="mail" placeholder="Adresse-mail" required >
+            <input name="password" type="password" id="password" placeholder="Mot de passe" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Le mot de passe doit contenir au moins un chiffre, une majuscule, une minuscule et être composé d'au moins 8 charactères">
+            <input name="cpassword" type="password" id="cpassword" placeholder="Confirmer mot de passe" required pattern="password" title="Les mots de passes ne correspondent pas">
             <input name="code" type="code" id="code" placeholder="I-C" required>
 
             <div class="CondUtilisations">
@@ -96,20 +97,9 @@
         }
         */
         }
-        else { ?>
-        <script>
-            alert("Les mots de passe ne correspondent pas");
-        </script>
-    <?php }
+
     }
     ?>
 
 </body>
 </html>
-
-<script>
-    function alert(texte){
-        windows.alert(texte);
-        return false;
-    }
-</script>
