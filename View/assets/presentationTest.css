@@ -7,6 +7,10 @@ body{
     font-family: 'oumgouleh';
     src: url('Ressources/Font/Avenir.ttc');
   }
+
+  h3{
+    color: white;
+}
   p,h3{
     font-family: 'oumgouleh';
   }
@@ -143,47 +147,70 @@ body{
   .connexionC:hover .menuD{
     visibility: visible;
   }
-  
+
   .test{
       display: flex;
-      border: 2px red solid;
-      flex-direction: column;
+      flex-direction : column;
+    justify-content : center;
       margin-top: 4em;
-      justify-content: space-around;
       margin-bottom: 3em;
   }
 
   .bloc1{
-      border:green 2px solid;
-      width: 92%;
-      margin-left:4%;
-      height: 100%;
-      display: flex;
-      margin-top: 3em;
-
-
-  }
-  .bloc2{
-    border:blue 2px solid;
+    border: white 2px solid;
     width: 92%;
     margin-left:4%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
     border-radius: 1.5em;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+  }
+  .bloc2{
+    border: white 2px solid;
+    width: 92%;
+    margin-left:4%;
+    height: 100%;
+    border-radius: 1.5em;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+  .bloc3{
+    border: white 2px solid;
+    width: 92%;
+    margin-left:4%;
+    height: 100%;
+    border-radius: 1.5em;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+  .bloc4{
+      border: white 2px solid;
+      width: 92%;
+      margin-left:4%;
+      height: 100%;
+      border-radius: 1.5em;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+      overflow: hidden;
+      margin-bottom: 20px;
 }
 .title_container{
     height:20%;
     width: 100%;
     display: flex;
     align-items: center;
-    border-bottom: solid 1px #b2bec3;
+    border : solid 5px #54a0ff ;
     background-color: #54a0ff;
     justify-content: center;
-    
+    margin : 0px;
   }
+
 .bloc2 h3{
     color: white;
 }

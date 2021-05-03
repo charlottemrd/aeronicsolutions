@@ -13,76 +13,48 @@
  
 <?php include "header.php" ?>
 
+
     <div class="test">
         <div class="bloc1">
-            <div class="bloc2">
-                <div class="title_container">
-                    <h3>
-                        Mesure de la température corporelle
-                    </h3>
-                </div>
-                <p>
-                    Fratres consulatu egressus confines vastabantur Constantius reges petit Valentiam ter in suo Constantius crebris dum crebris arma petit Gallorum egressus arma Arelate in limitibus Valentiam in in ter fratres suo Arelate tepore Gallorum perferret reserato Caesaris quorum fratres caeli ter.
-
-
-                </p>
-                <img src="" alt="">
+            <div class="title_container">
+                <h3>Mesure de la température corporelle</h3>
             </div>
-            <div class="bloc2">
-                <div class="title_container">
-                    <h3>
-                        Test auditif
-                    </h3>
-                </div>
-                <p>
-                    Fratres consulatu egressus confines vastabantur Constantius reges petit Valentiam ter in suo Constantius crebris dum crebris arma petit Gallorum egressus arma Arelate in limitibus Valentiam in in ter fratres suo Arelate tepore Gallorum perferret reserato Caesaris quorum fratres caeli ter.
-                </p>
+            <div>
+                <p class="objectif"> Objectif : Mesurer la température corporelle de l'utilisateur</p>
+                <p> Déroulement du test : </p>
+                <p> L'utilisateur va place un doigt sur le capteur qui avec une précision de 0.2 °C, déterminera sa température corporelle.</p>
                 <img src="../assets/Ressources/Images/test.jpg">
             </div>
         </div>
-        <div class="bloc1">
-            <div class="bloc2">
-                <div class="title_container">
-                    <h3>
-                        Test de réflexe visuel
-                    </h3>
-                </div>
-                <p>Fratres consulatu egressus confines vastabantur Constantius reges petit Valentiam ter in suo Constantius crebris dum crebris arma petit Gallorum egressus arma Arelate in limitibus Valentiam in in ter fratres suo Arelate tepore Gallorum perferret reserato Caesaris quorum fratres caeli ter.</p>
-                <img src="../assets/Ressources/Images/test.jpg">
+        <div class="bloc2">
+            <div class="title_container">
+                <h3>Test auditif</h3>
             </div>
-            <div class="bloc2">
-                <div class="title_container">
-                    <h3>Mesure de la fréquence cardiaque</h3>
-                </div>
-                <p>Fratres consulatu egressus confines vastabantur Constantius reges petit Valentiam ter in suo Constantius crebris dum crebris arma petit Gallorum egressus arma Arelate in limitibus Valentiam in in ter fratres suo Arelate tepore Gallorum perferret reserato Caesaris quorum fratres caeli ter.</p>
-                <img src="" alt="">
-            </div>
-
+            <p class="objectif"> Objectif : Déterminer si l'utilisateur a de potentiels troubles auditifs</p>
+            <p> Déroulement du test : </p>
+            <p> On va mesurer la qualité de reconnaissance de tonalité et observer la qualité du pilote à reproduire une fréquence sonore. Un son sera envoyé à l'aide d'un logiciel sur un haut-parleur. L'utilisateur devra tenter de le reproduire au mieux dans un micro et obtiendra un score sur 20.</p>
+            <img src="../assets/Ressources/Images/test.jpg">
         </div>
 
-    </div>
-
-
-
-
-
-    <div class="footer">
-        <p> (c) Copyright tous droits réservés Aeronic Solutions Corporation 2021 </p>
-        <div class="confidentialites">
-            <a href="confidentialite.php">Engagement de confidentialité</a>
-            <a href="cookies.php">Utilisation de cookies</a>
-            <a href="conditionsUtilisation.php">Conditions d'utilisations</a>
-            <a href="mentionsLegales.php">Mentions légales</a>
+        <div class="bloc3">
+            <div class="title_container">
+                <h3>Test de réflexe visuel</h3>
+            </div>
+            <p class="objectif"> Objectif : L'utilisateur va réaliser deux tests différents afin de tester ses réflexes visuels</p>
+            <p> Déroulement des tests : </p>
+            <p> Lors du premier test, on mesure le temps de réaction de l'utilisateur à une lumière qui s'allumera de façon inattendue tandis qu'avec le second test, on détermine le temps de réaction de l'utilisateur à un clignotement répété d'une lumière. Un décompte du temps avant que la lumière clignote a lieu au cours du second test.</p>
+            <img src="../assets/Ressources/Images/test.jpg">
         </div>
-        <div class="barreimage">
-            <div class="reseaux "> <a href=" https://twitter.com/AeronicSolution "><img src="../assets/Ressources/Images/logo-twitter-noir-et-blanc-png.png"></a></div>
-
-            <div class="reseaux"><a href="https://www.instagram.com/aeronicsolutions_/"><img src="../assets/Ressources/Images/instagram.png "></a></div>
-            <div class="reseaux"><a href="https://www.snapchat.com/add/aeronicsolution"><img src="../assets/Ressources/Images/snapchat.png"></a></div>
-
+        <div class="bloc4">
+            <div class="title_container">
+                <h3>Mesure de la fréquence cardiaque</h3>
+            </div>
+            <p class="objectif"> Objectif : Mesurer la fréquence cardiaque d'un utilisateur</p>
+            <p> Déroulement du test :</p>
+            <p> L'utilisateur va placer un doigt dans un conduit qui déterminera sa fréquence cardiaque en battements par minute. </p>
+            <img src="../assets/Ressources/Images/test.jpg">
         </div>
     </div>
 
 </body>
-
 </html>
