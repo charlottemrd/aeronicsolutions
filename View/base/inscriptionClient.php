@@ -17,24 +17,46 @@
 
 <form method="post" class="contentInscription">
     <div class="title_container">
-        <h3>Inscription : client</h3>
+        <h3>Inscription - <?php echo$_SESSION['utilisateur'];?> </h3>
     </div>
     <div class="form_container">
 
         <input name="prenom" type="text" id="prenom" placeholder="Prénom" required pattern=".{3,}" title="Le champ doit contenir au moins 3 lettres">
         <input name="nom" type="text" id="nom" placeholder="Nom" required pattern=".{3,}" title="Le champ doit contenir au moins 3 lettres">
-        <input name="birthDate" type="date" id="birthDate" placeholder="Date de naissance" >
         <input name="mail" type="text" id="mail" placeholder="Adresse-mail" required >
-        <div class="genre">
-        <select name="sexe" id="genre" >
-            <option value="H" selected="selected" disabled="disabled">Sexe</option>
-            <option value="H">Homme</option>
-            <option value="F">Femme</option>
-        </select>
-        </div>
         <input name="password" type="password" id="password" placeholder="Mot de passe" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Le mot de passe doit contenir au moins un chiffre, une majuscule, une minuscule et être composé d'au moins 8 charactères">
         <input name="cpassword" type="password" id="cpassword" placeholder="Confirmer mot de passe" required pattern="password" title="Les mots de passes ne correspondent pas">
-        <input name="compagnie" type="text" id="compagnie" placeholder="Compagnie aérienne" required >
+
+        <?php
+        if ($_SESSION['utilisateur']=='client') {
+            echo '<input name="birthDate" type="date" id="birthDate" placeholder="Date de naissance" >
+        <div class="genre">
+            <select name="sexe" id="genre" >
+                <option value="H" selected="selected" disabled="disabled">Sexe</option>
+                <option value="H">Homme</option>
+                <option value="F">Femme</option>
+            </select>
+        </div>
+        <input name="compagnie" type="text" id="compagnie" placeholder="Compagnie aérienne" required >';
+        }
+ ?>
+
+        <?php
+        if ($_SESSION['utilisateur']=='gestionnaire')
+        {
+            echo '<input name="centre" type="text" id="center" placeholder="Centre médical" required pattern="password" title="Les mots de passes ne correspondent pas">';
+        }
+        ?>
+
+
+
+
+
+
+
+
+
+
 
         <div class="CondUtilisations">
             <input class="inp-cbx" id="cbx" type="checkbox" style="display: none" required>
