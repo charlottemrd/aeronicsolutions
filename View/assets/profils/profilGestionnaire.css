@@ -1,7 +1,7 @@
 body{
     margin : 0;
     overflow: hidden;
-    background-image: url("../assets/Ressources/Images/pilots.jpg");
+    background-image: url("../Ressources/Images/pilots.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -14,7 +14,7 @@ body{
   /* Style of the top navigation bar */
   @font-face {
     font-family: 'oumgouleh';
-    src: url('Ressources/Font/Avenir.ttc');
+    src: url('../Ressources/Font/Avenir.ttc');
   }
   *{
     margin: 0;
