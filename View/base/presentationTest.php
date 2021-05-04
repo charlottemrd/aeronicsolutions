@@ -13,47 +13,44 @@
 <?php include "header.php" ?>
 
     <div class="test">
-        <div class="bloc1">
+        <div class="bloc">
             <div class="title_container">
                 <h3>Mesure de la température corporelle</h3>
             </div>
             <div>
-                <p class="objectif"> Objectif : Mesurer la température corporelle de l'utilisateur</p>
-                <p> Déroulement du test : </p>
-                <p> L'utilisateur va place un doigt sur le capteur qui avec une précision de 0.2 °C, déterminera sa température corporelle.</p>
+                <p> Objectif : Mesurer la température corporelle de l'utilisateur</p>
+                <p> Déroulement du test : L'utilisateur va placer un doigt sur le capteur qui avec une précision de 0.2 °C, déterminera sa température corporelle.</p>
                 <img src="../assets/Ressources/Images/test.jpg">
             </div>
         </div>
-        <div class="bloc2">
+        <div class="bloc">
             <div class="title_container">
                 <h3>Test auditif</h3>
             </div>
             <div>
-                <p class="objectif"> Objectif : Déterminer si l'utilisateur a de potentiels troubles auditifs</p>
-                <p> Déroulement du test : </p>
-                <p> On va mesurer la qualité de reconnaissance de tonalité et observer la qualité du pilote à reproduire une fréquence sonore. Un son sera envoyé à l'aide d'un logiciel sur un haut-parleur. L'utilisateur devra tenter de le reproduire au mieux dans un micro et obtiendra un score sur 20.</p><img src="../assets/Ressources/Images/test.jpg">
+                <p> Objectif : Déterminer si l'utilisateur a de potentiels troubles auditifs</p>
+                <p> Déroulement du test : On va mesurer la qualité de reconnaissance de tonalité et observer la qualité du pilote à reproduire une fréquence sonore. Un son sera envoyé à l'aide d'un logiciel sur un haut-parleur. L'utilisateur devra tenter de le reproduire au mieux dans un micro et obtiendra un score sur 20.</p>
+                <img src="../assets/Ressources/Images/test.jpg">
             </div>
         </div>
 
-        <div class="bloc3">
+        <div class="bloc">
             <div class="title_container">
                 <h3>Test de réflexe visuel</h3>
             </div>
             <div>
-                <p class="objectif"> Objectif : L'utilisateur va réaliser deux tests différents afin de tester ses réflexes visuels</p>
-                <p> Déroulement des tests : </p>
-                <p> Lors du premier test, on mesure le temps de réaction de l'utilisateur à une lumière qui s'allumera de façon inattendue tandis qu'avec le second test, on détermine le temps de réaction de l'utilisateur à un clignotement répété d'une lumière. Un décompte du temps avant que la lumière clignote a lieu au cours du second test.</p>
+                <p> Objectif : L'utilisateur va réaliser deux tests différents afin de tester ses réflexes visuels</p>
+                <p> Déroulement des tests : Lors du premier test, on mesure le temps de réaction de l'utilisateur à une lumière qui s'allumera de façon inattendue, tandis qu'avec le second test, on détermine le temps de réaction de l'utilisateur à un clignotement répété d'une lumière. Un décompte du temps avant que la lumière clignote a lieu au cours du second test.</p>
                 <img src="../assets/Ressources/Images/test.jpg">
             </div>
         </div>
-        <div class="bloc4">
+        <div class="bloc">
             <div class="title_container">
                 <h3>Mesure de la fréquence cardiaque</h3>
             </div>
             <div>
-                <p class="objectif"> Objectif : Mesurer la fréquence cardiaque d'un utilisateur</p>
-                <p> Déroulement du test :</p>
-                <p> L'utilisateur va placer un doigt dans un conduit qui déterminera sa fréquence cardiaque en battements par minute. </p>
+                <p> Objectif : Mesurer la fréquence cardiaque d'un utilisateur</p>
+                <p> Déroulement du test : L'utilisateur va placer un doigt dans un conduit qui déterminera sa fréquence cardiaque en battements par minute. </p>
                 <img src="../assets/Ressources/Images/test.jpg">
             </div>
         </div>

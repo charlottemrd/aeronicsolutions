@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : mar. 04 mai 2021 à 09:27
+-- Généré le : mar. 04 mai 2021 à 09:50
 -- Version du serveur :  5.7.31
 -- Version de PHP : 7.3.21
 
@@ -30,8 +30,8 @@ SET time_zone = "+00:00";
 DROP TABLE IF EXISTS `administrateurs`;
 CREATE TABLE IF NOT EXISTS `administrateurs` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `prenom` varchar(255) NOT NULL,
-  `nom` varchar(255) NOT NULL,
+  `firstName` varchar(255) NOT NULL,
+  `name` varchar(255) NOT NULL,
   `mail` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
   `status` varchar(255) NOT NULL DEFAULT 'administrateur',
@@ -50,13 +50,14 @@ CREATE TABLE IF NOT EXISTS `administrateurs` (
 DROP TABLE IF EXISTS `clients`;
 CREATE TABLE IF NOT EXISTS `clients` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `prenom` varchar(255) NOT NULL,
-  `nom` varchar(255) NOT NULL,
+  `firstName` varchar(255) NOT NULL,
+  `name` varchar(255) NOT NULL,
   `birthDate` timestamp NOT NULL,
   `kind` varchar(255) NOT NULL,
   `company` varchar(255) NOT NULL,
   `mail` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
+  `doctor` varchar(255) NOT NULL,
   `status` varchar(255) NOT NULL DEFAULT 'client',
   `icode` int(11) NOT NULL,
   PRIMARY KEY (`id`),
@@ -73,8 +74,8 @@ CREATE TABLE IF NOT EXISTS `clients` (
 DROP TABLE IF EXISTS `gestionnaires`;
 CREATE TABLE IF NOT EXISTS `gestionnaires` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `prenom` varchar(255) NOT NULL,
-  `nom` varchar(255) NOT NULL,
+  `firstName` varchar(255) NOT NULL,
+  `name` varchar(255) NOT NULL,
   `center` varchar(255) NOT NULL,
   `mail` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
