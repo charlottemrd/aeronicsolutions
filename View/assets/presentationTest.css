@@ -18,7 +18,7 @@ body{
   p,h3{
     font-family: 'oumgouleh';
   }
-  p{
+  .contenu p{
     font-weight: 400%;
       text-align: justify;
       padding-left: 8px;
@@ -26,6 +26,7 @@ body{
   }
 
   .test{
+      width: 100%;
       display: flex;
       flex-direction : column;
       justify-content : center;
@@ -58,12 +59,18 @@ body{
   }
 
 
-.bloc img{
+.contenu{
+    width : 100%;
+    text-align: center;
+}
+
+video{
+    height: 50%;
     width : 95%;
     padding-left : 2.5%;
     padding-right: 2.5%;
     text-align: center;
-
 }
+
 
 
