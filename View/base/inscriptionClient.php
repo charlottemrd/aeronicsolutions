@@ -17,7 +17,7 @@
 
 <form method="post" class="contentInscription">
     <div class="title_container">
-        <h3>Inscription - <?php echo$_SESSION['utilisateur'];?> </h3>
+        <h3>Inscription - <?php echo$_SESSION['utilisateurs'];?> </h3>
     </div>
     <div class="form_container">
 
@@ -32,9 +32,9 @@
             echo '<input name="birthDate" type="date" id="birthDate" placeholder="Date de naissance" >
         <div class="genre">
             <select name="sexe" id="genre" >
-                <option value="H" selected="selected" disabled="disabled">Sexe</option>
-                <option value="H">Homme</option>
-                <option value="F">Femme</option>
+                <option value="#" selected="selected" disabled="disabled">Sexe</option>
+                <option value="homme">Homme</option>
+                <option value="femme">Femme</option>
             </select>
         </div>
         <input name="compagnie" type="text" id="compagnie" placeholder="Compagnie aérienne" required >';
