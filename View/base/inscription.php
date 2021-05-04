@@ -5,7 +5,7 @@
     <title>Connexion</title>
 
     <meta charset="utf-8" />
-    
+
     <link rel="stylesheet" href="../assets/inscriptionStyle.css" />
 
 </head>
@@ -26,7 +26,7 @@
             <input name="birthDate" type="date" id="birthDate" placeholder="Date de naissance" >
             <input name="mail" type="text" id="mail" placeholder="Adresse-mail" required >
             <input name="password" type="password" id="password" placeholder="Mot de passe" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Le mot de passe doit contenir au moins un chiffre, une majuscule, une minuscule et être composé d'au moins 8 charactères">
-            <input name="cpassword" type="password" id="cpassword" placeholder="Confirmer mot de passe" required pattern="password" title="Les mots de passes ne correspondent pas">
+            <input name="cpassword" type="password" id="cpassword" placeholder="Confirmer mot de passe" required title="Les mots de passes ne correspondent pas">
             <input name="code" type="code" id="code" placeholder="I-C" required>
 
             <div class="CondUtilisations">
