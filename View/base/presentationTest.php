@@ -13,7 +13,7 @@
 <?php include "header.php" ?>
 
     <div class="test">
-        <div class="bloc1">
+        <div class="bloc">
             <div class="title_container">
                 <h3>Mesure de la température corporelle</h3>
             </div>
@@ -21,10 +21,10 @@
                 <p class="objectif"> Objectif : Mesurer la température corporelle de l'utilisateur</p>
                 <p> Déroulement du test : </p>
                 <p> L'utilisateur va place un doigt sur le capteur qui avec une précision de 0.2 °C, déterminera sa température corporelle.</p>
-                <img src="../assets/Ressources/Images/test.jpg">
+                <embed src="mavideo.mov" width="350" height="200" AutoStart="true">
             </div>
         </div>
-        <div class="bloc2">
+        <div class="bloc">
             <div class="title_container">
                 <h3>Test auditif</h3>
             </div>
@@ -35,7 +35,7 @@
             </div>
         </div>
 
-        <div class="bloc3">
+        <div class="bloc">
             <div class="title_container">
                 <h3>Test de réflexe visuel</h3>
             </div>
@@ -46,7 +46,7 @@
                 <img src="../assets/Ressources/Images/test.jpg">
             </div>
         </div>
-        <div class="bloc4">
+        <div class="bloc">
             <div class="title_container">
                 <h3>Mesure de la fréquence cardiaque</h3>
             </div>
