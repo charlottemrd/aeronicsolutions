@@ -21,7 +21,7 @@
                 <p class="objectif"> Objectif : Mesurer la température corporelle de l'utilisateur</p>
                 <p> Déroulement du test : </p>
                 <p> L'utilisateur va place un doigt sur le capteur qui avec une précision de 0.2 °C, déterminera sa température corporelle.</p>
-                <embed src="mavideo.mov" width="350" height="200" AutoStart="true">
+
             </div>
         </div>
         <div class="bloc">
