@@ -27,7 +27,7 @@
                 </div>
                 <div class="information">
                     <h4>Date de naissance</h4>
-                    <p>12 brumaire an CCXXX</p>
+                    <p>12 brumaire an CCXX</p>
                 </div>
                 <div class="information">
                     <h4>E-mail</h4>

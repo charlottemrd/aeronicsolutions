@@ -179,6 +179,7 @@ color: white;
   align-items: center;
   transition: all 0.3s ease;
   opacity: 0.9;
+  
 }
 .contentconnexion:hover{
 transform: scale(1.02);
@@ -189,47 +190,29 @@ width: 80%;
 display: flex;
 align-items: center;
 justify-content: space-around;
-margin-top: 1em;
+margin-top: 3em;
 column-count: 2;
-
 }
 
-.form_container input{
-
-height: 10vh;
-width: 100%;
-font-family: 'oumgouleh';
-outline: none;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  border-radius:0.4em;
-  border-top-style: hidden;
-  border-right-style: hidden;
-  border-left-style: hidden;
-  border-bottom-style: hidden;
-  box-shadow: rgba(99, 99, 99, 0.5) 0px 0px 8px 0px;
-   padding-left: 15px;
-   
-
+.form_container{
+  height: 100%;
 }
 .information{
-  padding-top: 20px;
-  padding-bottom: 15px;
+  height: 24%;
   
 }
 .information h4{
-  padding-bottom:5px;
+  height: 50%;
 }
+
 .changement{
   height: 10%;
   width: 60%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 1em;
   column-count: 2;
-
+  margin-top: 1em;
 }
 input:focus{
 border: 1.5px solid #54a0ff;
