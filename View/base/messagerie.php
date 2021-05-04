@@ -23,16 +23,30 @@
 
             <input name="prenom" type="text" id="prenom_message" placeholder="Prénom" required>
             <input name="nom" type="text" id="nom_message" placeholder="Nom" required>
-            <input name="adresse e-mail" type="email" id="mail_message" placeholder="Adresse e-mail" required>
-             <textarea name="adresse e-mail" type="text" id="mail_text" placeholder="Votre message" required  >
+            <input name="mail" type="mail" id="email" placeholder="Adresse e-mail" required>
+             <textarea name="contenu" type="text" id="contenu" placeholder="Votre message" required  >
              </textarea>
     </div>
         <div class="envoyer_messageM">
             <input class="envoyer_message" name="envoi" type="submit"></input>
         </div>
-    </form>
+   </form>
 
 
 </div>
+<?php
+if (isset($_POST['envoi'])) {
+
+    extract($_POST);
+    ini_set( 'display_errors', 1 );
+    error_reporting( E_ALL );
+    $from = $_POST['mail'];
+    $to = "solutionsaeronic@gmail.com";
+    $subject = "Demande Aeronic Solutions";
+    $message = $_POST['contenu'];
+    $headers = "De :" . $from;
+    mail($to,$subject,$message, $headers);
+}
+?>
 </body>
 </html>

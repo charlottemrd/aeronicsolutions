@@ -27,7 +27,7 @@
                 </div>
                 <div class="information">
                     <h4>Date de naissance</h4>
-                    <p>12 brumaire an CCXXX</p>
+                    <p>12 brumaire an CCXX</p>
                 </div>
                 <div class="information">
                     <h4>E-mail</h4>
@@ -58,11 +58,11 @@
             </div>
         </div>
         <div class="changement">
-            <div class="bt1">
-                <a href="modifierMdp.php">Modifier mot de passe</a>
+            <div class="bt3">
+                <input class="change" name="log" type="submit" value="Modifier Mot de Passe"></input>
             </div>
-            <div class="bt1">
-                <p><a href="modifierProfil.php">Modifier le profil</a></p>
+            <div class="bt4">
+                <input class="change" name="log" type="submit" value="Modifier Profil"></input>
             </div>
         </div>
     </form>

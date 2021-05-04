@@ -1,5 +1,7 @@
 <link rel="stylesheet" href="../assets/header.css" />
-
+<?php
+session_start();
+?>
 <nav>
     <div class="logoC">
         <a href="index.php">

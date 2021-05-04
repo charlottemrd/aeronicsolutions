@@ -157,10 +157,12 @@ align-items: center;
 justify-content: space-around;
 margin-top: 1em;
 }
-.form_container input{
-height: 4vh;
-width: 100%;
-font-family: "oumgouleh";
+
+.form_container input,.form_container select{
+
+  height: 4vh;
+  width: 100%;
+  font-family: "oumgouleh";
   font-size: 100%;
   line-height: 1.15;
   margin: 0;
@@ -170,14 +172,17 @@ font-family: "oumgouleh";
   border-left-style: hidden;
   border-bottom-style: hidden;
   box-shadow: rgba(99, 99, 99, 0.5) 0px 0px 8px 0px;
-   padding-left: 15px;
-   outline-color:#54a0ff;
+  padding-left: 15px;
+  outline-color:#54a0ff;
+}
 
+.genre{
+  width: 104%;
 }
 input:focus{
 border: 1.5px solid #54a0ff;
-
 }
+
 
 input:hover{
 border: 1.5px solid #54a0ff;
@@ -185,6 +190,11 @@ border: 1.5px solid #54a0ff;
 input:active{
 border: 1.5px solid #54a0ff;
 }
+
+select option {
+  border: 1.5px solid #54a0ff;
+}
+
 .mdp_oublié{
 width: 100%;
 }

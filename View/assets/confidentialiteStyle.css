@@ -13,8 +13,8 @@
     padding: 15px;
     margin: 50px;
     margin-top: 50px;
-    background-color:#54a0ff; 
-  
+    background-color:#54a0ff;
+
 }
 
  h1,h2{
@@ -52,7 +52,6 @@ li{
     margin-right:3em;
     margin-left:3em;
     margin-top:3em;
-
 }
 
 .retour{
@@ -62,8 +61,8 @@ li{
     justify-content: flex-end;
     margin-bottom: 2em;
     margin-top: 3em;
-
 }
+
 
 .retour img {
     width: 3em;
