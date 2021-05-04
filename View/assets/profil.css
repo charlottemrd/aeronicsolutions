@@ -27,11 +27,6 @@ p{
   font-weight: 400%;
 }
 
-
-
-
-
-
 .contentconnexion{
   margin-top: -5em;
   border-radius: 1.5em;
@@ -39,7 +34,6 @@ p{
   width: 80%;
   height: 50vh;
   font-family: "oumgouleh";
-  
   background-color: white;
   max-width: 38em;
   max-height: 100vh;
@@ -49,8 +43,7 @@ p{
   align-items: center;
   transition: all 0.3s ease;
   opacity: 0.9;
-  border: indigo 2px solid;
-  
+ 
 }
 .contentconnexion:hover{
   transform: scale(1.02);
@@ -76,7 +69,7 @@ p{
   justify-content: space-around;
   margin-top: 5%;
   column-count: 2;
-  border: pink 2px solid;
+
 }
 
 .form_container{
@@ -97,9 +90,7 @@ p{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  column-count: 2;
-  border: grey 2px solid;
-  
+  column-count: 2; 
   
 }
 

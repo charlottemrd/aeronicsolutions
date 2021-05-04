@@ -17,7 +17,7 @@
 
     <form action="connexion.php" method="POST" class="contentconnexion">
         <div class="title_container">
-            <h3>Données personnelles</h3>
+            <h3>Données personnelles Client</h3>
         </div class>
         <div class="superform_container">
             <div class="form_container">
@@ -26,12 +26,12 @@
                     <p>George</p>
                 </div>
                 <div class="information">
-                    <h4>Date de naissance</h4>
-                    <p>12 brumaire an CCXX</p>
-                </div>
-                <div class="information">
                     <h4>E-mail</h4>
                     <p>email@adresse.fr</p>
+                </div>
+                <div class="information">
+                    <h4>Date de naissance</h4>
+                    <p>12 brumaire an CCXX</p>
                 </div>
                 <div class="information">
                     <h4>Médecin</h4>
@@ -44,16 +44,16 @@
                     <p>Dupont</p>
                 </div>
                 <div class="information">
-                    <h4>Genre</h4>
-                    <p>Masculin</p>
+                    <h4> I-C</h4>
+                    <p> P45D25A </p>
                 </div>
                 <div class="information">
                     <h4>Compagnie aérienne</h4>
                     <p>Aire isep</p>
                 </div>
                 <div class="information">
-                    <h4> I-C</h4>
-                    <p> P45D25A </p>
+                    <h4>Genre</h4>
+                    <p>Masculin</p>
                 </div>
             </div>
         </div>
