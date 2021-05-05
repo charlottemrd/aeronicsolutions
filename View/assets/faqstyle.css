@@ -11,6 +11,7 @@ body{
     display: flex;
     height: 100vh;
 }
+
 /* Style of the top navigation bar */
 @font-face {
     font-family: 'oumgouleh';

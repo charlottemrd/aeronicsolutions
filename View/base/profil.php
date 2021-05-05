@@ -15,6 +15,11 @@
 <?php include 'header.php';
 include 'footer.php';
 session_start;
+
+include 'header.php';
+include 'footer.php';
+include 'includes/database.php';
+include 'includes/requeteProfil.php';
 if ($_SESSION['utilisateurs']=='client'){
     echo '<link rel="stylesheet" href="../assets/profils/profil.css" />';
 }
@@ -24,6 +29,7 @@ elseif ($_SESSION['utilisateurs']=='administrateur'){
 else{
     echo '<link rel="stylesheet" href="../assets/profils/profilGestionnaire.css" />';
 }
+
 ?>
 
     <form action="profil.php" method="POST" class="contentconnexion">
@@ -34,29 +40,29 @@ else{
             <div class="form_container">
                 <div class="information">
                     <h4>Prenom</h4>
-                    <p>George</p>
+                    <p><?= $user['firstName']?></p>
                 </div>
                 <div class="information">
                     <h4>E-mail</h4>
-                    <p>email@adresse.fr</p>
+                    <p><?=$user['mail']?></p>
                 </div>
                 <?php if ($_SESSION['utilisateurs']=='gestionnaire')
-               {
-                echo'<div class="information">
-                    <h4>Diplôme</h4>
-                    <p>C\'est un  medecin</p>
+                {
+                    echo' <div class="information">
+                    <h4>Centre médical</h4>
+                    <p>';?> <?= $user['center']?> <?php echo'</p>
                 </div>';
                 }?>
                <?php if ($_SESSION['utilisateurs']=='client')
                {
                 echo'<div class="information">
                     <h4>Date de naissance</h4>
-                    <p>12 brumaire an CCXX</p>
+                    <p>';?> <?= date("d-m-Y",strtotime($user['birthDate']));?> <?php echo'</p>
                 </div> 
                 
                 <div class="information">
                     <h4>Médecin</h4>
-                    <p>Dr. Themedic</p>
+                    <p>';?> <?= $user['doctor']?> <?php echo'</p>
                 </div>';
                 }?>
 
@@ -64,31 +70,27 @@ else{
             <div class="form_container">
                 <div class="information">
                     <h4>Nom</h4>
-                    <p>Dupont</p>
+                    <p><?= $user['name']?></p>
                 </div>
+
                 <div class="information">
                     <h4> I-C</h4>
-                    <p> P45D25A </p>
+                    <p> <?= $user['icode']?> </p>
                 </div>
-                <?php if ($_SESSION['utilisateurs']=='gestionnaire')
-                {
-                    echo' <div class="information">
-                    <h4>Centre médical</h4>
-                    <p>Toulouse</p>
-                </div>';
-                }?>
 
                 <?php if ($_SESSION['utilisateurs']=='client')
                 {echo'
                 <div class="information">
                     <h4>Compagnie aérienne</h4>
-                    <p>Aire isep</p>
+                    <p>';?> <?= $user['company']?> <?php echo'</p>
                 </div>
+                
                 <div class="information">
                     <h4>Genre</h4>
-                    <p>Masculin</p>
+                   <p>';?> <?= $user['kind']?> <?php echo'</p>
                 </div>';
                 }?>
+
             </div>
         </div>
         <div class="changement">
