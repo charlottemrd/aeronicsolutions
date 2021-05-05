@@ -28,8 +28,8 @@
           </div>
           <div class="information">
               <h4>Médecin</h4>
-              <input name= "medecin" type="text" placeholder="Dr. Themedic" autofocus/>
-            </div>
+              <p>Dr. Themedic</p>
+          </div>
             <div class="information">
               <h4>E-mail</h4>
               <p>email@adresse.fr</p>
@@ -60,16 +60,15 @@
         </div>
       </div>
     </div>
-    <div class= "changement">
-          <div class="bt1">
-            <a href="profil.php">Confirmer</a>
-          </div>
-          <div class="bt1">
-            <a href="profil.php">Annuler</a>
-           </div>
-    </div>
-
-
+    <div class="changement">
+            <div class="bt3">
+                <input class="change" name="log" type="submit" value="Confirmer"></input>
+            </div>
+            <div class="bt4">
+                <input class="change" name="log" type="submit" value="Annuler"></input>
+            </div>
+      </div>
+</div>
 </form>
 </body>
 </html>
