@@ -17,7 +17,7 @@ session_start();
     </div>
     <div class="connexionC">
         <div class="IMGC">
-            <a href="profil.php">
+            <a href="modifierProfil.php">
                 <img class="Bcon" href="index.php" src="../assets/Ressources/Images/account.png" width=30 alt="##" />
             </a>
         </div>
@@ -53,7 +53,7 @@ session_start();
                 </div>
             </div>>
             <?php
-                include 'includes/deconnexion.php';
+                include '../../Model/deconnexion.php';
             }
             ?>
 

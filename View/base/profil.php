@@ -16,8 +16,6 @@
 include 'footer.php';
 session_start;
 
-include 'header.php';
-include 'footer.php';
 include 'includes/database.php';
 include 'includes/requeteProfil.php';
 
