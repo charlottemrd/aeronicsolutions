@@ -1,7 +1,7 @@
 body{
   margin : 0;
   overflow: hidden;
-  background-image: url("../assets/Ressources/Images/pilots.jpg");
+  background-image: url("../Ressources/Images/pilots.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -14,7 +14,7 @@ body{
 /* Style of the top navigation bar */
 @font-face {
   font-family: 'oumgouleh';
-  src: url('Ressources/Font/Avenir.ttc');
+  src: url('../Ressources/Font/Avenir.ttc');
 }
 *{
   margin: 0;
@@ -27,11 +27,6 @@ p{
   font-weight: 400%;
 }
 
-
-
-
-
-
 .contentconnexion{
   margin-top: -5em;
   border-radius: 1.5em;
@@ -39,7 +34,6 @@ p{
   width: 80%;
   height: 50vh;
   font-family: "oumgouleh";
-  
   background-color: white;
   max-width: 38em;
   max-height: 100vh;
@@ -49,8 +43,7 @@ p{
   align-items: center;
   transition: all 0.3s ease;
   opacity: 0.9;
-  border: indigo 2px solid;
-  
+ 
 }
 .contentconnexion:hover{
   transform: scale(1.02);
@@ -76,7 +69,7 @@ p{
   justify-content: space-around;
   margin-top: 5%;
   column-count: 2;
-  border: pink 2px solid;
+
 }
 
 .form_container{
@@ -97,9 +90,7 @@ p{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  column-count: 2;
-  border: grey 2px solid;
-  
+  column-count: 2; 
   
 }
 
