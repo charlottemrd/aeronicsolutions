@@ -1,7 +1,6 @@
 <link rel="stylesheet" href="../assets/header.css" />
 <?php
 session_start();
-
 ?>
 <nav>
     <div class="logoC">
@@ -51,7 +50,7 @@ session_start();
                 <div class="bt2" >
                     <a href="?link=1" name="logout">Deconnexion</a>
                 </div>
-            </div>>
+            </div>
             <?php
                 include '../../Model/deconnexion.php';
             }
