@@ -12,8 +12,11 @@
 
 <body>
 
-<?php include 'header.php';
-include 'footer.php'; ?>
+<?php 
+//session_start();
+include 'header.php';
+include 'footer.php';
+//include 'includes/session.php'; ?>
 
 <form method="post" class="contentInscription">
     <div class="title_container">

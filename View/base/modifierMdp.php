@@ -9,8 +9,9 @@
 </head>
 <body>
 
-<?php include "header.php" ?>
-<?php include "footer.php" ?>
+<?php include "header.php";
+include "footer.php";
+//include 'includes/session.php'; ?>
 
 <form method="POST" class="contentconnexion">
   <div class="title_container">

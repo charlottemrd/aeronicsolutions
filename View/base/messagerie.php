@@ -10,7 +10,8 @@
 <body>
 
 <?php include "header.php"; ?>
-<?php include "footer.php"; ?>
+<?php include "footer.php";
+include 'includes/session.php'; ?>
 
 <div class="contentmessage">
     <div class="title_container">

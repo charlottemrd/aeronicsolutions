@@ -9,7 +9,7 @@ if (isset($_POST['modifier'])) {
         $nom=$_POST['nom'];
 
 
-        if ($_SESSION['utilisateurs']=='client'){
+        if ($_SESSION['utilisateur']=='client'){
         $date=$_POST['date'];
         $compagnie=$_POST['compagnie'];
 
@@ -21,7 +21,7 @@ if (isset($_POST['modifier'])) {
 
 
 
-else if ($_SESSION['utilisateurs']=='administrateur'){
+else if ($_SESSION['utilisateur']=='administrateur'){
 
 
     $sql = "UPDATE administrateurs SET firstName = '$prenom', name='$nom' 
@@ -31,7 +31,7 @@ else if ($_SESSION['utilisateurs']=='administrateur'){
 
 }
 
-else if ($_SESSION['utilisateurs']=='gestionnaire'){
+else if ($_SESSION['utilisateur']=='gestionnaire'){
     $cabinet=$_POST['cabinet'];
 
     $sql = "UPDATE gestionnaires SET firstName = '$prenom', name='$nom', center='$cabinet' 

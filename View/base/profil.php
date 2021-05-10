@@ -12,77 +12,107 @@
 
 <body>
     
-<?php 
+<?php include 'header.php';
+include 'footer.php';
 //include 'includes/session.php';
-include 'header.php';
-include 'footer.php'; 
+
 include 'includes/database.php';
-global $db;
+include 'includes/requeteProfil.php';
 
-if ($_SESSION['utilisateur'] == 'client') {
-    $q = $db->query("SELECT * FROM clients WHERE icode = '$_SESSION[icode]'");
-    $user = $q->fetch();
+if ($_SESSION['utilisateur']=='client'){  ?>
+    <link rel="stylesheet" href="../assets/profils/profil.css"/>
+    <?php
+}
+elseif ($_SESSION['utilisateur']=='administrateur'){ ?>
+    <link rel="stylesheet" href="../assets/profils/profilAdmin.css" />
+    <?php
 }
 
-if ($_SESSION['utilisateur'] == 'gestonnaire') {
-    $r = $db->query("SELECT * FROM gestonnaires WHERE icode = '$_SESSION[icode]'");
-    $user = $r->fetch();
+else{
+   ?> <link rel="stylesheet" href="../assets/profils/profilGestionnaire.css" />
+    <?php
 }
-
-if ($_SESSION['utilisateur'] == 'administrateur') {
-    $s = $db->query("SELECT * FROM administrateurs WHERE icode = '$_SESSION[icode]'");
-    $user = $s->fetch();
-}
-
 ?>
-    <form action="connexion.php" method="POST" class="contentconnexion">
+      <form action="profil.php" method="POST" class="contentconnexion">
         <div class="title_container">
-            <h3>Données personnelles</h3>
+            <h3>Données personnelles - <?= $_SESSION['utilisateur'];?></h3>
         </div class>
         <div class="superform_container">
             <div class="form_container">
                 <div class="information">
                     <h4>Prenom</h4>
-                    <p><?php echo $user['firstName'] ?></p>
-                </div>
-                <div class="information">
-                    <h4>Date de naissance</h4>
-                    <p><?php echo $user['birthDate'] ?></p>
+                    <p> <?= $user['firstName']?> </p>
                 </div>
                 <div class="information">
                     <h4>E-mail</h4>
-                    <p><?php echo $user['mail'] ?></p>
+                    <p><?= $user['mail']?></p>
                 </div>
+                <?php if ($_SESSION['utilisateur']=='gestionnaire')
+                {
+                    ?> <div class="information">
+                    <h4>Centre médical</h4>
+                    <p> <?= $user['center']?> </p>
+                </div>
+               <?php }
+               if ($_SESSION['utilisateur']=='client')
+               {   ?>
+                    <div class="information">
+                    <h4>Date de naissance</h4>
+                    <p> <?= date("d-m-Y",strtotime($user['birthDate']));?> </p>
+                </div> 
+
                 <div class="information">
                     <h4>Médecin</h4>
-                    <p>Dr. Themedic</p>
+                    <p> <?= $user['doctor']?> </p>
                 </div>
+              <?php  } ?>
+
             </div>
             <div class="form_container">
                 <div class="information">
                     <h4>Nom</h4>
-                    <p><?php echo $user['name'] ?></p>
+                    <p><?= $user['name']?></p>
                 </div>
-                <div class="information">
-                    <h4>Genre</h4>
-                    <p><?php echo $user['kind'] ?></p>
-                </div>
-                <div class="information">
-                    <h4>Compagnie aérienne</h4>
-                    <p><?php echo $user['company'] ?></p>
-                </div>
+
                 <div class="information">
                     <h4> I-C</h4>
-                    <p> <?php echo $user['icode'] ?> </p>
+                    <p> <?= $user['icode']?> </p>
                 </div>
+
+                <?php if ($_SESSION['utilisateur']=='client')
+                { ?>
+                <div class="information">
+                    <h4>Compagnie aérienne</h4>
+                    <p> <?= $user['company']?> </p>
+                </div>
+
+                <div class="information">
+                    <h4>Genre</h4>
+                   <p> <?= $user['kind']?> </p>
+                </div>
+                <?php
+                }
+                ?>
+
             </div>
         </div>
         <div class="changement">
-            <div class="bt1">
-                <a href="modifierMdp.php">Modifier mot de passe</a>
+            <div class="bt3">
+                <input class="change" name="log" type="submit" value="Modifier Mot de Passe" >
+                <?php
+                if(isset($_POST['log'])){
+                    header('Location: modifierMdp.php');
+                }
+                ?>
             </div>
-            <div class="bt1">
-                <p><a href="modifierProfil.php">Modifier le profil</a></p>
+            <div class="bt4">
+                <input class="change" name="logprofil" type="submit" value="Modifier Profil">
+                <?php
+                if(isset($_POST['logprofil']))
+                {
+                    header('Location: modifierProfil.php');
+                }
+                ?>
             </div>
         </div>
     </form>

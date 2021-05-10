@@ -11,7 +11,9 @@
 
 <body>
 
-<?php include 'header.php'; ?>
+<?php include 'header.php';
+//include 'includes/session.php';
+?>
 
 <form method="post" class="contentconnexion">
   <div class="title_container">
@@ -35,15 +37,32 @@
         
         extract($_POST);
         
+        $result = 0;
+
         include 'includes/database.php';
         $q = $db->prepare("SELECT * FROM clients WHERE mail =:mail");
         $q->execute(['mail' => $identifiant]);
-        $result = $q->fetch();
+        $data = $q->fetch();
+        $result += $q->rowCount();
 
-        if($result == true){
-            if(password_verify($lpassword, $result['password'])){
+        $r = $db->prepare("SELECT * FROM gestionnaires WHERE mail =:mail");
+        $r->execute(['mail' => $identifiant]);
+        $data = $r->fetch();
+        $result += $r->rowCount();
+
+        $s = $db->prepare("SELECT * FROM administrateurs WHERE mail =:mail");
+        $s->execute(['mail' => $identifiant]);
+        $data = $s->fetch();
+        $result += $s->rowCount();
+
+        if($result != 0) {
+             $_SESSION['mail'] = $identifiant;
+             $_SESSION['utilisateur'] = $data['status'];
+            echo $_SESSION['mail'];
+            echo 'test';
+            /*if(password_verify($lpassword, $result['password'])){
                 header('Location: index.php'); 
-            }
+            }*/
         }
     }
 ?>

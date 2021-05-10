@@ -20,10 +20,10 @@ session_start();
                 <img class="Bcon" href="index.php" src="../assets/Ressources/Images/account.png" width=30 alt="##" />
             </a>
         </div>
-        <?php  if (!isset($_SESSION['utilisateurs'])){ ?>
+        <?php  if (!isset($_SESSION['utilisateur'])){ ?>
         <div class="menuDPasConnecte">
                 <div class="bt1">
-                <a href="inscription.php">Inscription</a>
+            <a href="inscriptionAccueil.php">Inscription</a>
                 </div>
             <div class="bt2">
                 <a href="connexion.php">Connexion</a>
@@ -39,11 +39,11 @@ session_start();
                     <a href="#">Faire un test</a>
                 </div>
                 <div class="bt1">
-                <?php    if ($_SESSION['utilisateurs']=='client'){ ?>
+                <?php    if ($_SESSION['utilisateur']=='client'){ ?>
                     <a href="#">Historique</a>
-                 <?php } else if($_SESSION['utilisateurs']=='gestionnaire'){ ?>
+                 <?php } else if($_SESSION['utilisateur']=='gestionnaire'){ ?>
                     <a href="#">Rechercher</a>
-                <?php } else if($_SESSION['utilisateurs']=='administrateur'){ ?>
+                <?php } else if($_SESSION['utilisateur']=='administrateur'){ ?>
                     <a href="#">Maintenance du site</a>
                     <?php } ?>
                 </div>

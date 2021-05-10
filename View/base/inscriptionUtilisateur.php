@@ -13,8 +13,7 @@
 <body>
 
 <?php include 'header.php';
-include 'footer.php';
-?>
+include 'footer.php'; ?>
 
     <form method="post" class="contentInscription">
         <div class="title_container">
@@ -69,6 +68,7 @@ include 'footer.php';
 
         extract($_POST);
 
+        // condition à mettre dans un fichier à part, à appeler également dans modifierMdp.php
         if ($password == $cpassword) {
 
             include 'includes/database.php';
@@ -107,6 +107,7 @@ include 'footer.php';
                         'doctor' => 'Smith',
                         'icode' => $_SESSION['icode']
                     ]); 
+                    $_SESSION['mail'] = $mail;
                     header('Location: profil.php');exit;      
                 }
 
@@ -121,6 +122,7 @@ include 'footer.php';
                         'password' => password_hash("$password", PASSWORD_BCRYPT, $options),
                         'icode' => $_SESSION['icode']
                     ]); 
+                    $_SESSION['mail'] = $mail;
                     header('Location: profil.php');exit;
                 }
 
@@ -133,7 +135,8 @@ include 'footer.php';
                         'mail' => $mail,
                         'password' => password_hash("$password", PASSWORD_BCRYPT, $options),
                         'icode' => $_SESSION['icode']
-                    ]); 
+                    ]);
+                    $_SESSION['mail'] = $mail; 
                     header('Location: profil.php');exit;
                 }
             }
