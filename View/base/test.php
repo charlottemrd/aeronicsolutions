@@ -17,7 +17,7 @@
 <h1>Score reconnaissance de tonailité</h1>
 <div class="container">
   <canvas id="myChart"></canvas>
-  <div class="score_container"><h2>3</h2></div>
+  <div class="score_container"><h2>3/5</h2></div>
   
 </div>
 
