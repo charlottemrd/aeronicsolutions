@@ -12,8 +12,8 @@
 
 <body>
 
-<?php include 'header.php'; ?>
-<?php include 'footer.php'; ?>
+<?php include 'header.php';
+include 'footer.php'; ?>
 
 <form method="post" class="contentInscription">
     <div class="title_container">
@@ -33,26 +33,21 @@
     <div class="logC">
         <input class="log" name="log" type="submit">
     </div>
+    
 <?php
     if (isset($_POST['log'])) {
         extract($_POST);
-        session_start();
-
 
         include 'includes/database.php';
         global $db;
         $code=$_POST['code'];
 
-        $mot_passe = $db->query("SELECT  status FROM icodes where icode='$code'");
-        $data = $mot_passe->fetch();
-        if($data == false){
-            echo 'problem';
-        }
-        else{
-        $_SESSION['utilisateurs']= $data['status'];
-        echo  $_SESSION['utilisateurs'];
-        header('Location: inscriptionClient.php');
-        }
+        $q = $db->query("SELECT * FROM icodes where icode='$code'");
+        $data = $q->fetch();
+        
+        $_SESSION['utilisateur']= $data['status'];
+        $_SESSION['icode'] = $data['icode'];
+        header('Location: inscriptionUtilisateur.php');exit;
     }
     ?>
 </form>

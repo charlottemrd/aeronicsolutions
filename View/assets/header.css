@@ -29,7 +29,7 @@ nav {
   }
   .linkC {
     padding-right:2em;
-    width: 20%;
+    width: 100%;
     text-align: right;
     display: flex;
     justify-content: space-between;
@@ -68,8 +68,8 @@ nav {
     z-index: 4;
   }
 
-  .menuD {
-    height: 6em;
+  .menuDPasConnecte, .menuDConnecte {
+
     width: 100%;
     background-color: white;
     display: flex;
@@ -81,8 +81,15 @@ nav {
     visibility: hidden;
     box-shadow: 0px 3px 10px -7px #636e72;
   }
+  .menuDPasConnecte{
+    height: 6em;
+  }
+
+.menuDConnecte{
+  height: 12em;
+}
   
-  .menuD a{
+  .menuDPasConnecte a, .menuDConnecte a{
     text-decoration: none;
   
   }
@@ -129,7 +136,7 @@ nav {
   .bt2:hover{
     box-shadow: inset 0px 0px 25px #4180ce;
   }
-  
-  .connexionC:hover .menuD{
+
+  .connexionC:hover .menuDPasConnecte, .connexionC:hover .menuDConnecte  {
     visibility: visible;
   }
