@@ -2,7 +2,7 @@
 
 
 global $db;
-$_SESSION['mail']='marcel@outlook.fr';
+$_SESSION['mail']='admin@gmail.com';
 $mail=$_SESSION['mail'];
 if ($_SESSION['utilisateurs']=='client'){
 
