@@ -1,27 +1,118 @@
-body{
-    margin: 0;
+
+    body{
+        margin : 0;
 }
+
+h1{
+    color:  #212529;
+
+}
+
+h2{
+  color:  #727B82;
+}
+
+h3{
+    color :#B4BDC3;
+    font-size: 1.4em;
+    
+}
+
 .container{
+    height: 60em;
+background-color: #F2F5F9;
+}
+
+.text_container{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: 10em;
+    margin-top: 4em;
+    margin-left:2.7%;
+}
+
+
+
+.test_container{
     position:relative;
-    border: red solid 2px;
     margin: 0;
     padding: 0;
-    height: 80vh;
+    height: 40em;
     width: 100%;
 }
 
-.score_container {
+.ligne1_container{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
+    height: 16em;
+    justify-content: space-around;
+
+}
+.petit_test_container{
+    width: 28%;
+    height: 100%;
+    background-color: white;
+    border-radius: 0.3em;
+    box-shadow: 0px 0px 10px #bdc3c7;
+
+
+}
+
+.ligne2_container{
+    display: flex;
+    width: 100%;
+    height: 22em;
+    justify-content: space-around;
+    margin-top: 2em;
+}
+
+.grand_test_container{
+    width: 60%;
+    height: 100%;
+    border: 2px prurple solid;
+    background-color: white;
+    border-radius: 0.3em;
+    box-shadow: 0px 0px 10px #bdc3c7;
+
+
+}
+
+.grand_test_container{
+    width: 60%;
+    height: 100%;
+}
+
+.reconnaissanceTonalité_container{
+    width: 30%;
+    height: 100%;
+    background-color: white;
+    border-radius: 0.3em;
+    box-shadow: 0px 0px 10px #bdc3c7;
+
+
+}
+.text_test_container{
+height: 20%;
+width: 90%;
+margin-left: 5%;
+}
+.doug_canva_container {
+    width: 80%;
+    height: 70%;
+    margin-left: 10%;
+
+}
+.doug_canva_container h1 {
     position: absolute;
-    top:50%;
-    left:50%;
-    font-size: 6em;
+    top:75%;
+    left:81.7%;
+    font-size: 2em;
     margin:0;
     right:50%;
     bottom:50%;
-    border : green 2px solid;
-}
+} 
+
+
 canvas{
 }
