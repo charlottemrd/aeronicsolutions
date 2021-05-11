@@ -10,8 +10,8 @@
 
 <body>
  
-<?php include "header.php";
-//include 'includes/session.php'; ?>
+<?php include "header.php";?>
+
 
     <div class="test">
 
@@ -67,6 +67,6 @@
             </div>
         </div>
     </div>
-
+<?php include "footer2.php"; ?>
 </body>
 </html>
