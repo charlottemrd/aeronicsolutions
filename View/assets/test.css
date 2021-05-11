@@ -14,13 +14,14 @@ h2{
 
 h3{
     color :#B4BDC3;
-    font-size: 1.4em;
+    font-size: 1.4vw;
     
 }
 
 .container{
-    height: 60em;
+    height: 110em;
 background-color: #F2F5F9;
+margin-top:1em;
 }
 
 .text_container{
@@ -28,7 +29,6 @@ background-color: #F2F5F9;
     flex-direction: column;
     width: 95%;
     height: 10em;
-    margin-top: 4em;
     margin-left:2.7%;
 }
 
@@ -38,14 +38,14 @@ background-color: #F2F5F9;
     position:relative;
     margin: 0;
     padding: 0;
-    height: 40em;
+    height: 72%;
     width: 100%;
 }
 
 .ligne1_container{
     display: flex;
     width: 100%;
-    height: 16em;
+    height: 31%;
     justify-content: space-around;
 
 }
@@ -62,13 +62,12 @@ background-color: #F2F5F9;
 .ligne2_container{
     display: flex;
     width: 100%;
-    height: 22em;
     justify-content: space-around;
-    margin-top: 2em;
+    margin-top: 4%;
 }
 
 .grand_test_container{
-    width: 60%;
+    width: 100%;
     height: 100%;
     border: 2px prurple solid;
     background-color: white;
@@ -79,40 +78,73 @@ background-color: #F2F5F9;
 }
 
 .grand_test_container{
-    width: 60%;
+    width: 90%;
     height: 100%;
 }
 
-.reconnaissanceTonalité_container{
-    width: 30%;
-    height: 100%;
-    background-color: white;
-    border-radius: 0.3em;
-    box-shadow: 0px 0px 10px #bdc3c7;
-
-
-}
 .text_test_container{
-height: 20%;
+height: 15%;
 width: 90%;
 margin-left: 5%;
 }
 .doug_canva_container {
     width: 80%;
     height: 70%;
-    margin-left: 10%;
-
+    margin-left: 9%;
 }
-.doug_canva_container h1 {
+
+
+
+.n1 h1 {
     position: absolute;
-    top:75%;
-    left:81.7%;
-    font-size: 2em;
+    top:15.3%;
+    left:14.5%;
+    font-size: 2VW;
     margin:0;
     right:50%;
     bottom:50%;
 } 
 
 
-canvas{
+
+.n2 h1 {
+    position: absolute;
+    top:15.3%;
+    left:48.5%;
+    font-size: 2VW;
+    margin:0;
+    right:50%;
+    bottom:50%;
+} 
+
+.n3 h1 {
+    position: absolute;
+    top:15.3%;
+    left:81.8%;
+    font-size: 2VW;
+    margin:0;
+    right:50%;
+    bottom:50%;
+} 
+
+
+.line_chart_container {
+    width: 86%;
+    height: 70%;
+    margin-left: 7%;
+    margin-bottom: 4%;
+
 }
+
+canvas{
+    max-height: 40em;
+    color: linear-gradient(blue, white);
+    padding: 0;
+    margin:0;
+
+}
+
+.autre_bloc{
+    height: 10em;;
+}
+
