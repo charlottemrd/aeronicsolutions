@@ -27,7 +27,7 @@
             <p>Veuillez consulter vos mails une fois avoir renseigné votre adresse mail à laquelle vous souhaité recevoir votre nouveau mot de passe. Un nouveau mot de passe va vous être envoyé d'ici peu.</p>
             <p>Si vous souhaiter modifier ce nouveau mot de passe, vous pourrez le faire une fois connecté au site sur la page de modificatoin du mot de passe.</p>
                 <div class="logC">
-                    <input class="log" name="log" type="submit" value="Envoyer"></input>
+                    <input class="envoi" name="envoi" type="submit" value="Envoyer"></input>
                 </div>
     </div>
 </form>

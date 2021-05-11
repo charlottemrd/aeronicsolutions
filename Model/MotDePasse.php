@@ -14,21 +14,17 @@ function mdpAleatoire($taille)
     return $mdp;
 }
 
-if (isset($_POST['log'])) {
-
-    extract($_POST);
-    ini_set('display_errors', 1);
-    error_reporting(E_ALL);
-    $to =$_POST['mail'] ;
+if (isset($_POST['envoi'])) {
+    ini_set( 'display_errors', 1 );
+    error_reporting( E_ALL );
     $from = "solutionsaeronic@gmail.com";
-    $subject = "Nouveau mot de passe";
-    $message = "Votre nouveau mot de passe est : .Ce nouveau mot de passe remplace l'ancien.";
-    $headers  = 'MIME-Version: 1.0' . "\n"; // Version MIME
-    $headers .= 'From: "Nom_de_expediteur"<'.$from.'>'."\n"; // Expediteur
-    $headers .= 'Delivered-to: '.$to."\n"; // Destinataire
-    echo $_POST['mail'];
+    $to = $_POST['mail'];
+    $subject = "Demande Aeronic Solutions";
+    $message = 'vhxdjsbch';
+    $headers = "De :" . $from;
+    mail($to,$subject,$message, $headers);
+}
 
-    mail($to, $subject, $message, $headers);
     if (mail($to, $subject, $message, $headers)) // Envoi du message
     {
         echo 'Votre message a bien été envoyé ';
@@ -36,6 +32,7 @@ if (isset($_POST['log'])) {
     else // Non envoyé
     {
         echo "Votre message n'a pas pu être envoyé";
-    }
+
+
 }
 ?>
