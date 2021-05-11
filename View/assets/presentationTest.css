@@ -42,8 +42,7 @@ body{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     overflow: hidden;
     margin-top: 20px;
-    margin-bottom: 25px;
-      padding-bottom: 8px;
+    margin-bottom: 25px;padding-bottom: 8px;
       background : white;
   }
 
@@ -64,13 +63,12 @@ body{
     text-align: center;
 }
 
-video{
-    height: 50%;
-    width : 95%;
-    padding-left : 2.5%;
-    padding-right: 2.5%;
-    text-align: center;
+.image{
+    width: 100%;
 }
 
-
+.image img{
+    width: 90%;
+    text-align: center;
+}
 
