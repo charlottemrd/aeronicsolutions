@@ -10,17 +10,46 @@
 </head>
 <body>
 
-<?php include "header.php";
-//include 'includes/session.php'; ?>
+<?php include "header.php"; ?>
 
-
-
-<h1>Score reconnaissance de tonailité</h1>
 <div class="container">
-  <canvas id="myChart"></canvas>
-  <div class="score_container"><h2>3/5</h2></div>
-  
+    <div class="text_container">
+    <h1>Bonjour Gabriel ! </h1>
+    <H2>Bon retour parmis nous, voici les résultats de tes tests</H2>
+    </div>
+    <div class="test_container">
+        <div class="ligne1_container">
+            <div class="petit_test_container test1">
+                <div class="text_test_container">
+                    <h3>test 1</h3>
+                </div>
+            </div>
+            <div class="petit_test_container test2">
+                <div class="text_test_container">
+                    <h3>test 2</h3>
+                </div>
+            </div>
+            <div class="petit_test_container test3">
+                <div class="text_test_container">
+                    <h3>test 3</h3>
+                </div>
+            </div>
+        </div>
+        <div class="ligne2_container">
+            <div class="grand_test_container"></div>
+            <div class="reconnaissanceTonalité_container">
+                <div class="text_test_container">
+                    <h3>Reconnaissance de tonalité</h3>
+                </div>
+                <div class="doug_canva_container">
+                    <canvas id="myChart"></canvas>
+                <h1>3/5</h1>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
@@ -74,7 +103,6 @@ new Chart(document.getElementById("myChart"), {
 
 
 </script>
-<?php include "footer.php"; ?>
+<?php include "footer2.php"; ?>
 </body>
 </html>
-
