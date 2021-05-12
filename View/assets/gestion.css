@@ -37,13 +37,12 @@ p{
     font-family: Arial;
     font-size: 16px;
 }
-
-.contentfaq{
+.contentconnexion{
     margin-top: -5em;
     border-radius: 1.5em;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-    width: 100%;
-    height: 70vh;
+    width: 80%;
+    height: 50vh;
     font-family: "oumgouleh";
     font-size: 16px;
     background-color: white;
@@ -54,82 +53,76 @@ p{
     align-items: center;
     transition: all 0.3s ease;
     opacity: 0.9;
-
 }
-.contentfaq:hover{
+.contentconnexion:hover{
     transform: scale(1.02);
 }
 
-.title_container{
-    height:15%;
+.superform_container{
+    height: 70%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    column-count: 2;
+    padding-bottom: 0em;
+    padding-top: 4%;
+
+}
+.form_container{
+    height: 100%;
+}
+
+.gestion_container h3, .gestion_container p{
+    color:#444444;
+}
+
+.bt3{
+    height: 90%;
     width: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-bottom: solid 1px #b2bec3;
-}
-.title_container h3 ,.title_partie h3{
-    color:#444444;
-    font-size: 1.5em;
+    border-radius: 1.05em;
+    margin:5px;
+    overflow: hidden;
 
 
 }
-.title_partie h3{
-    margin-left: 5%;
-}
 
-.faq_container{
-    height:75%;
+.bt3 input{
     width: 100%;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-    scrollbar-base-color: #9098A9;
-
-}
-
-.faq_container h3, .faq_container p{
-    color:#444444;
-
-}
-
-.questions{
-width: 90%;
-margin-left: 5%;
-margin-bottom: 5px;
+    height: 50%;
+    background-color:#54a0ff ;
+    color: white;
+    border-radius: 1.05em;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
 }
 
 
-.bouton,.reponses{
-    width: 100%;
-    font-family: oumgouleh;
-    color:#444444;
+a{
+    text-decoration: none;
+}
+
+.changement{
+    height: 10%;
+    width: 60%;
     display: flex;
-    justify-content: center;
-
-}
-.bouton{
-    width: 100%;
-    font-size: 1.3em;
-    outline: none;
-    border-radius: 1em;
-    border-style: none;
-    padding-bottom:0.2em;
-    padding-top:0.2em;
-    text-align:center;
-
+    align-items: center;
+    justify-content: space-between;
+    column-count: 2;
 }
 
-.bouton:hover{
-  background-color: #54a0ff;
-  color: white;
-}
-.reponses{
-  width: 90%;
-  margin-left: 5%;
-  display: none;
-}
-.reponses h3{
-    font-size:1em;
-    text-align: justify;
-}
+
+
+
+
+
+
+
+
+
+
