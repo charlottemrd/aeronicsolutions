@@ -20,7 +20,7 @@ p,h3{
 }
 
 .form_container{
-    height: 72%;
+    height: 85%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -29,8 +29,8 @@ p,h3{
 
 }
 .form_container input{
-    height: 6vh;
-    width: 100%;
+    height:13%;
+    width: 85%;
     font-family: sans-serif;
     outline: none;
     font-size: 100%;
@@ -89,12 +89,12 @@ input:active{
 
 p{
     justify-content: center;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
 
 }
 .instruction_container1{
-    height: 50%;
+    height: 60%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -105,8 +105,9 @@ a{
 }
 .logC{
     width: 100%;
-    height: 20%;
+    height: 15%;
     position: relative;
+
 }
 .log{
     background-color: #54a0ff;
@@ -121,8 +122,6 @@ a{
     color: white;
     transition: all 0.3s;
     font-family: "oumgouleh";
-    bottom: 0;
-    position:relative;
 }
 .log:hover{
     background-color: #4585d5;

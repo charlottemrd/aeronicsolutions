@@ -29,7 +29,7 @@ include 'includes/requeteProfil.php';
     <div class="form_container">
         <br class="instruction_container1">
             <h3>Vous êtes bien connecté au site</h3></br>
-            <h3>Bienvenu <?= $user['firstName']?><?= $user['name']?> </h3>
+            <h3>Bienvenu <?= $user['firstName']?> <?= $user['name']?> </h3>
 
         </div>
 
