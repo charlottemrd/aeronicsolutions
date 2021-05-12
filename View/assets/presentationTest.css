@@ -6,7 +6,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
   }
-  /* Style of the top navigation bar */
+
   @font-face {
     font-family: 'oumgouleh';
     src: url('Ressources/Font/Avenir.ttc');
@@ -20,9 +20,9 @@ body{
   }
   .contenu p{
     font-weight: 400%;
-      text-align: justify;
-      padding-left: 8px;
-      padding-right: 8px;
+    text-align: justify;
+    padding-left: 8px;
+    padding-right: 8px;
   }
 
   .test{
@@ -42,8 +42,9 @@ body{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     overflow: hidden;
     margin-top: 20px;
-    margin-bottom: 25px;padding-bottom: 8px;
-      background : white;
+    margin-bottom: 25px;
+    padding-bottom: 8px;
+    background : white;
   }
 
 .title_container{
@@ -70,5 +71,6 @@ body{
 .image img{
     width: 90%;
     text-align: center;
+
 }
 
