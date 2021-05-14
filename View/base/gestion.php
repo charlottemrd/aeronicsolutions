@@ -17,15 +17,19 @@ include  "../../Model/gestionModel.php"?>
     <div class="title_container">
         <h3>Maintenance du site - Aeronic Solutions</h3>
     </div>
-    <a class="bt3">
-        <a href="gestionClient.php"><input name="modifierClient" type="submit" href="gestionClient.php" value="Gérer les clients" ></a>
-        <input name="modifierGestionnaires" type="submit" href="#" value="Gérer les gestionnaires" >
+    <div class="bt1">
+        <a href="gestionClient.php">Gérer les clients</a>
     </div>
-        <div class="bt3">
+    <div class="bt1">
+        <a href="#">Gérer les gestionnaires</a>
+    </div>
+    <div class="bt1">
+        <a href="#">Gérer la FAQ</a>
+    </div>
+    <div class="bt1">
+        <a href="#">Gérer les capteurs</a>
+    </div>
 
-            <input name="modifierFAQ" type="submit" href=#" value="modifier la FAQ" >
-            <input name="modifierCapteurs" type="submit" href="#" value="Gérer les capteurs" >
-        </div>
 </div>
 </body>
 </html>

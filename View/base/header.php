@@ -44,7 +44,7 @@ session_start();
                  <?php } else if($_SESSION['utilisateur']=='gestionnaire'){ ?>
                     <a href="#">Rechercher</a>
                 <?php } else if($_SESSION['utilisateur']=='administrateur'){ ?>
-                    <a href="#">Maintenance du site</a>
+                    <a href="gestion.php">Maintenance du site</a>
                     <?php } ?>
                 </div>
                 <div class="bt2" >

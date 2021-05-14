@@ -10,8 +10,9 @@
 </head>
 <body>
 
-<?php include "header.php"; ?>
-<?php include "footer.php"; ?>
+<?php include "header.php";
+ include "footer.php";
+?>
 
 <body>
 <div class="contentGestion">
@@ -77,7 +78,16 @@
             <option value="supprimer">Je souhaite supprimer un client</option>
             <option value="modifier">Je souhaite bannir un client</option>
         </select>
-        <input name="code" type="code" id="code" placeholder="I-C"  required>
+        <select name="code" id="code" required >
+            <option value="" selected="selected" disabled="disabled">I-code</option>
+            <?php
+            $q = $db->query("SELECT * FROM clients order by icode asc");
+            while($row = $q ->fetch()){
+            $icode=$row[10];
+            ?>
+            <option value=<?= $icode ?>><?=$icode?></option>
+            <?php } ?>
+        </select>
         <button type="submit" id="buttonAdd" name="buttonAdd">Soumettre</button></div>
     </form>
 </div>
