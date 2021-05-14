@@ -19,11 +19,10 @@ if (isset($_POST['envoi'])) {
     error_reporting( E_ALL );
     $from = "solutionsaeronic@gmail.com";
     $to = $_POST['mail'];
-    $subject = "Demande Aeronic Solutions";
-    $message = 'vhxdjsbch';
+    $subject = "Nouveau mot de passe Aeronic Solutions";
+    $message = 'Voici votre nouveau mot de passe : '.mdpAleatoire(9).'Ce nouveau mot de passe vous permettra de vous connecter sur le site. Vous pouvez, si vous le souhaité, le modifier une fois connecté.';
     $headers = "De :" . $from;
     mail($to,$subject,$message, $headers);
-}
 
     if (mail($to, $subject, $message, $headers)) // Envoi du message
     {
@@ -32,7 +31,7 @@ if (isset($_POST['envoi'])) {
     else // Non envoyé
     {
         echo "Votre message n'a pas pu être envoyé";
-
+    }
 
 }
 ?>
