@@ -14,13 +14,12 @@ if (isset($_POST['modifier'])) {
     $compagnie=$_POST['compagnie'];
     $mail=$_POST['mail'];
 
-
-$sql = "UPDATE clients SET firstName = '$prenom'
+    $sql = "UPDATE clients SET firstName = '$prenom', name='$nom', birthDate='$date', kind='$kind',company='$compagnie' ,mail='$mail'
                 WHERE icode = '$code'";
 $reponse = $db->exec($sql);
-header("location:../View/base/modifierClient.php");
+header("location:../View/base/gestionClient.php");
 }
-else if (isset($_POST['modifier'])) {
-    header("location:../View/base/gestion.php");
+else if (isset($_POST['annuler'])) {
+    header("location:../View/base/gestionClient.php");
 }
 ?>

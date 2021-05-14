@@ -74,9 +74,9 @@
     <div class="gestionnaireM">
         <select name="gestionClient" id="gestionClient" required>
             <option value="" >Que souhaitez-vous faire ?</option>
-            <option value="mofifier">Je souhaite modifier des informations</option>
+            <option value="modifier">Je souhaite modifier des informations</option>
             <option value="supprimer">Je souhaite supprimer un client</option>
-            <option value="modifier">Je souhaite bannir un client</option>
+            <option value="bannir">Je souhaite bannir un client</option>
         </select>
         <select name="code" id="code" required >
             <option value="" selected="selected" disabled="disabled">I-code</option>
