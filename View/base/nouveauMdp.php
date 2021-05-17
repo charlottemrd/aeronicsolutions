@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Profil</title>
+    <title>Mot de passe</title>
 
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../assets/nouveauMdp.css" />
