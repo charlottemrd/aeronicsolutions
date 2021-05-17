@@ -20,7 +20,6 @@
         <div class="barre_boutton">
             <input type="submit" value="rechercher" name="bouttonRechercher" id="bouttonRechercher">
         </div>
-        <h3><?php echo $_SESSION['recherche']?></h3>
     </form>
     <h3></h3>
     <table class="tableau_container">
@@ -41,12 +40,14 @@
 </thead>
 <tbody>
     <?php
-    
-    
+    if(isset($_SESSION['recherche'])){
+        $nomRecherche = $_SESSION['recherche'];
+    $q = $db->query("SELECT * FROM clients where name like "%'$nomRecherche'%" order by icode asc ");
     // Creation et envoi de la requete
-
+    }
+    else{
     $q = $db->query("SELECT * FROM clients order by icode asc");
-    
+    }
     // Recuperation des resultats
     while($row = $q ->fetch()){
         $icode=$row[10];

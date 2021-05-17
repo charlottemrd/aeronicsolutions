@@ -11,7 +11,7 @@ if (isset($_POST['bouttonRechercher'])) {
     extract($_POST);
 
     $_SESSION['recherche'] = $_POST['search'];
-
+    
 
 
 }
