@@ -29,11 +29,17 @@ if(isset($_POST['log'])){
     }
 
     if($result != 0) {
+        if($data['banish']=='true')
+        {
+            header("Location:connexionBannissementController.php");
+        }
+        else{
         $_SESSION['mail'] = $identifiant;
         $_SESSION['utilisateur'] = $data['status'];
         
         if(password_verify($lpassword, $data['password'])){
             header('Location: profilController.php'); 
+        }
         }
     }
 } 
