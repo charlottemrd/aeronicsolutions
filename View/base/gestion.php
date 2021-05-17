@@ -20,7 +20,7 @@
         <a href="gestionGestionnaireController.php">Gérer les gestionnaires</a>
     </div>
     <div class="bt1">
-        <a href="#">Gérer la FAQ</a>
+        <a href="menuFaqController.php">Gérer la FAQ</a>
     </div>
     <div class="bt1">
         <a href="#">Gérer les capteurs</a>

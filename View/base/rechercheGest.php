@@ -45,6 +45,7 @@
 
       <?php  $nomRecherche = $_SESSION['recherche'];
     $q = $db->query("SELECT * FROM clients where name like '%$nomRecherche%' order by icode asc ");
+   unset($_SESSION['recherche']);
     // Creation et envoi de la requete
     }
     else{

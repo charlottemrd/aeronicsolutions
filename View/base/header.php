@@ -9,7 +9,7 @@
     <div class="linkC">
         <a href="#">Nous découvrir</a>
         <a href="../View/base/presentationTest.php">Nos tests</a>
-        <a href="faq.php">FAQ</a>
+        <a href="faqController.php">FAQ</a>
         <a href="../View/base/messagerie.php">Nous contacter</a>
     </div>
     <div class="connexionC">
