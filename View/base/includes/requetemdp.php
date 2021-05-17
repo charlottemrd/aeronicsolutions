@@ -6,7 +6,7 @@ include('../motDePasseOublie.php');
 if (isset($_POST['confirmation'])) {
         extract($_POST);
         global $db;
-        $mail=$_POST['mail'];
+        $mail=$_SESSION['mail'];
         $password=$_POST['password'];
         $options = ['cost' => 12,];
         $passhash = password_hash("$password", PASSWORD_BCRYPT, $options);

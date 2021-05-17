@@ -12,7 +12,6 @@
 <?php include "header.php";
 include "footer.php";
 include 'includes/database.php';
-
 ?>
 
 <form method="POST" class="contentconnexion">
@@ -40,13 +39,18 @@ include 'includes/database.php';
 </html>
 
 <?php
+global $db;
+echo $_SESSION['mail'];
 if (isset($_POST['confirmation'])) {
-
+    $options = ['cost' => 12,];
     extract($_POST);
     if ($password == $cpassword) {
         echo $password;
         echo $passhash=password_hash("$password", PASSWORD_BCRYPT, $options);
         header('Location:connexion.php');
+    }
+    if ($password != $cpassword) {
+        alert('Les mots de passes sont différents !');
     }
 }
 ?>

@@ -15,6 +15,7 @@
 <?php include 'header.php'; ?>
 <?php include 'footer.php'; ?>
 <?php include 'motDePasse.php'; ?>
+<?php include 'includes/database.php';?>
 
 
 
@@ -35,5 +36,27 @@
 </form>
 </body>
 </html>
+
+<?php
+if (isset($_POST['envoi'])) {
+    extract($_POST);
+    global $db;
+    $_SESSION['mail'] = $_POST['mail'];
+    $result = 0;
+
+    $c = $db->prepare("SELECT mail FROM administrateurs WHERE mail = :mail");
+    $c->execute(['mail' => $mail]);
+    $result = $c->rowCount();
+
+    $d = $db->prepare("SELECT mail FROM clients WHERE mail = :mail");
+    $d->execute(['mail' => $mail]);
+    $result += $d->rowCount();
+
+    $e = $db->prepare("SELECT mail FROM gestionnaires WHERE mail = :mail");
+    $e->execute(['mail' => $mail]);
+    $result += $e->rowCount();
+
+}
+?>
 
 
