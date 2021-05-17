@@ -20,11 +20,12 @@ if (isset($_POST['envoi'])) {
     $from = "solutionsaeronic@gmail.com";
     $to = $_POST['mail'];
     $subject = "Nouveau mot de passe Aeronic Solutions";
-    $message = 'Voici votre nouveau mot de passe : '.mdpAleatoire(9).'Ce nouveau mot de passe vous permettra de vous connecter sur le site. Vous pouvez, si vous le souhaité, le modifier une fois connecté.';
+    $message = 'Voici votre nouveau mot de passe : '.mdpAleatoire(9).'. Ce nouveau mot de passe vous permettra de vous connecter sur le site. Vous pouvez, si vous le souhaité, le modifier une fois connecté.';
     $headers = "De :" . $from;
-    mail($to,$subject,$message, $headers);
+    echo $message;
+    $envoi=mail($to,$subject,$message, $headers);
 
-    if (mail($to, $subject, $message, $headers)) // Envoi du message
+    if ($envoi) // Envoi du message
     {
         echo 'Votre message a bien été envoyé ';
     }
