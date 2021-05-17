@@ -40,7 +40,7 @@
                 <?php    if ($_SESSION['utilisateur']=='client'){ ?>
                     <a href="#">Historique</a>
                  <?php } else if($_SESSION['utilisateur']=='gestionnaire'){ ?>
-                    <a href="#">Rechercher</a>
+                    <a href="rechercheGestController.php">Rechercher</a>
                 <?php } else if($_SESSION['utilisateur']=='administrateur'){ ?>
                     <a href="gestionController.php">Maintenance du site</a>
                     <?php } ?>

@@ -6,12 +6,12 @@ include '../Model/database.php';
 
 
 if (isset($_POST['bouttonRechercher'])) {
-    if (isset($_SESSION['recherche'])) {
-        unset($_SESSION['recherche']);
-    }
+
+
     extract($_POST);
 
     $_SESSION['recherche'] = $_POST['search'];
+
 
 
 }

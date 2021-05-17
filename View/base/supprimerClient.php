@@ -19,7 +19,6 @@
     <div class="gestion_container">
         <p>Confirmez-vous la suppresion du client <?=$client['firstName'],' ',$client['name'],' ?'?> </p>
         <form method="post" class="form_message">
-
     </div>
 
 <div class="gestionnaireM">

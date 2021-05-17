@@ -13,15 +13,16 @@
 
 <div class ="container">
 
-    <div class="search_bar_container">
-        <form id="barreRecherche" class="barre"  method="post" action="../Controller/rechercheGestController.php">
-            <input class="searchbar" type="search" id="search" name="search" aria-label="Search through site content">
-</form>
+    <form class="search_bar_container" method="post" >
+        <div id="barreRecherche" name="barreRecherche" class="barre"  >
+            <input class="searchbar" type="text" id="search" name="search" aria-label="Search through site content">
+        </div>
         <div class="barre_boutton">
             <input type="submit" value="rechercher" name="bouttonRechercher" id="bouttonRechercher">
-</div>
-</div>
-<h3></h3>
+        </div>
+        <h3><?php echo $_SESSION['recherche']?></h3>
+    </form>
+    <h3></h3>
     <table class="tableau_container">
       <thead>
 
@@ -43,8 +44,8 @@
     
     
     // Creation et envoi de la requete
-    
-   
+
+    $q = $db->query("SELECT * FROM clients order by icode asc");
     
     // Recuperation des resultats
     while($row = $q ->fetch()){
@@ -58,7 +59,7 @@
         $doctor = $row[8];
 
        ?><tr>
-        <td><?$icode?>"></td>
+        <td><?=$icode?></td>
         <td><?=$mail?></td>
         <td><?=$firstName?></td>
         <td><?=$name?></td>
@@ -73,7 +74,7 @@
   </tbody>
 
 </table>
-
 </div>
+</form>
 </body>
 </html>
