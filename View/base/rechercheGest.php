@@ -21,7 +21,8 @@
             <input type="submit" value="rechercher" name="bouttonRechercher" id="bouttonRechercher">
         </div>
     </form>
-    <h3></h3>
+
+
     <table class="tableau_container">
       <thead>
 
@@ -40,9 +41,10 @@
 </thead>
 <tbody>
     <?php
-    if(isset($_SESSION['recherche'])){
-        $nomRecherche = $_SESSION['recherche'];
-    $q = $db->query("SELECT * FROM clients where name like "%'$nomRecherche'%" order by icode asc ");
+    if(isset($_SESSION['recherche'])){ ?>
+
+      <?php  $nomRecherche = $_SESSION['recherche'];
+    $q = $db->query("SELECT * FROM clients where name like '%$nomRecherche%' order by icode asc ");
     // Creation et envoi de la requete
     }
     else{
