@@ -4,7 +4,7 @@
     <title>RechercheGest</title>
 
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="../assets/rechercheGest.css" />
+    <link rel="stylesheet" href="../View/assets/rechercheGest.css" />
 
 </head>
 <body>
@@ -12,16 +12,23 @@
 
 
 <div class ="container">
+
     <div class="search_bar_container">
-        <input class="searchbar" type="search" id="site-search" name="q" aria-label="Search through site content">
-    </div>
+        <form id="barreRecherche" class="barre"  method="post" action="../Controller/rechercheGestController.php">
+            <input class="searchbar" type="search" id="search" name="search" aria-label="Search through site content">
+</form>
+        <div class="barre_boutton">
+            <input type="submit" value="rechercher" name="bouttonRechercher" id="bouttonRechercher">
+</div>
+</div>
+<h3></h3>
     <table class="tableau_container">
       <thead>
 
 
     <tr>
 
-        <th>I-code</th>
+        <th>I-Code</th>
         <th>E-mail</th>
         <th>Prenom</th>
         <th>Nom</th>
@@ -33,10 +40,12 @@
 </thead>
 <tbody>
     <?php
-    include "includes/database.php";
-
+    
+    
     // Creation et envoi de la requete
-    $q = $db->query("SELECT * FROM clients order by icode asc");
+    
+   
+    
     // Recuperation des resultats
     while($row = $q ->fetch()){
         $icode=$row[10];
@@ -49,7 +58,7 @@
         $doctor = $row[8];
 
        ?><tr>
-        <td><a href="../base/profil.php?code=$icode"><?=$icode?></a></td>
+        <td><?$icode?>"></td>
         <td><?=$mail?></td>
         <td><?=$firstName?></td>
         <td><?=$name?></td>
@@ -66,6 +75,5 @@
 </table>
 
 </div>
-<?php include "footer2.php"; ?>
 </body>
 </html>

@@ -1,6 +1,6 @@
 <?php session_start();
 include '../View/base/header.php';
-include '../View/base/footer.php';
+include '../View/base/footer2.php';
 
     if (isset($_POST['log'])) {
 
