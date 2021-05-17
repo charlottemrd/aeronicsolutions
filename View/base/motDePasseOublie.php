@@ -25,8 +25,8 @@
         <div class="form_container">
             <br class="instruction_container1">
             <input type="text" name="mail" id="mail" placeholder="Adresse mail" required>
-            <p>Veuillez consulter vos mails une fois avoir renseigné votre adresse mail à laquelle vous souhaité recevoir votre nouveau mot de passe. Un nouveau mot de passe va vous être envoyé d'ici peu.</br>
-            Si vous souhaitez modifier ce nouveau mot de passe, vous pourrez le faire une fois connecté au site sur la page de modification du mot de passe.</p>
+            <p>Veuillez consulter vos mails une fois avoir renseigné votre adresse mail. Un lien de redirection va vous être envoyé afin que vous puissez redéfinir votre nouveau mot de passe.</br>
+            </p>
 
         </div>
          <div class="logC">
