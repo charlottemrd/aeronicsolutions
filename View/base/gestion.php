@@ -17,7 +17,7 @@
         <a href="gestionClientController.php">Gérer les clients</a>
     </div>
     <div class="bt1">
-        <a href="#">Gérer les gestionnaires</a>
+        <a href="gestionGestionnaireController.php">Gérer les gestionnaires</a>
     </div>
     <div class="bt1">
         <a href="#">Gérer la FAQ</a>
