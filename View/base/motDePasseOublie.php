@@ -25,7 +25,7 @@
         <div class="form_container">
             <br class="instruction_container1">
             <input type="text" name="mail" id="mail" placeholder="Adresse mail" required>
-            <p>Veuillez consulter vos mails une fois avoir renseigné votre adresse mail. Un lien de redirection va vous être envoyé afin que vous puissez redéfinir votre nouveau mot de passe.</br>
+            <p>Veuillez consulter vos mails une fois avoir renseigné votre adresse mail. Cette adresse mail est votre identifiant du site, elle vous permet de vous connecter. Un lien de redirection va vous être envoyé afin que vous puissez redéfinir votre nouveau mot de passe.</br>
             </p>
 
         </div>
