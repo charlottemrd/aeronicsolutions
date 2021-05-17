@@ -15,7 +15,6 @@
 <?php include 'header.php'; ?>
 <?php include 'footer.php'; ?>
 <?php include 'motDePasse.php'; ?>
-<?php include 'includes/requeteProfil.php';?>
 
 
 

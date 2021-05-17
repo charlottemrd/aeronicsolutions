@@ -23,7 +23,7 @@
         <input type="text" name="identifiant" id="identifiant" placeholder="Identifiant" required>
         <input type="password" name="lpassword" id="lpassword" placeholder="Mot de passe" required>
         <div class="mdp_oublié">
-            <a href="modifierMdp.php">Mot de passe oublié</a>
+            <a href="motDePasseOublie.php">Mot de passe oublié</a>
         </div>
     </div>
     <div class="logC">
