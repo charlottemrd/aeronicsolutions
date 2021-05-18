@@ -12,16 +12,19 @@
 
 
 <div class ="container">
-
+    <div class="info_container">
+        <h1>Liste de vos clients</h1>
+    </div>
     <form class="search_bar_container" method="post" >
         <div id="barreRecherche" name="barreRecherche" class="barre"  >
-            <input class="searchbar" type="text" id="search" name="search" aria-label="Search through site content">
+            <input class="searchbar" placeholder="Rechercher par nom" type="text" id="search" name="search" aria-label="Search through site content">
         </div>
         <div class="barre_boutton">
             <input type="submit" value="rechercher" name="bouttonRechercher" id="bouttonRechercher">
         </div>
     </form>
 
+<div class="tbody_container">
 
     <table class="tableau_container">
       <thead>
@@ -41,15 +44,15 @@
 </thead>
 <tbody>
     <?php
-    if(isset($_SESSION['recherche'])){ ?>
+    if(isset($_POST['search'])){ ?>
 
-      <?php  $nomRecherche = $_SESSION['recherche'];
-    $q = $db->query("SELECT * FROM clients where name like '%$nomRecherche%' order by icode asc ");
-   unset($_SESSION['recherche']);
+      <?php  $nomRecherche = $_POST['search'];
+    $q = $db->query("SELECT * FROM clients where name like '$nomRecherche%' order by name asc ");
+   unset($_POST['search']);
     // Creation et envoi de la requete
     }
     else{
-    $q = $db->query("SELECT * FROM clients order by icode asc");
+    $q = $db->query("SELECT * FROM clients order by name asc");
     }
     // Recuperation des resultats
     while($row = $q ->fetch()){
@@ -76,8 +79,9 @@
     ?>
     </tr>
   </tbody>
-
 </table>
+</div>
+
 </div>
 </form>
 </body>
