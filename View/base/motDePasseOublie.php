@@ -6,17 +6,11 @@
 
     <meta charset="utf-8" />
 
-    <link rel="stylesheet" href="../assets/mdpoubli.css" />
+    <link rel="stylesheet" href="../View/assets/mdpoubli.css" />
 
 </head>
 
 <body>
-
-<?php include 'header.php'; ?>
-<?php include 'footer.php'; ?>
-<?php include 'motDePasse.php'; ?>
-<?php include 'includes/requeteProfil.php';?>
-
 
 
 <form method="post" class="contentconnexion">
