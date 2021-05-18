@@ -9,26 +9,40 @@ include '../View/base/nouveauMdp.php';
 if (isset($_POST['confirmation'])) {
     extract($_POST);
     global $db;
-    $_SESSION['mailoublie'] = $mail;
-    $password = $_POST['password'];
-    $options = ['cost' => 12,];
-    $passhash = password_hash("$password", PASSWORD_BCRYPT, $options);
+    $_SESSION['mailoublie'] = $mailoubli;
+
+
 
 
         if ($password == $cpassword) {
+            $password = $_POST['password'];
+            $options = ['cost' => 12,];
 
-            if ($_SESSION['utilisateur'] == 'client') {
-                $sql = "UPDATE clients SET password ='$passhash'WHERE mail = '$mail'";
-                $reponse = $db->exec($sql);
+            if ($_SESSION['client'] == 'client') {
+                $r = $db->prepare("UPDATE administrateurs SET password=:password");
+                $r->execute([
+                    'password' => password_hash("$password", PASSWORD_BCRYPT, $options),
+
+                ]);
+                header('Location:accueilController.php');
             } else if ($_SESSION['utilisateur'] == 'administrateur') {
-                $sql = "UPDATE administrateurs SET password ='$passhash'WHERE mail = '$mail'";
-                $reponse = $db->exec($sql);
 
+
+                $r = $db->prepare("UPDATE administrateurs SET password=:password");
+                $r->execute([
+                    'password' => password_hash("$password", PASSWORD_BCRYPT, $options),
+
+                ]);
+                header('Location:accueilController.php');
             } else if ($_SESSION['utilisateur'] == 'gestionnaire') {
-                $sql = "UPDATE gestionnaires SET password ='$passhash'WHERE mail = '$mail'";
-                $reponse = $db->exec($sql);
+                $r = $db->prepare("UPDATE gestionnaires SET password=:password");
+                $r->execute([
+                    'password' => password_hash("$password", PASSWORD_BCRYPT, $options),
+
+                ]);
+                header('Location:accueilController.php');
             }
-            header('Location:accueilController.php');
+
         }
         if  ($password != $cpassword) {
             echo '<script language="Javascript">
