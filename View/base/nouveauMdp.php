@@ -12,6 +12,8 @@
 <?php include "header.php";
 include "footer.php";
 include 'includes/database.php';
+include 'includes/requeteProfil.php';
+include 'includes/requetemdp.php';
 ?>
 
 <form method="POST" class="contentconnexion">
@@ -45,12 +47,13 @@ if (isset($_POST['confirmation'])) {
     $options = ['cost' => 12,];
     extract($_POST);
     if ($password == $cpassword) {
-        echo $password;
-        echo $passhash=password_hash("$password", PASSWORD_BCRYPT, $options);
         header('Location:connexion.php');
     }
-    if ($password != $cpassword) {
-        alert('Les mots de passes sont différents !');
+    if  ($password != $cpassword) {
+        echo '<script language="Javascript">
+            alert("Les mots de passes sont différents !\nVeuillez recommencer l\'opération en saisissant des mots de passes identique.");
+        </script>';
+        }
     }
-}
 ?>
+

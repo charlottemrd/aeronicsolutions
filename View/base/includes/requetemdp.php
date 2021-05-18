@@ -1,7 +1,5 @@
 <?php
-include ('requeteProfil.php');
-include ('../nouveauMdp.php');
-include('../motDePasseOublie.php');
+
 
 if (isset($_POST['confirmation'])) {
         extract($_POST);
