@@ -26,7 +26,7 @@
         </div>
     </div>
     <div class= "changement">
-        <input class="bt2" name="confirmation" type="submit" value="Confirmer"></input>
+        <input class="bt5" name="confirmation" type="submit" value="Confirmer"></input>
     </div>
 
 </form>

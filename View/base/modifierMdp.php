@@ -16,27 +16,25 @@
     <div class="superform_container">
       <div class="form_container">
         <div class="information">
-          <h4>Mot de passe actuel</h4>
-          <input name= "mdp" type="password" />
-        </div>
-        <div class="information">
           <h4>Nouveau mot de passe</h4>
-          <input name= "mdp" type="password" />
+          <input name= "password" type="password" />
         </div>
         <div class="information">
           <h4>Confirmer nouveau mot de passe</h4>
-          <input name= "mdp" type="password" />
+          <input name= "cpassword" type="password" />
         </div>
       </div>
     </div>
-    <div class= "changement">
-          <div class="bt1">
-            <a href="profilController.php">Confirmer</a>
-          </div>
-          <div class="bt2">
-            <a href="profilController.php">Annuler</a>
-           </div>
+    <div class="changement">
+        <div class="bt3">
+            <input class="modifier" name="modifier" type="submit" value="Confirmer" >
+
+        </div>
+        <div class="bt4">
+            <input class="annuler" name="annuler" type="submit" value="Annuler">
+        </div>
     </div>
+
 
 </form>
 </body>

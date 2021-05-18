@@ -133,7 +133,7 @@ input:active{
     color:white;
     font-size: 1.5em;
 }
-.bt2{
+.bt5{
     background-color: #54a0ff;
     width: 100%;
     height: 100%;
@@ -146,6 +146,7 @@ input:active{
     color: white;
     transition: all 0.3s;
     font-family: "oumgouleh";
+    border-radius: 1.05em;
 }
 
 a{
