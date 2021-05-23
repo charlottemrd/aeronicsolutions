@@ -31,10 +31,9 @@ include "footer.php";
             </thead>
             <tbody>
             <?php
-            include "includes/database.php";
 
             // Creation et envoi de la requete
-            $q = $db->query("SELECT * FROM faq order by partie asc");
+            $q = $db->query("SELECT * FROM faq order by idFaq asc");
             // Recuperation des resultats
             while($row = $q ->fetch()){
                 $idFaq=$row[0];
@@ -52,10 +51,10 @@ include "footer.php";
             </tr>
             </tbody>
         </table>
-        <form method="post" class="form_message" action="../../Controller/menuFaqController.php">
+        <form method="post" class="form_message" >
     </div>
     <div class="ajout_client">
-        <a href="#">Ajouter une nouvelle question</a>
+        <a href="ajoutFaqController.php">Ajouter une nouvelle question</a>
     </div>
     <div class="gestionnaireM">
         <select name="gestionFaq" id="gestionFaq" required>
@@ -63,7 +62,7 @@ include "footer.php";
             <option value="modifier">Je souhaite modifier des informations</option>
             <option value="supprimer">Je souhaite supprimer une question</option>
         </select>
-        <select name="idFaq" id="idFaq" required >
+        <select name="codeFaq" id="codeFaq" required >
             <option value="" selected="selected" disabled="disabled">Numero de FAQ</option>
             <?php
             $q = $db->query("SELECT * FROM faq order by idFaq asc");
