@@ -3,18 +3,17 @@
 <head>
     <title>myChart</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.css">
-    <link rel="stylesheet" href="..\assets\test.css">
+    <link rel="stylesheet" href="../View/assets/test.css">
 
     <meta charset="utf-8" />
 
 </head>
 <body>
 
-<?php include "header.php"; ?>
 
 <div class="container">
     <div class="text_container">
-    <h1>Bonjour Gabriel ! </h1>
+    <h1>Bonjour ! </h1>
     <H2>Bon retour parmi nous, voici les résultats de tes tests</H2>
     </div>
     <div class="test_container">
@@ -227,7 +226,9 @@ new Chart(document.getElementById("line-chart"), {
 	}
 });
 </script>
+ 
 
-<?php include "footer2.php"; ?>
+
+
 </body>
 </html>

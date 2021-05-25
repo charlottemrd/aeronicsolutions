@@ -6,7 +6,7 @@ include '../Model/database.php';
 
 
 
-if (isset($_POST['envoi'])) {
+if (isset($_POST['envoi'])) { 
     extract($_POST);
     $_SESSION['mailoublie'] = $_POST['mail'];
     ini_set('display_errors', 1);

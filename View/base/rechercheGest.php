@@ -9,8 +9,6 @@
 </head>
 <body>
 
-
-
 <div class ="container">
     <div class="info_container">
         <h1>Liste de vos clients</h1>
@@ -28,10 +26,7 @@
 
     <table class="tableau_container">
       <thead>
-
-
     <tr>
-
         <th>I-Code</th>
         <th>E-mail</th>
         <th>Prenom</th>
@@ -45,10 +40,11 @@
 <tbody>
     <?php
     if(isset($_POST['search'])){ ?>
-
-      <?php  $nomRecherche = $_POST['search'];
+      <?php  
+      $_SESSION['maRecherche'] = $_POST['search'];
+      $nomRecherche=$_SESSION['maRecherche'];
     $q = $db->query("SELECT * FROM clients where name like '$nomRecherche%' order by name asc ");
-   unset($_POST['search']);
+   
     // Creation et envoi de la requete
     }
     else{
@@ -66,7 +62,7 @@
         $doctor = $row[8];
 
        ?><tr>
-        <td><?=$icode?></td>
+        <td><?=$icode?></form></td>
         <td><?=$mail?></td>
         <td><?=$firstName?></td>
         <td><?=$name?></td>
@@ -81,8 +77,33 @@
   </tbody>
 </table>
 </div>
-
+<form method="post" >
+    
+    
+    <div class="gestionnaireM">
+        <select name="code" id="code" required >
+            <option value="" selected="selected" disabled="disabled">I-code</option>
+            <?php
+           if(isset($_SESSION['maRecherche'])){ ?>
+            <?php  $nomRecherche=$_SESSION['maRecherche'];
+           echo $_POST['search'];
+          $q = $db->query("SELECT * FROM clients where name like '$nomRecherche%' order by name asc ");
+        
+          // Creation et envoi de la requete
+          }
+          else{
+          $q = $db->query("SELECT * FROM clients order by name asc");
+          }
+            while($row = $q ->fetch()){
+                $icode=$row[10];
+                ?>
+                <option value=<?= $icode ?>><?=$icode?></option>
+            <?php } ?>
+        </select>
+        <button type="submit" id="submit" name="submit">Soumettre</button></div>
+            
+    </form>
 </div>
-</form>
+
 </body>
 </html>
