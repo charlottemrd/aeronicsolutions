@@ -22,8 +22,8 @@ include '../View/base/footer.php';
             header('Location: inscriptionController.php');exit;
         }
         else{
-           // message erreur : icode n existe pas dans la bdd
-            }
+           
+        }
 
     }
 

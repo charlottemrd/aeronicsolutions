@@ -12,6 +12,11 @@ function mdpDifferent() {
 }
 function icodeexite(){
 
+    var reset=alert("Le code IC existe déjà. Veuillez saisir le code qu'il vous a été fourni.");
+    document.getElementById("code").style.backgroundColor="#F08080";
+    if (reset==true){
+        document.getElementById("code").reset();
+    }
 }
 
 

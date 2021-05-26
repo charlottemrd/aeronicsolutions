@@ -28,7 +28,7 @@
     </div>
     </div>
     <div class="logC">
-        <input class="log" name="log" type="submit" onsubmit="icodeexite()">
+        <input class="log" name="log" type="submit" onsubmit="return icodeexite()">
     </div>
 
 </form>
