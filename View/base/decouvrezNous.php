@@ -3,11 +3,10 @@
 <head>
     <title> Aeronic Solutions </title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="../assets/decouvrezNousStyle.css" />
+    <link rel="stylesheet" href="../View/assets/decouvrezNousStyle.css" />
 </head>
 
 <body>
-<?php include 'header.php' ?>
 
 <div class="bloc">
     <div class="titre">
@@ -20,7 +19,7 @@
 
         <div class="conteneur">
             <div class="image">
-                <img src="../assets/Ressources/Images/photo_Charlotte.png">
+                <img src="../View/assets/Ressources/Images/photo_Charlotte.png">
             </div>
             <div class="presentation">
                 <p> Charlotte MILARD : </p>
@@ -30,7 +29,7 @@
 
         <div class="conteneur">
             <div class="image">
-                <img src="../assets/Ressources/Images/photo_Leo.png">
+                <img src="../View/assets/Ressources/Images/photo_Leo.png">
             </div>
             <div class="presentation">
                 <p>Léo KAOUA : </p>
@@ -40,7 +39,7 @@
 
         <div class="conteneur">
             <div class="image">
-                <img src="../assets/Ressources/Images/photo_Chanier.png">
+                <img src="../View/assets/Ressources/Images/photo_Chanier.png">
             </div>
             <div class="presentation">
                 <p> Thibault CHANIER : </p>
@@ -50,7 +49,7 @@
 
         <div class="conteneur">
             <div class="image">
-                <img src="../assets/Ressources/Images/photo_Gabriel.png">
+                <img src="../View/assets/Ressources/Images/photo_Gabriel.png">
             </div>
             <div class="presentation">
                 <p> Gabriel BLANCHET : </p>
@@ -60,7 +59,7 @@
 
         <div class="conteneur">
             <div class="image">
-                <img src="../assets/Ressources/Images/photo_Elena.png">
+                <img src="../View/assets/Ressources/Images/photo_Elena.png">
             </div>
             <div class="presentation">
                 <p> Elena PASCO--CASTILLOT : </p>
@@ -70,7 +69,7 @@
 
         <div class="conteneur">
             <div class="image">
-                <img src="../assets/Ressources/Images/photo_Ragu.png">
+                <img src="../View/assets/Ressources/Images/photo_Ragu.png">
             </div>
             <div class="presentation">
                 <p> Thibault RAGU : </p>
@@ -96,6 +95,5 @@
         </p>
     </div>
 </div>
-<?php include 'footer2.php' ?>
 </body>
 </html>

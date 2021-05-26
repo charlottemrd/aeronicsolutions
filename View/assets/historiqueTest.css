@@ -25,13 +25,19 @@ border-radius: 1em;
 overflow: hidden;
 box-shadow: 0px 0px 10px #bdc3c7;
 max-width: 1500px;
-border: red solid 2px;
+border:red 2px solid;
 
 
 }
 
+.espace_container{
+    max-height: 80%;
+    min-height: 80%;
+    border: orange 2px solid;
+}
+
 .info_container{
-  height: 5em;
+  height: 10%;
   background-color: #54a0ff;
   width: 100%;
   display: flex;
@@ -45,93 +51,14 @@ border: red solid 2px;
   font-size: 2em;
 }
 
-.search_bar_container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 6em;
-    width: 100%;
-    margin-top: 2em;
-
-}
-
-.barre{
-  width: 30%;
-}
-
-.barre input {
-  border-top-left-radius: 2em;
-  border-bottom-left-radius: 2em;
-  height: 3em;
-  width: 100%;
-  box-shadow: 0px 0px 10px #bdc3c7;
-  border-top-style: hidden;
-  border-right-style: hidden;
-  border-left-style: hidden;
-  border-bottom-style: hidden;
-  outline: none;
-  padding-left: 15px;
-  font-family: 'oumgouleh';
-  font-family: sans-serif;
-  font-size: 100%;
-
-}
-
-.barre_boutton{
-  background-color:#54a0ff ;
-  width: 7%;
-  height: 3em;
-  border-top-right-radius:2em ;
-  border-bottom-right-radius: 2em;
-  overflow: hidden;
-  box-shadow: 0px 0px 10px #bdc3c7;
-
-}
-.barre_boutton:hover{
-  box-shadow: inset 0px 0px 25px #4180ce;
-
-
-}
-
-.barre_boutton input{
-  background-color:#54a0ff ;
-  font-size: 1vw;
-  border-top-style: hidden;
-  border-right-style: hidden;
-  border-left-style: hidden;
-  border-bottom-style: hidden;
-  outline: none;
-  width: 100%;
-  height: 100%;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0px 0px 10px #bdc3c7;
-  text-decoration: none;
-}
-
-input:focus{
-  border: 1.5px solid #54a0ff;
-
-}
-
-input:hover{
-  border: 1.5px solid #54a0ff;
-}
-input:active{
-  border: 1.5px solid #54a0ff;
-}
 
 .gestionnaireM{
   width: 100%;
-  height: 100%;
-  position:relative;
+  height:100%;
   background-color: #54a0ff;
   display: flex;
   justify-content: center ;
   align-items: center;
-  border: 2px solid red;
 }
 
 
@@ -163,9 +90,8 @@ input:active{
     font: normal 13px, sans-serif;
     width: 100%;
     border-collapse: collapse;
-      border-radius: 1em;
-    overflow: hidden;
     border-radius: 1em;
+    overflow: hidden;
 
 
 }
@@ -184,13 +110,9 @@ input:active{
     scroll-behavior: smooth;
     height: auto;
     margin-left:10%;
-    margin-bottom : 2em;
+    margin-top : 2%;
     border-radius: 1em;
-    margin-top: 1em;
-    min-height: 18em;
-
-
-
+    box-shadow: 0px 0px 10px #bdc3c7;
 }
 
 

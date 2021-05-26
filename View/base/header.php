@@ -7,15 +7,15 @@
         </a>
     </div>
     <div class="linkC">
-        <a href="#">Nous découvrir</a>
+        <a href="decouvrezNousController.php">Nous découvrir</a>
         <a href="../View/base/presentationTest.php">Nos tests</a>
         <a href="faqController.php">FAQ</a>
-        <a href="../View/base/messagerie.php">Nous contacter</a>
+        <a href="messagerieController.php">Nous contacter</a>
     </div>
     <div class="connexionC">
         <div class="IMGC">
             <a href="profilController.php">
-                <img class="Bcon" href="accueilController.php" src="../View/assets/Ressources/Images/account.png" width=30 alt="##" />
+                <img class="Bcon" src="../View/assets/Ressources/Images/account.png" width=30 alt="##" />
             </a>
         </div>
         <?php  if (!isset($_SESSION['mail'])){ ?>

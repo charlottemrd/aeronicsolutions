@@ -21,7 +21,8 @@ h3{
 .container{
     height: 110em;
 background-color: #F2F5F9;
-margin-top:1em;
+margin-top:4em;
+
 }
 
 .text_container{
@@ -98,7 +99,7 @@ margin-left: 5%;
 .n1 h1 {
     position: absolute;
     top:15.3%;
-    left:14.5%;
+    left:15.3%;
     font-size: 2VW;
     margin:0;
     right:50%;
@@ -120,7 +121,7 @@ margin-left: 5%;
 .n3 h1 {
     position: absolute;
     top:15.3%;
-    left:81.8%;
+    left:81%;
     font-size: 2VW;
     margin:0;
     right:50%;
@@ -135,6 +136,7 @@ margin-left: 5%;
     margin-bottom: 4%;
 
 }
+
 
 canvas{
     max-height: 40em;

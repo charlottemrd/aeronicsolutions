@@ -4,14 +4,11 @@
     <title>Nous contacter</title>
 
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="../assets/mesagerieStyle.css" />
+    <link rel="stylesheet" href="../View/assets/mesagerieStyle.css" />
 
 </head>
 <body>
 
-<?php include "header.php"; ?>
-<?php include "footer.php";
-include 'includes/session.php'; ?>
 
 <div class="contentmessage">
     <div class="title_container">
@@ -22,9 +19,9 @@ include 'includes/session.php'; ?>
 
     <form method="post" class="form_message">
 
-            <input name="prenom" type="text" id="prenom_message" placeholder="Prénom" required>
-            <input name="nom" type="text" id="nom_message" placeholder="Nom" required>
-            <input name="mail" type="mail" id="email" placeholder="Adresse e-mail" required>
+            <input name="prenom" type="text" id="prenom_message" placeholder="Prénom" value="<?=$user['firstName']?>" required>
+            <input name="nom" type="text" id="nom_message" placeholder="Nom" value="<?=$user['name']?>" required>
+            <input name="mail" type="mail" id="email" placeholder="Adresse e-mail" value="<?=$user['mail']?>" required>
              <textarea name="contenu" type="text" id="contenu" placeholder="Votre message" required  >
              </textarea>
     </div>
@@ -35,19 +32,7 @@ include 'includes/session.php'; ?>
 
 
 </div>
-<?php
-if (isset($_POST['envoi'])) {
 
-    extract($_POST);
-    ini_set( 'display_errors', 1 );
-    error_reporting( E_ALL );
-    $from = $_POST['mail'];
-    $to = "solutionsaeronic@gmail.com";
-    $subject = "Demande Aeronic Solutions";
-    $message = $_POST['contenu'];
-    $headers = "De :" . $from;
-    mail($to,$subject,$message, $headers);
-}
-?>
+
 </body>
 </html>

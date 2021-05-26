@@ -2,7 +2,6 @@
 if (isset($_POST['modifier'])) {
         extract($_POST);
         global $db;
-        $_SESSION['mail']='admin@gmail.com';
         $mail=$_SESSION['mail'];
         $prenom=$_POST['prenom'];
         $nom=$_POST['nom'];
@@ -17,11 +16,11 @@ if (isset($_POST['modifier'])) {
         $reponse = $db->exec($sql);
         header("location: ../Controller/profilController.php");}
 
-else if ($_SESSION['utilisateur']=='administrateur'){
-    $sql = "UPDATE administrateurs SET firstName = '$prenom', name='$nom' 
+        else if ($_SESSION['utilisateur']=='administrateur'){
+        $sql = "UPDATE administrateurs SET firstName = '$prenom', name='$nom' 
                 WHERE mail = '$mail'";
-    $reponse = $db->exec($sql);
-    header("location: ../Controller/profilController.php");
+        $reponse = $db->exec($sql);
+        header("location: ../Controller/profilController.php");
 
 }
 
