@@ -11,7 +11,7 @@ if (isset($_POST['submit'])) {
     }
     extract($_POST);
 
-    $_SESSION['numeroTest'] = $_POST['numero'];
+    $_SESSION['testPilote'] = $_POST['numero'];
 
     header("location:testController.php");
 } 

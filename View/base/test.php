@@ -13,7 +13,7 @@
 
 <div class="container">
     <div class="text_container">
-    <h1>Bonjour ! </h1>
+    <h1><?=$monPilote['firstName']?>  <?=$monPilote['name']?></h1>
     <H2>Bon retour parmi nous, voici les résultats de tes tests</H2>
     </div>
     <div class="test_container">

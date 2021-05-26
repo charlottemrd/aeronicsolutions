@@ -3,6 +3,8 @@
 include '../View/base/header.php';
 include '../Model/database.php';
 include '../View/base/test.php';
+
+include '../Model/requetePilote.php';
 include '../View/base/footer2.php';
 
 ?>
