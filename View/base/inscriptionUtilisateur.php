@@ -12,18 +12,18 @@
 
 <body>
 
-    <form method="post" class="contentInscription">
+    <form method="post" class="contentInscription" >
         <div class="title_container">
             <h3>Inscription - <?= $_SESSION['utilisateur']; ?> </h3>
         </div>
         <div class="form_container">
 
-            <input name="prenom" type="text" id="prenom" placeholder="Prénom" required pattern=".{3,}" title="Le champ doit contenir au moins 3 lettres">
-            <input name="nom" type="text" id="nom" placeholder="Nom" required pattern=".{3,}" title="Le champ doit contenir au moins 3 lettres">
+            <input name="prenom"   type="text" id="prenom" placeholder="Prénom" required pattern=".{3,}" title="Le champ doit contenir au moins 3 lettres">
+            <input name="nom"   type="text" id="nom" placeholder="Nom"  required pattern=".{3,}" title="Le champ doit contenir au moins 3 lettres">
 
             <?php
             if ($_SESSION['utilisateur'] == 'client') { ?>
-                <input name="birthDate" type="date" id="birthDate" placeholder="Date de naissance">
+                <input name="birthDate"  type="date" id="birthDate" placeholder="Date de naissance">
                 <div class="genre">
                     <select name="genre" id="genre">
                         <option value="-" selected="selected" disabled="disabled">Genre</option>
@@ -34,7 +34,7 @@
                 <input name="compagnie" type="text" id="compagnie" placeholder="Compagnie aérienne" required>
             <?php }  
             if ($_SESSION['utilisateur'] == 'gestionnaire') { ?>
-                <input name="center" type="text" id="center" placeholder="Centre médical" required pattern=".{3,}" title="Le champ doit contenir au moins 3 lettres">
+                <input name="center"  type="text" id="center" placeholder="Centre médical" required pattern=".{3,}" title="Le champ doit contenir au moins 3 lettres">
             <?php }
             ?>
 
@@ -56,7 +56,7 @@
             </div>
         </div>
         <div class="logC">
-            <input class="log" name="log" type="submit"></input>
+            <input class="log" name="log" type="submit" onclick="return verif_formulaire();" ></input>
         </div>
     </form>
 

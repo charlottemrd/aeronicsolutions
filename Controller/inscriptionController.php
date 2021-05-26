@@ -2,10 +2,10 @@
 include '../View/base/header.php';
 include '../View/base/footer2.php';
 
+
     if (isset($_POST['log'])) {
 
         extract($_POST);
-
         // condition à mettre dans un fichier à part, à appeler également dans modifierMdp.php
         if ($password == $cpassword) {
 
@@ -31,9 +31,9 @@ include '../View/base/footer2.php';
             // A SIMPLIFIER
             if ($result == 0) {
                 if ($_SESSION['utilisateur'] == 'client') {
-                    
+
                     $q = $db->prepare("INSERT INTO clients(firstName,name,birthDate,kind,company,mail,password,doctor,icode) VALUES (:firstName,:name,:birthDate,:kind,:company,:mail,:password,:doctor,:icode)");
-                
+
                     $q->execute([
                         'firstName' => $prenom,
                         'name' => $nom,
@@ -44,8 +44,8 @@ include '../View/base/footer2.php';
                         'password' => password_hash("$password", PASSWORD_BCRYPT, $options),
                         'doctor' => 'Smith',
                         'icode' => $_SESSION['icode']
-                    ]); 
-                    $_SESSION['mail'] = $mail;     
+                    ]);
+                    $_SESSION['mail'] = $mail;
                 }
 
                 if ($_SESSION['utilisateur'] == 'gestionnaire') {
@@ -58,7 +58,7 @@ include '../View/base/footer2.php';
                         'mail' => $mail,
                         'password' => password_hash("$password", PASSWORD_BCRYPT, $options),
                         'icode' => $_SESSION['icode']
-                    ]); 
+                    ]);
                     $_SESSION['mail'] = $mail;
                 }
 
@@ -72,12 +72,11 @@ include '../View/base/footer2.php';
                         'password' => password_hash("$password", PASSWORD_BCRYPT, $options),
                         'icode' => $_SESSION['icode']
                     ]);
-                    $_SESSION['mail'] = $mail; 
+                    $_SESSION['mail'] = $mail;
                 }
-                header('Location: profilController.php');exit;
-            }
-
-            else {
+                header('Location: profilController.php');
+                exit;
+            } else {
                 header('Location: inscriptionController.php');
             }
             /*
@@ -99,3 +98,5 @@ include '../View/base/footer2.php';
     }
     include '../View/base/inscriptionUtilisateur.php';
 ?>
+
+
