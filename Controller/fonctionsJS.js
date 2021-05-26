@@ -1,4 +1,4 @@
-function verif_formulaire() {
+function mdpDifferent() {
     if (document.getElementById("password").value!=document.getElementById("cpassword").value) {
     document.getElementById("password").style.backgroundColor="#F08080";
     document.getElementById("cpassword").style.backgroundColor="#F08080";
@@ -10,3 +10,8 @@ function verif_formulaire() {
 }
 
 }
+function icodeexite(){
+
+}
+
+

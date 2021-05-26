@@ -31,3 +31,4 @@ include '../View/base/footer.php';
 
     include '../View/base/inscriptionAccueil.php';
 ?>
+<script  type="text/javascript" src="../fonctionsJs.js"> </script>;

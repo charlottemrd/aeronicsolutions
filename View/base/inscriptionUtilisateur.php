@@ -56,7 +56,7 @@
             </div>
         </div>
         <div class="logC">
-            <input class="log" name="log" type="submit" onclick="return verif_formulaire();" ></input>
+            <input class="log" name="log" type="submit" onclick="return mdpDifferent();" ></input>
         </div>
     </form>
 

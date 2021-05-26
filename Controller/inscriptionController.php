@@ -2,7 +2,6 @@
 include '../View/base/header.php';
 include '../View/base/footer.php';
 
-
     if (isset($_POST['log'])) {
 
         extract($_POST);
