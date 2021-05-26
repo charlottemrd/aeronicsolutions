@@ -55,7 +55,7 @@
             </table>
         </div>
     </div>
-    <form method="post" class="form_message" action="testController.php">
+    <form method="post" class="form_message" >
             <div class="gestionnaireM">
                 <select name="code" id="code" required >
                     <option value="" selected="selected" disabled="disabled">N°Test</option>
