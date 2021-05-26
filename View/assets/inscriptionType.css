@@ -21,6 +21,7 @@ p,h3{
 }
 p{
   font-weight: 400%;
+
 }
 
 
@@ -172,8 +173,21 @@ a{
   text-decoration: none;
 }
 
+input:required:valid{
+  border: green 2px solid;
+}
+
+input:required:invalid{
+  border: red 2px solid;
+}
+
+.erreurM p
+{
+  color: red;
+}
 @keyframes wave {
   50% {
     transform: scale(0.9);
   }
 }
+
