@@ -23,12 +23,12 @@
         <div class="IC_container">
 
             <div class="input_container">
-                <input name="code" type="text" id="code" placeholder="I-C"  required pattern="[0-9]+">
+                <input name="code" type="text" id="code" placeholder="I-C"  required pattern="[0-9]+" >
             </div>
             <div class="erreurM">
                 <p><?=$_GET['erreurIcode']?></p>
             </div>
-    </div>
+        </div>
     </div>
     <div class="logC">
         <input class="log" name="log" type="submit" )">

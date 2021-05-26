@@ -21,13 +21,17 @@ if (isset($_POST['log'])) {
         header('Location: inscriptionController.php');
         exit;
     }
-    else{
-        $_GET['erreurIcode']="le code n'existe pas ";
-         }
+    else {
 
+
+
+        $_GET['erreurIcode'] = "le code n'existe pas ";
+
+    }
 }
 
 
 
 include '../View/base/inscriptionAccueil.php';
 ?>
+

@@ -240,3 +240,11 @@ background-color: #4585d5;
 a{
 text-decoration: none;
 }
+
+input:required:valid{
+  border: green 2px solid;
+}
+
+input:required:invalid{
+  border: red 2px solid;
+}
