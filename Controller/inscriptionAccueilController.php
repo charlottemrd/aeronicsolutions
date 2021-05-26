@@ -9,12 +9,26 @@ include '../View/base/footer.php';
         global $db;
         $code=$_POST['code'];
 
+        $result = 0;
+
+
         $q = $db->query("SELECT * FROM icodes where icode='$code'");
         $data = $q->fetch();
-        
-        $_SESSION['utilisateur']= $data['status'];
-        $_SESSION['icode'] = $data['icode'];
-        header('Location: inscriptionController.php');exit;
+        $result += $q->rowCount();
+        if($result != 0) {
+
+            $_SESSION['utilisateur']= $data['status'];
+            $_SESSION['icode'] = $data['icode'];
+            header('Location: inscriptionController.php');exit;
+        }
+        else{
+           
+        }
+
     }
+
+
+
     include '../View/base/inscriptionAccueil.php';
 ?>
+<script  type="text/javascript" src="../fonctionsJs.js"> </script>;

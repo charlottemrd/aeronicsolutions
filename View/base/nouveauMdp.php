@@ -26,7 +26,7 @@
         </div>
     </div>
     <div class= "changement">
-        <input class="bt5" name="confirmation" type="submit" value="Confirmer"></input>
+        <input class="bt5" name="confirmation" type="submit" value="Confirmer" onclick="return mdpDifferent();"></input>
     </div>
 
 </form>

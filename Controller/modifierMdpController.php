@@ -39,14 +39,10 @@ if (isset($_POST['modifier'])) {
             }
 
         }
-        if ($password != $cpassword) {
-            echo '<script language="Javascript">
-            alert("Les mots de passes sont différents !\nVeuillez recommencer l\'opération en saisissant des mots de passes identique.");
-        </script>';
-
-        }
 
 
 }
 
 ?>
+
+<script  type="text/javascript" src="../fonctionsJs.js"> </script>;

@@ -4,7 +4,7 @@
     <title>Profil</title>
 
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="../assets/editProfils/modifierProfil.css" />
+    <link rel="stylesheet" href="../View/assets/editProfils/modifierProfil.css" />
 
 </head>
 <body>
@@ -12,14 +12,14 @@
 <?php
 
 if ($_SESSION['utilisateur']=='client'){  ?>
-    <link rel="stylesheet" href="../assets/editProfils/modifierProfil.css"/> <?php
+    <link rel="stylesheet" href="../View/assets/editProfils/modifierProfil.css"/> <?php
 }
 elseif ($_SESSION['utilisateur']=='administrateur'){ ?>
-    <link rel="stylesheet" href="../assets/editProfils/modifierProfilAdmin.css" />
+    <link rel="stylesheet" href="../View/assets/editProfils/modifierProfilAdmin.css" />
     <?php
 }
 else{ ?>
-    <link rel="stylesheet" href="../assets/editProfils/modifierProfilGestionnaire.css"  />
+    <link rel="stylesheet" href="../View/assets/editProfils/modifierProfilGestionnaire.css"  />
     <?php
 }
 ?>

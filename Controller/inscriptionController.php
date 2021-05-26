@@ -5,7 +5,6 @@ include '../View/base/footer.php';
     if (isset($_POST['log'])) {
 
         extract($_POST);
-
         // condition à mettre dans un fichier à part, à appeler également dans modifierMdp.php
         if ($password == $cpassword) {
 
@@ -31,9 +30,9 @@ include '../View/base/footer.php';
             // A SIMPLIFIER
             if ($result == 0) {
                 if ($_SESSION['utilisateur'] == 'client') {
-                    
+
                     $q = $db->prepare("INSERT INTO clients(firstName,name,birthDate,kind,company,mail,password,doctor,icode) VALUES (:firstName,:name,:birthDate,:kind,:company,:mail,:password,:doctor,:icode)");
-                
+
                     $q->execute([
                         'firstName' => $prenom,
                         'name' => $nom,
@@ -44,8 +43,8 @@ include '../View/base/footer.php';
                         'password' => password_hash("$password", PASSWORD_BCRYPT, $options),
                         'doctor' => 'Smith',
                         'icode' => $_SESSION['icode']
-                    ]); 
-                    $_SESSION['mail'] = $mail;     
+                    ]);
+                    $_SESSION['mail'] = $mail;
                 }
 
                 if ($_SESSION['utilisateur'] == 'gestionnaire') {
@@ -58,7 +57,7 @@ include '../View/base/footer.php';
                         'mail' => $mail,
                         'password' => password_hash("$password", PASSWORD_BCRYPT, $options),
                         'icode' => $_SESSION['icode']
-                    ]); 
+                    ]);
                     $_SESSION['mail'] = $mail;
                 }
 
@@ -72,13 +71,12 @@ include '../View/base/footer.php';
                         'password' => password_hash("$password", PASSWORD_BCRYPT, $options),
                         'icode' => $_SESSION['icode']
                     ]);
-                    $_SESSION['mail'] = $mail; 
+                    $_SESSION['mail'] = $mail;
                 }
-                header('Location: profilController.php');exit;
-            }
-
-            else {
-                header('Location: inscriptionController.php');
+                header('Location: profilController.php');
+                exit;
+            } else {
+                header('Location: index.php');
             }
             /*
             $q2 = $db->query("SELECT * FROM clients WHERE prenom = 'Thibault'");
@@ -98,4 +96,7 @@ include '../View/base/footer.php';
         }
     }
     include '../View/base/inscriptionUtilisateur.php';
+
 ?>
+<script type="text/javascript" src="../fonctionsJs.js"></script>
+
