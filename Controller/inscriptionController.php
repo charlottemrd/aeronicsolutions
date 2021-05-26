@@ -77,7 +77,7 @@ include '../View/base/footer.php';
                 header('Location: profilController.php');
                 exit;
             } else {
-                header('Location: inscriptionController.php');
+                header('Location: index.php');
             }
             /*
             $q2 = $db->query("SELECT * FROM clients WHERE prenom = 'Thibault'");
@@ -97,6 +97,7 @@ include '../View/base/footer.php';
         }
     }
     include '../View/base/inscriptionUtilisateur.php';
-?>
 
+?>
+<script type="text/javascript" src="../fonctionsJs.js"></script>
 
