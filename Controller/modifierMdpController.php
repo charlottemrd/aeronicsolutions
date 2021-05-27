@@ -36,13 +36,18 @@ if (isset($_POST['modifier'])) {
                     'mail' => $mail
                 ]);
                 header('Location:accueilController.php');
+                exit;
             }
 
         }
+        else
+            {
+
+                header("Location: modifierMdpController.php?errModifMdp=Les mots de passe ne correspondent pas");
+
+            }
 
 
 }
 
 ?>
-
-<script  type="text/javascript" src="../fonctionsJs.js"> </script>;

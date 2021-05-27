@@ -204,3 +204,15 @@ a{
 .bt4{
     box-shadow: 0px 0px 10px #bdc3c7;
 }
+input:required:valid{
+    border: green 2px solid;
+}
+
+input:required:invalid{
+    border: red 2px solid;
+}
+
+.erreurM p
+{
+    color: red;
+}
