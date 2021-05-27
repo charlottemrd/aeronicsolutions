@@ -18,12 +18,25 @@
         <h3>Inscription - <?=$_SESSION['utilisateur']; ?> </h3>
     </div>
     <div class="form_container">
-        <input name="prenom"   type="text" id="prenom" placeholder="Prénom" required pattern="[a-Z]" maxlength="20" minlength="3" title="Le champ doit contenir au moins 3 lettres" value="<?=$_POST['prenom']?>">
-        <input name="nom"   type="text" id="nom" placeholder="Nom"  required pattern="[a-Z]" maxlength="20" minlength="3" title="Le champ doit contenir au moins 3 lettres" value="<?=$_POST['nom']?>">
+        <input name="prenom"   type="text" id="prenom" placeholder="Prénom" required pattern="[a-zA-ZÀ-ÿ]+[^0-9]" maxlength="20" minlength="3"  title="Veuillez rentrer un prénom correct" value="<?=$_POST['prenom']?>">
+        <input name="nom"   type="text" id="nom" placeholder="Nom"  required pattern="[a-Z]"  title="Le champ doit contenir au moins 3 lettres" title="Veuillez rentrer un nom correct" value="<?=$_POST['nom']?>">
+
+
+        <?php
+        if ($_SESSION['utilisateur'] == 'gestionnaire') { ?>
+            <input name="center"  type="text" id="center" placeholder="Centre médical" required pattern="[a-Z]" pattern="[a-zA-ZÀ-ÿ]+[^0-9]" maxlength="20" minlength="3" title="Veuillez rentrer une valeur correct" value="<?=$_POST['center']?>">
+        <?php }
+        ?>
+
+        <input name="mail" type="text" id="mail" placeholder="Adresse-mail" required pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+.[a-zA-Z.]{2,15}" value="<?=$_POST['mail']?>" title="Veuillez rentrer un mail correct">
+        <input name="password" type="password" id="password" placeholder="Mot de passe" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Le mot de passe doit contenir au moins un chiffre, une majuscule, une minuscule et être composé d'au moins 8 charactères">
+        <input name="cpassword" type="password" id="cpassword" placeholder="Confirmer mot de passe" required  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Le mot de passe doit contenir au moins un chiffre, une majuscule, une minuscule et être composé d'au moins 8 charactères">
 
         <?php
         if ($_SESSION['utilisateur'] == 'client') { ?>
-            <input name="birthDate"  type="date" id="birthDate" required placeholder="Date de naissance" value="<?=$_POST['birthDate']?>">
+            <input name="compagnie" type="text" id="compagnie" placeholder="Compagnie aérienne" title="Veuillez rentrer une valeur correcte" required pattern="[a-Z]" pattern="[a-zA-ZÀ-ÿ]+[^0-9]" maxlength="20" minlength="3" value="<?=$_POST['compagnie']?>">
+
+            <input name="birthDate"  type="date" id="birthDate" required placeholder="Date de naissance"  value="<?=$_POST['birthDate']?>" >
             <div class="genre">
                 <select name="genre" id="genre" required value="<?=$_POST['genre']?>">
                     <option value="" selected="selected" disabled="disabled">Genre</option>
@@ -31,17 +44,7 @@
                     <option value="Femme">Femme</option>
                 </select>
             </div>
-            <input name="compagnie" type="text" id="compagnie" placeholder="Compagnie aérienne" required pattern="[a-Z]" maxlength="20" minlength="3" value="<?=$_POST['compagnie']?>">>
-        <?php }
-        if ($_SESSION['utilisateur'] == 'gestionnaire') { ?>
-            <input name="center"  type="text" id="center" placeholder="Centre médical" required pattern="[a-Z]" maxlength="20" minlength="3" title="Le champ doit contenir au moins 3 lettres" value="<?=$_POST['center']?>">
-        <?php }
-        ?>
-
-        <input name="mail" type="text" id="mail" placeholder="Adresse-mail" required pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+.[a-zA-Z.]{2,15}" value="<?=$_POST['mail']?>">
-        <input name="password" type="password" id="password" placeholder="Mot de passe" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Le mot de passe doit contenir au moins un chiffre, une majuscule, une minuscule et être composé d'au moins 8 charactères">
-        <input name="cpassword" type="password" id="cpassword" placeholder="Confirmer mot de passe" required  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Le mot de passe doit contenir au moins un chiffre, une majuscule, une minuscule et être composé d'au moins 8 charactères">
-
+             <?php }?>
         <div class="CondUtilisations">
             <input class="inp-cbx" id="cbx" type="checkbox" style="display: none" required>
 
@@ -53,7 +56,9 @@
                    </span></label>
         </div>
     </div>
-    <p class="erreurM"><?=$_GET['inscriptionError']?></p>
+    <div class="erreurM">
+        <p><?=$_GET['inscriptionError']?></p>
+    </div>
     <div class="logC">
         <input class="log" name="log" type="submit"></input>
     </div>
