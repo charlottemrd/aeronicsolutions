@@ -43,7 +43,7 @@
                     <option value="Homme">Homme</option>
                     <option value="Femme">Femme</option>
                 </select>
-            </div>
+            </div
              <?php }?>
         <div class="CondUtilisations">
             <input class="inp-cbx" id="cbx" type="checkbox" style="display: none" required>
@@ -52,7 +52,7 @@
                        <svg width="12px" height="10px" viewbox="0 0 12 10">
                            <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
                        </svg></span><span>Valider les
-                       <a href="ConditionsUtilisation.php" target="_blank">Conditions générales d'utilisations</a>
+                       <a href="../View/base/ConditionsUtilisation.php" target="_blank">Conditions générales d'utilisations</a>
                    </span></label>
         </div>
     </div>
