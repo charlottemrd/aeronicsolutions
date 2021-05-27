@@ -174,7 +174,7 @@ a{
 }
 
 input:required:valid{
-  border: green 2px solid;
+  border: #9ACD32 2px solid;
 }
 
 input:required:invalid{
@@ -190,4 +190,3 @@ input:required:invalid{
     transform: scale(0.9);
   }
 }
-
