@@ -40,8 +40,16 @@ if(isset($_POST['log'])){
         if(password_verify($lpassword, $data['password'])){
             header('Location: profilController.php'); 
         }
+        else{
+            $_GET['connexionError'] = "Identifiants invalides ";
         }
+        }
+
     }
+    else
+        {
+            $_GET['connexionError'] = "Identifiants invalides ";
+        }
 } 
 include '../View/base/connexion.php';
 ?>
