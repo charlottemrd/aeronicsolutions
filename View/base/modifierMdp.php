@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Profil</title>
+    <title>Modifier mot de passe</title>
 
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../View/assets/modifierMdp.css" />

@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Aeronic solutions </title>
+    <title>Nos tests </title>
 
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../assets/presentationTest.css" />

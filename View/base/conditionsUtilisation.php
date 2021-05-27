@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Conditions d'ulisations</title>
+  <title>Conditions d'utilisations</title>
    <meta charset="utf-8" />
    <link rel="stylesheet" href="../assets/footer.css" />
    <link rel="stylesheet" href="../assets/confidentialiteStyle.css" />

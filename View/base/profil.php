@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Profil</title>
+    <title>Mon profil</title>
 
     <meta charset="utf-8" />
 </head>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>historiqueTest</title>
+    <title>Historique Tests</title>
     
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../View/assets/historiqueTest.css" />

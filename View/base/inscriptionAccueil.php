@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Connexion</title>
+    <title>Inscription</title>
 
     <meta charset="utf-8" />
 

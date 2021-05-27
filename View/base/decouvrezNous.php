@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title> Aeronic Solutions </title>
+    <title> Nous découvrir </title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../View/assets/decouvrezNousStyle.css" />
 </head>

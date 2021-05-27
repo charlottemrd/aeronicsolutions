@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Supprimer client</title>
+    <title>Vous êtes banni</title>
 
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../View/assets/supprimerClient.css" />

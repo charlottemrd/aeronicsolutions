@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Ajout question</title>
+    <title>Ajouter question</title>
 
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../View/assets/editProfils/modifierProfil.css" />

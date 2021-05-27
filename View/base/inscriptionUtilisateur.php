@@ -3,7 +3,7 @@
 <html>
 
 <head>
-    <title>Inscription client</title>
+    <title>Inscription </title>
 
     <meta charset="utf-8" />
 

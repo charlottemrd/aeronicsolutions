@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Confirmation</title>
+    <title>Confirmation inscription</title>
 
     <meta charset="utf-8" />
 

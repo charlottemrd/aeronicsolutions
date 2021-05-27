@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="../View/Assets/footer.css" />
+<link rel="stylesheet" href="../View/assets/footer.css" />
 
 <div class="footer">
     <p> (c) Copyright tous droits réservés Aeronic Solutions Corporation 2021 </p>

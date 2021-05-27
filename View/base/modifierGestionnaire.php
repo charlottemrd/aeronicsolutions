@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Profil</title>
+    <title>Modifier gestionnaire</title>
 
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../View/assets/editProfils/modifierProfil.css" />
