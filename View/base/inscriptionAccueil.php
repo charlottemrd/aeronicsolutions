@@ -26,7 +26,7 @@
                 <input name="code" type="text" id="code" placeholder="I-C"  required pattern="[0-9]+" >
             </div>
             <div class="erreurM">
-                <p><?=$_GET['erreurIcode']?></p>
+                <p><?php if (isset($_GET['erreurIcode'])){echo $_GET['erreurIcode'];}?></p>
             </div>
         </div>
     </div>

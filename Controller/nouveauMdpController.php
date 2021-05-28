@@ -45,7 +45,6 @@ if (isset($_POST['confirmation'])) {
     }
     else
         {
-            echo $_SESSION['mailoublie'];
             header("Location: nouveauMdpController.php?errNewMdpRS=Les mots de passe ne correspondent pas");
 
 
