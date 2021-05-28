@@ -19,9 +19,9 @@
 
     <form method="post" class="form_message">
 
-            <input name="prenom" type="text" id="prenom_message" placeholder="Prénom" value="<?=$user['firstName']?>" required>
-            <input name="nom" type="text" id="nom_message" placeholder="Nom" value="<?=$user['name']?>" required>
-            <input name="mail" type="mail" id="email" placeholder="Adresse e-mail" value="<?=$user['mail']?>" required>
+            <input name="prenom" type="text" id="prenom_message" placeholder="Prénom" value="<?php if(isset($user['firstName'])){ echo $user['firstName'];}?>" required>
+            <input name="nom" type="text" id="nom_message" placeholder="Nom" value="<?php if(isset($user['name'])){ echo $user['name'];}?>" required>
+            <input name="mail" type="mail" id="email" placeholder="Adresse e-mail" value="<?php if(isset($user['mail'])){ echo $user['mail'];}?>" required>
              <textarea name="contenu" type="text" id="contenu" placeholder="Votre message" required  >
              </textarea>
     </div>
