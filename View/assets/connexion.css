@@ -142,7 +142,7 @@ a{
 }
 
 input:required:valid{
-  border: #9ACD32 2px solid;
+  border: #4585d5 2px solid;
 }
 
 input:required:invalid{

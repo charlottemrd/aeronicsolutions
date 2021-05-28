@@ -14,13 +14,19 @@
 <div class="container">
     <div class="text_container">
         <h1>Résulat de tests</h1>
-    <H2>  voici les résultats du test du  <?=date("d-m-Y",strtotime($monTest['date']))?> - du patient <?=$monPilote['firstName']?>  <?=$monPilote['name']?> - référence du test : <?=$monTest['id']?></H2>
+    <?php if($_SESSION['utilisateur']=='gestionnaire'){?>
+    <H2>Voici les résultats du test du  <?=date("d-m-Y",strtotime($monTest['date']))?> - du patient <?=$monPilote['firstName']?>  <?=$monPilote['name']?> - référence du test : <?=$monTest['id']?></H2>
+    <?php }
+    else if($_SESSION['utilisateur']=='client'){?>
+      <H2>Voici les résultats du test   <?=date("d-m-Y",strtotime($monTest['date']))?> - référence du test : <?=$monTest['id']?></H2>
+    <?php } ?>
+
     </div>
     <div class="test_container">
         <div class="ligne1_container" id="ligne1_container" >
             <div class="petit_test_container test1">
                 <div class="text_test_container">
-                    <h3>Température corporelle</h3>
+                    <h3>Température corporelle (°c)</h3>
                 </div>
                 <div class="doug_canva_container n1">
                     <canvas id="myChart1"></canvas>
@@ -50,6 +56,9 @@
             <div class="grand_test_container">
               <div class="text_test_container">
                   <h3>Fréquence cardiaque</h3>
+                  <div class="invisible">
+                  <h3 name="freqValue" id="freqValue" ><?=$monTest['frequency']?></h3>
+                  </div>
               </div>
               <div class="line_chart_container">  
                 <canvas id="line-chart"></canvas>
@@ -214,15 +223,13 @@ new Chart(document.getElementById("line-chart"), {
 	type: 'line',
 	options: {},
 	data: {
-	labels: ["January", 
-"February", "March", "April", "May", "June",
-"July"],
+
+        labels: ["", "",""],
 	datasets: [{
 	backgroundColor:'rgba(84,160,255,0.16)',
 	borderColor: 
 '#54a0ff',
-	data: [0, 1, 5,
-	2, 20, 30, 45],
+	data: [0,document.getElementById("freqValue").innerHTML,0],
 		}]
 	}
 });

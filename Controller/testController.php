@@ -3,9 +3,9 @@ session_start();
 include '../View/base/header.php';
 include '../Model/database.php';
 include '../Model/requetePilote.php';
+include '../Model/requeteProfil.php';
 include '../Model/requeteTest.php';
 
-$temperature=monTest['temperature'];
 
 
 

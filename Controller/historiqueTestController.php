@@ -3,6 +3,7 @@
 include '../View/base/header.php';
 include '../Model/database.php';
 include '../Model/requetePilote.php';
+include '../Model/requeteProfil.php';
 include '../View/base/footer.php';
 
 if (isset($_POST['submit'])) {

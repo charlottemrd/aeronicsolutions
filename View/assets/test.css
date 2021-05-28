@@ -150,3 +150,10 @@ canvas{
     height: 10em;;
 }
 
+.invisible h3
+{
+    width:0%;
+    height: 0%;
+    color: red;
+    visibility: hidden;
+}

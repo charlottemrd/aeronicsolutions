@@ -204,8 +204,9 @@ a{
 .bt4{
     box-shadow: 0px 0px 10px #bdc3c7;
 }
+
 input:required:valid{
-    border: #9ACD32 2px solid;
+    border: #4585d5 2px solid;
 }
 
 input:required:invalid{

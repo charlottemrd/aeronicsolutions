@@ -38,7 +38,7 @@
                 </div>
                 <div class="bt1">
                 <?php    if ($_SESSION['utilisateur']=='client'){ ?>
-                    <a href="#">Historique</a>
+                    <a href="historiqueTestController.php">Historique</a>
                  <?php } else if($_SESSION['utilisateur']=='gestionnaire'){ ?>
                     <a href="rechercheGestController.php">Rechercher</a>
                 <?php } else if($_SESSION['utilisateur']=='administrateur'){ ?>

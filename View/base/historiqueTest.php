@@ -13,7 +13,13 @@
 
 <div class ="container">
     <div class="info_container">
-        <h1>Information du patient <?=$monPilote['firstName']?>  <?=$monPilote['name']?></h1>
+        <?php if($_SESSION['utilisateur']=='gestionnaire'){?>
+        <h1>Historique de tests du patient <?=$monPilote['firstName']?>  <?=$monPilote['name']?></h1>
+        <?php }
+        else if($_SESSION['utilisateur']=='client'){ ?>
+        <h1>Mon historique de test </h1>
+        <?php } ?>
+
     </div>
     <div class="espace_container">
         <div class="tbody_container">
@@ -31,7 +37,13 @@
                 </thead>
                 <tbody>
                     <?php
+                    if($_SESSION['utilisateur']=='gestionnaire'){
                     $codePilote=$_SESSION['pilote'];
+                    }
+                    else if($_SESSION['utilisateur']=='client'){
+
+                        $codePilote=$user['icode'];
+                    }
                     $q = $db->query("SELECT * FROM test INNER JOIN clients ON test.icode=clients.icode where clients.icode ='$codePilote' ORDER BY date DESC");
     
                     // Recuperation des resultats
