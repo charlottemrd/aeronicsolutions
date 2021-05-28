@@ -5,8 +5,9 @@ include "../View/base/header.php";
 include "../View/base/footer.php";
 include "../Model/database.php";
 
-include '../Model/requeteProfil.php';
-
+if(isset($_SESSION['mail'])){
+    include '../Model/requeteProfil.php';
+}
 
 if (isset($_POST['envoi'])) {
 
