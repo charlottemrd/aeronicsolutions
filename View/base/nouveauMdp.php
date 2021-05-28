@@ -24,7 +24,7 @@
                 <input name= "cpassword" id="cpassword" type="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Le mot de passe doit contenir au moins un chiffre, une majuscule, une minuscule et être composé d'au moins 8 charactères"/>
             </div>
             <div class="erreurM">
-                <p><?=$_GET['errNewMdpRS']?></p>
+                <p><?php if (isset($_GET['errNewMdpRS'])){ echo $_GET['errNewMdpRS'] ;}?></p>
             </div>
         </div>
     </div>

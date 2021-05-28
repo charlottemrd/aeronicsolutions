@@ -25,7 +25,7 @@
         </div>
           <div class="information">
           <div class="erreurM">
-              <p><?php echo $_GET['errModifMdp'];?></p>
+              <p><?php if (isset( $_GET['errModifMdp'])){ echo $_GET['errModifMdp'];}?></p>
           </div>
           </div>
       </div>
