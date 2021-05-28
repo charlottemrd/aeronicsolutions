@@ -6,19 +6,14 @@ include '../Model/requeteFaq.php';
 
 
 if (isset($_POST['modifier'])) {
-
     extract($_POST);
     global $db;
     $numeroFaq=$_SESSION['modiffaq'];
-
-
     $sql = "UPDATE faq SET question = '$question', reponse='$reponse', partie='$partie'
-                WHERE  idFaq = '$numeroFaq'";
+                WHERE  idFaq = $numeroFaq";
     $reponse = $db->exec($sql);
     header("location: menuFaqController.php");
 }
-else if (isset($_POST['annuler'])) {
-    header("location: menuFaqController.php");
-}
+
 include '../View/base/modifierFaq.php';
 ?>

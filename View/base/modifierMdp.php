@@ -36,7 +36,7 @@
 
         </div>
         <div class="bt4">
-            <input class="annuler" name="annuler" type="submit" value="Annuler">
+            <input class="annuler" name="annuler" type="reset" value="Annuler" onclick="window.location.href='modifierProfilController.php'">
         </div>
     </div>
 

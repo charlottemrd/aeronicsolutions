@@ -17,11 +17,11 @@
         <div class="form_container">
             <div class="information">
                 <h4>Prenom</h4>
-                <input name= "prenom" id="prenom" type="text" value="<?= $client['firstName']?>" autofocus/>
+                <input name= "prenom" id="prenom" type="text" value="<?= $client['firstName']?>" required autofocus/>
             </div>
                 <div class="information">
                     <h4>Date de naissance</h4>
-                    <input name="date" type="date" value="<?= $client['birthDate']?>" autofocus/>
+                    <input name="date" type="date" value="<?= $client['birthDate']?>" required autofocus/>
                 </div>
                 <div class="information">
                     <h4>Médecin</h4>
@@ -31,25 +31,25 @@
 
             <div class="information">
                 <h4>E-mail</h4>
-                <input name= "mail" id= "mail"type="text"   value=<?= $client['mail']?> autofocus/>
+                <input name= "mail" id= "mail"type="text"  value=<?= $client['mail']?> required pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+.[a-zA-Z.]{2,15}" title="Veuillez rentrer un mail correct" autofocus/>
             </div>
         </div>
         <div class="form_container">
             <div class="information">
                 <h4>Nom</h4>
-                <input name= "nom" id="nom" type="text" value="<?= $client['name']?>" autofocus/>
+                <input name= "nom" id="nom" type="text" value="<?= $client['name']?>" required autofocus/>
             </div>
          <div class="information ">
                     <h4>Compagnie aérienne</h4>
-                    <input name= "compagnie" id= "compagnie"type="text" value=<?= $client['company']?> autofocus/>
+                    <input name= "compagnie" id= "compagnie"type="text" value=<?= $client['company']?> required autofocus/>
                 </div>
                 <div class="information">
                     <h4>Genre </h4>
-                    <input name= "genre" id= "genre" type="text"  value=<?= $client['kind'] ?> autofocus/>
+                    <input name= "genre" id= "genre" type="text"  value=<?= $client['kind'] ?> required autofocus/>
                 </div>
             <div class="information">
                 <h4> I-C</h4>
-                <input name= "icode" id= "icode"type="text" disabled="disabled"  value=<?= $client['icode'] ?> autofocus/>
+                <input name= "icode" id= "icode"type="text" disabled="disabled"  value=<?= $client['icode'] ?>  autofocus/>
             </div>
         </div>
     </div>
@@ -59,7 +59,7 @@
 
         </div>
         <div class="bt4">
-            <input class="annuler" name="annuler" type="submit" value="Annuler">
+            <input class="annuler" name="annuler" type="reset" value="Annuler" onclick="window.location.href='gestionClientController.php'" >
         </div>
     </div>
     </div>

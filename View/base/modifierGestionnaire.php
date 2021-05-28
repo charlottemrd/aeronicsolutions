@@ -17,28 +17,28 @@
         <div class="form_container">
             <div class="information">
                 <h4>Prenom</h4>
-                <input name= "prenom" id="prenom" type="text" value="<?= $gestionnaire['firstName']?>" autofocus/>
+                <input name= "prenom" id="prenom" type="text" value="<?= $gestionnaire['firstName']?>"  required autofocus/>
             </div>
 
 
             <div class="information">
                 <h4>E-mail</h4>
-                <input name= "mail" id= "mail"type="text"   value=<?= $gestionnaire['mail']?> autofocus/>
+                <input name= "mail" id= "mail"type="text"   value=<?= $gestionnaire['mail']?> required pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+.[a-zA-Z.]{2,15}" title="Veuillez rentrer un mail correct" autofocus/>
             </div>
             <div class="information">
                 <h4> I-C</h4>
-                <input name= "icode" id= "icode"type="text" disabled="disabled"  value=<?= $gestionnaire['icode'] ?> autofocus/>
+                <input name= "icode" id= "icode"type="text" disabled="disabled"  value=<?= $gestionnaire['icode']  ?> autofocus/>
             </div>
         </div>
         <div class="form_container">
             <div class="information">
                 <h4>Nom</h4>
-                <input name= "nom" id="nom" type="text" value="<?= $gestionnaire['name']?>" autofocus/>
+                <input name= "nom" id="nom" type="text" required value=<?= $gestionnaire['name']?> autofocus/>
             </div>
 
             <div class="information">
                 <h4>Genre </h4>
-                <input name= "centre" id= "centre" type="text"  value=<?= $gestionnaire['center'] ?> autofocus/>
+                <input name= "centre" id= "centre" type="text" required value=<?= $gestionnaire['center']  ?> autofocus/>
             </div>
 
         </div>
@@ -49,7 +49,7 @@
 
         </div>
         <div class="bt4">
-            <input class="annuler" name="annuler" type="submit" value="Annuler">
+            <input class="annuler" name="annuler" type="reset" value="Annuler" onclick="window.location.href='gestionGestionnaireController.php'">
         </div>
     </div>
     </div>

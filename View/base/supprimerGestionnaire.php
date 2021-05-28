@@ -17,7 +17,7 @@
         <h3>Supprimer le gestionnaire</h3>
     </div>
     <div class="gestion_container">
-        <p>Confirmez-vous la suppresion du client <?=$gestionnaire['firstName'],' ',$gestionnaire['name'],' ?'?> </p>
+        <p>Confirmez-vous la suppresion du gestionnaire <?=$gestionnaire['firstName'],' ',$gestionnaire['name'],' ?'?> </p>
         <form method="post" class="form_message">
 
     </div>

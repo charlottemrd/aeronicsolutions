@@ -32,12 +32,12 @@ else{ ?>
         <div class="form_container">
             <div class="information">
                 <h4>Prenom</h4>
-                <input name= "prenom" id="prenom" type="text" value="<?= $user['firstName']?>" autofocus/>
+                <input name= "prenom" id="prenom" type="text" value="<?= $user['firstName']?>" required autofocus/>
             </div>
             <?php if ($_SESSION['utilisateur']=='client'){  ?>
                 <div class="information">
                     <h4>Date de naissance</h4>
-                    <input name="date" type="date" value="<?= $user['birthDate']?>" autofocus/>
+                    <input name="date" type="date" value="<?= $user['birthDate']?>" required autofocus/>
                 </div>
                 <div class="information">
                     <h4>Médecin</h4>
@@ -48,34 +48,34 @@ else{ ?>
             <?php if ($_SESSION['utilisateur']=='gestionnaire') { ?>
                 <div class="information">
                     <h4>Cabinet</h4>
-                    <input name= "cabinet" id= "cabinet" type="text" value= <?= $user['center']?> autofocus/>
+                    <input name= "cabinet" id= "cabinet" type="text" value= <?= $user['center']?> required autofocus/>
                 </div>
             <?php } ?>
             <div class="information">
                 <h4>E-mail</h4>
-                <input name= "mail" id= "mail"type="text"  disabled="disabled" value=<?= $user['mail']?> autofocus/>
+                <input name= "mail" id= "mail"type="text"  disabled="disabled" value=<?= $user['mail']?> required autofocus/>
             </div>
         </div>
         <div class="form_container">
             <div class="information">
                 <h4>Nom</h4>
-                <input name= "nom" id="nom" type="text" value="<?= $user['name']?>" autofocus/>
+                <input name= "nom" id="nom" type="text" value="<?= $user['name']?>" required autofocus/>
             </div>
 
             <?php if ($_SESSION['utilisateur']=='client'){  ?>
                 <div class="information <?php echo $user['kind']; ?>">
                     <h4>Compagnie aérienne</h4>
-                    <input name= "compagnie" id= "compagnie"type="text" value=<?= $user['company']?> autofocus/>
+                    <input name= "compagnie" id= "compagnie"type="text" value=<?= $user['company']?> required autofocus/>
                 </div>
                 <div class="information">
                     <h4>Genre </h4>
-                    <input name= "genre" id= "genre"type="text"  disabled="disabled" value=<?= $user['kind'] ?> autofocus/>
+                    <input name= "genre" id= "genre"type="text"  disabled="disabled" value=<?= $user['kind'] ?>  autofocus/>
                 </div>
 
             <?php } ?>
             <div class="information">
                 <h4> I-C</h4>
-                <input name= "icode" id= "icode"type="text"  disabled="disabled" value=<?= $user['icode'] ?> autofocus/>
+                <input name= "icode" id= "icode"type="text"  disabled="disabled" value=<?= $user['icode'] ?>  autofocus/>
             </div>
         </div>
     </div>
@@ -85,7 +85,7 @@ else{ ?>
 
         </div>
         <div class="bt4">
-            <input class="annuler" name="annuler" type="submit" value="Annuler">
+            <input class="annuler" name="annuler" type="reset" value="Annuler" onclick="window.location.href='profilController.php' ">
         </div>
     </div>
     </div>

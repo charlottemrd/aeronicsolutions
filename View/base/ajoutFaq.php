@@ -42,7 +42,7 @@
 
         </div>
         <div class="bt4">
-            <input type="text" window.location.href='menuFaqController.php';"  value="Annuler">
+            <input class="annuler" name="annuler" type="reset" value="Annuler" onclick="window.location.href='menuFaqController.php'">
         </div>
     </div>
 </form>
