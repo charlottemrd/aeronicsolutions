@@ -50,7 +50,7 @@
         <form method="post" class="form_message">
     </div>
     <div class="ajout_client">
-        <a href="ajouterClientController.php">Ajouter un nouveau gestionnaire</a>
+        <a href="ajoutGestionnaireController.php">Ajouter un nouveau gestionnaire</a>
     </div>
     <div class="gestionnaireM">
         <select name="gestionGestionnaire" id="gestionGestionnaire" required>

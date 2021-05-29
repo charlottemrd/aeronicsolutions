@@ -64,7 +64,7 @@
     </div>
     <div class="changement">
         <div class="bt3">
-            <input class="modifier" name="modifier" type="submit" value="Modifier profil" >
+            <input class="modifier" name="modifier" type="submit" value="Ajouter profil" >
         </div>
         <div class="bt4">
             <input class="annuler" name="annuler" type="reset" value="Annuler" onclick="window.location.href='gestionClientController.php' ">
