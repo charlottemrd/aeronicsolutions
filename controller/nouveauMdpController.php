@@ -18,7 +18,7 @@ if (isset($_POST['confirmation'])) {
                 'password' => password_hash("$password", PASSWORD_BCRYPT, $options),
                 'mail' =>"$mailoubli"
             ]);
-            header('Location:accueilController.php');exit;
+            header('Location: connexionController.php');exit;
         }
 
         else if ($_SESSION['utilisateur']=='administrateur') {
@@ -27,7 +27,7 @@ if (isset($_POST['confirmation'])) {
                 'password' => password_hash("$password", PASSWORD_BCRYPT, $options),
                 'mail' =>"$mailoubli"
             ]);
-            header('Location:accueilController.php');exit;
+            header('Location: connexionController.php');exit;
         } 
 
         else if ($_SESSION['utilisateur']=='gestionnaire') {
@@ -37,7 +37,7 @@ if (isset($_POST['confirmation'])) {
                 'password' => password_hash("$password", PASSWORD_BCRYPT, $options),
                 'mail' =>$mailoubli
             ]);
-            header('Location:accueilController.php');exit;
+            header('Location: connexionController.php');exit;
         }
     }
     else {

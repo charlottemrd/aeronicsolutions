@@ -1,4 +1,4 @@
-<?php
+<?php 
 include 'motDePasse.php';
 include '../model/requeteProfil.php';
 

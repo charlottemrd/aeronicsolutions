@@ -1,5 +1,4 @@
-<?php
-session_start();
+<?php session_start();
 include "../view/header.php";
 include "../view/footer.php";
 include "../model/database.php";
