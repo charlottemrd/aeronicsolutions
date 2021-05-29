@@ -59,7 +59,7 @@
     <form method="post" class="form_message">
     </div>
     <div class="ajout_client">
-        <a href="ajouterClientController.php">Ajouter un nouveau client</a>
+        <a href="ajoutClientController.php">Ajouter un nouveau client</a>
     </div>
     <div class="gestionnaireM">
         <select name="gestionClient" id="gestionClient" required>
