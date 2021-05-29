@@ -12,6 +12,9 @@
     <div class="parallaxC">
         <div class="textParaC">
             <p>Ensemble, toujours plus haut.</p>
+            <div class="arrow_Container">
+               <a href="#tp"> <img src="../public/images/arrow.png" alt=""  ></a>
+            </div>
         </div>
         <div class="parallax">
             <div class="parallaxColor">
@@ -19,7 +22,7 @@
             </div>
         </div>
     </div>
-    <div class="tresgrosbloc">
+    <div class="tresgrosbloc" id="tp">
         <div class="grosBloc">
             <div class="title">
                 <h2>Informations</h2>

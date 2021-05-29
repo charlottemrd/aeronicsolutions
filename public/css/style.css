@@ -56,6 +56,31 @@ p{
   justify-content: center;
 }
 
+.arrow_Container{
+ z-index: 4;
+ width: 4%;
+ height: 4%;
+ margin-right: 0.45%;
+ position: absolute;
+
+}
+
+.arrow_Container img{
+  height:200%;
+  width: 100%;
+  z-index:3;
+  margin-top: 500%;
+  margin-right: 10em;
+  
+}
+
+.arrow_Container img:hover{
+    transform: scale(1.05);
+
+  
+}
+
+
 .textParaC p{
   font-size: 5em;
   color: white;
