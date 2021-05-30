@@ -59,11 +59,10 @@ p{
   align-items: center;
   transition: all 0.3s ease;
   opacity: 0.9;
+  border: red 2px solid;
 }
 
-.contentconnexion:hover{
-  transform: scale(1.02);
-}
+
 
 .superform_container{
   height: 60%;

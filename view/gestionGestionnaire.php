@@ -12,6 +12,7 @@
         <h3>Gestion - gestionnaires</h3>
     </div>
     <div class="gestion_container">
+    <div class="tbody_container">
         <table class="tableau_container">
             <thead>
             <tr>
@@ -44,32 +45,36 @@
                 </tr> <?php
             }
             ?>
-            </tr>
+            
             </tbody>
         </table>
+        </div>
+        <div class="plus_container">
+           <a href="ajoutGestionnaireController.php"> <img src="../public/images/pluss.png" alt=""></a>
+        </div>
+        </div>
         <form method="post" class="form_message">
+            <div class="gestionnaireM">
+                <select name="gestionGestionnaire" id="gestionGestionnaire" required>
+                    <option value="" >Que souhaitez-vous faire ?</option>
+                    <option value="modifier">Je souhaite modifier des informations</option>
+                    <option value="supprimer">Je souhaite supprimer un gestionnaire</option>
+                    <option value="bannir">Je souhaite bannir un gestionnaire</option>
+                </select>
+                <select name="code" id="code" required >
+                    <option value="" selected="selected" disabled="disabled">I-code</option>
+                    <?php
+                    $q = $db->query("SELECT * FROM gestionnaires order by icode asc");
+                    while($row = $q ->fetch()){
+                        $icode=$row[7];?>
+                        <option value=<?= $icode ?>><?=$icode?></option>
+                    <?php } ?>
+                </select>
+        <button type="submit" id="buttonAdd" name="buttonAdd">Soumettre</button>
     </div>
-    <div class="ajout_client">
-        <a href="ajoutGestionnaireController.php">Ajouter un nouveau gestionnaire</a>
-    </div>
-    <div class="gestionnaireM">
-        <select name="gestionGestionnaire" id="gestionGestionnaire" required>
-            <option value="" >Que souhaitez-vous faire ?</option>
-            <option value="modifier">Je souhaite modifier des informations</option>
-            <option value="supprimer">Je souhaite supprimer un gestionnaire</option>
-            <option value="bannir">Je souhaite bannir un gestionnaire</option>
-        </select>
-        <select name="code" id="code" required >
-            <option value="" selected="selected" disabled="disabled">I-code</option>
-            <?php
-            $q = $db->query("SELECT * FROM gestionnaires order by icode asc");
-            while($row = $q ->fetch()){
-                $icode=$row[7];?>
-                <option value=<?= $icode ?>><?=$icode?></option>
-            <?php } ?>
-        </select>
-        <button type="submit" id="buttonAdd" name="buttonAdd">Soumettre</button></div>
     </form>
 </div>
+<div class="espace"></div>
+
 </body>
 </html>

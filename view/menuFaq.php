@@ -13,6 +13,8 @@
                 <h3>Gestion - FAQ</h3>
             </div>
             <div class="gestion_container">
+                <div class="tbody_container">
+
                 <table class="tableau_container">
                     <thead>
                         <tr>
@@ -41,15 +43,15 @@
                             </tr> <?php
                                 }
                                     ?>
-                        </tr>
                     </tbody>
                 </table>
+                </div>
+                <div class="plus_container">
+                    <a href="ajoutFaqController.php"> <img src="../public/images/pluss.png" alt=""></a>
+                </div>
+                </div>
                 <form method="post" class="form_message">
-            </div>
-            <div class="ajout_client">
-                <a href="ajoutFaqController.php">Ajouter une nouvelle question</a>
-            </div>
-            <div class="gestionnaireM">
+                <div class="gestionnaireM">
                 <select name="gestionFaq" id="gestionFaq" required>
                     <option value="">Que souhaitez-vous faire ?</option>
                     <option value="modifier">Je souhaite modifier des informations</option>
@@ -69,5 +71,7 @@
             </div>
             </form>
         </div>
+        <div class="espace"></div>
+
     </body>
 </html>

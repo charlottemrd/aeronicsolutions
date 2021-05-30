@@ -30,9 +30,7 @@ body{
     opacity: 0.9;
 }
 
-.contentmessage:hover{
-    transform: scale(1.02);
-}
+
 
 .title_container{
     height:15%;

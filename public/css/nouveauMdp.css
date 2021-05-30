@@ -29,6 +29,8 @@ p,h3,h4{
 p{
     font-weight: 400%;
 }
+  
+
 
 .titre{
     text-align: center;
@@ -61,9 +63,7 @@ p{
     opacity: 0.9;
 }
 
-.contentconnexion:hover{
-    transform: scale(1.02);
-}
+
 
 .superform_container{
     height: 60%;
@@ -77,7 +77,7 @@ p{
 
 .form_container input{
     height: 4vh;
-    width: 100%;
+    width: 92%;
     font-family: 'oumgouleh';
     outline: none;
     font-size: 100%;
@@ -93,8 +93,13 @@ p{
 }
 
 .information{
-    padding-top: 20px;
-    padding-bottom: 15px;
+    
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-bottom: 2em;
+    padding-top: 1em;
+
 }
 
 .information h4{
@@ -109,6 +114,10 @@ p{
     justify-content: center;
     margin-top: 1em;
     margin-bottom: 1.5em;
+}
+
+.changement input{
+    font-size: 1.3em;
 }
 
 input:focus{

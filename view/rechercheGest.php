@@ -9,7 +9,7 @@
 <body>
     <div class ="container">
         <div class="info_container">
-            <h1>Liste de vos clients</h1>
+            <h1>Liste des clients</h1>
         </div>
         <form class="search_bar_container" method="post" >
                 <input class="searchbar" placeholder="Rechercher par nom" type="text" id="search" name="search" aria-label="Search through site content">

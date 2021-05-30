@@ -3,7 +3,7 @@
 <head>
     <title>Ajouter question</title>
     <meta charset="utf-8"/>
-    <link rel="stylesheet" href="../public/css/editProfils/modifierProfil.css"/>
+    <link rel="stylesheet" href="../public/css/modifierFAQ.css"/>
 </head>
 
 <body>
@@ -15,11 +15,11 @@
         <div class="form_containerFaq">
             <div class="information">
                 <h4>Question</h4>
-                <input name= "question" id="question" type="text" placeholder="question" required autofocus >
+                <input name= "question" id="question" type="text" placeholder="Question" required autofocus >
             </div>
             <div class="information">
                 <h4>Réponse</h4>
-                <input name= "reponse" id="reponse" type="text"  placeholder="reponse" required autofocus>
+                <input name= "reponse" id="reponse" type="text"  placeholder="Reponse" required autofocus>
             </div>
             <div class="information2" >
                 <h4 >Partie</h4>

@@ -57,6 +57,8 @@ p{
     color: white;
     text-align: center;
     height: 3em;
+    padding:8px;
+    font-size: 1.2em;
 }
 
 .tableau_container tbody td {
@@ -111,8 +113,7 @@ p{
 
 .gestion_container{
 display: flex;
-justify-content: center;
-align-items: center;
+height: auto;
 flex-direction: column;
 
 }
@@ -122,15 +123,13 @@ flex-direction: column;
     margin-top: 1em;
     height: 2%;
     width: 2%;
+    margin-left: 49%;
 }
 .plus_container img{
     height: 300%;
     width: 100%;
 }
 
-.contentGestion:hover{
-    transform: scale(1.02);
-}
 
 .title_container{
     height:15%;
@@ -154,8 +153,7 @@ flex-direction: column;
 .gestion_container{
     height:75%;
     width: 100%;
-    
-    scrollbar-base-color: #9098A9;
+    scrollbar-base-color: red;
 }
 
 .gestion_container h3, .gestion_container p{
@@ -198,8 +196,11 @@ border-style: none;
     border-bottom-style: hidden;
     box-shadow: rgba(99, 99, 99, 0.5) 0px 0px 8px 0px;
     background-color: white;
+
     text-align: center;
     width: 15em;
+    font-size: 1.2em;
+
   }
   
   .gestionnaireM select{
@@ -207,15 +208,19 @@ border-style: none;
     margin:1%;
     border-top-left-radius: 2.5em;
     border-bottom-left-radius: 2.5em;
-    
     border-top-style: hidden;
     border-right-style: hidden;
     border-left-style: hidden;
     border-bottom-style: hidden;
     box-shadow: rgba(99, 99, 99, 0.5) 0px 0px 8px 0px;
     background-color: white;
+    display: flex;
+    justify-content: center;
     text-align: center;
     width: 15em;
+    font-size: 1.2em;
+    padding-left: 15px;
+
   }
 
 .tbody_container{
@@ -223,33 +228,30 @@ border-style: none;
     overflow-x: hidden;
     scroll-behavior: smooth;
     width: 90%;
+    margin-left: 5%;
     height: auto;
     border-radius: 1em;
     box-shadow: 0px 0px 10px #bdc3c7;
     max-height: 80%;
     margin-top: 3% ;
+    font-size: 1em;
 
   }
   
 
-.ajout_client{
-    width: 10%;
-    height:75% ;
-    border: red 2px solid;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.ajout_client a{
-    font-family: "oumgouleh";
-    color:white;
-    text-decoration: none;
-}
-
-.ajout_client a:hover{
-    color:#2c578d;
-}
 .espace{
     min-height: 9em;
+  }
+
+
+  .gestionnaireM button:hover{
+    box-shadow: inset 0px 0px 10px #bdc3c7;
+
+  }
+  .gestionnaireM select:hover{
+    box-shadow: inset 0px 0px 10px #bdc3c7;
+
+  }
+  .plus_container img:hover{
+    transform: scale(1.05);
   }

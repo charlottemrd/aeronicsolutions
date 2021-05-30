@@ -9,7 +9,7 @@
 <body>
 <form method="POST" class="contentconnexion">
     <div class="title_container">
-        <h3> Mot De Passe</h3>
+        <h3> Nouveau mot de passe</h3>
     </div class>
     <div class="superform_container">
         <div class="form_container">

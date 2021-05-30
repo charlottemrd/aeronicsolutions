@@ -62,9 +62,7 @@ p{
 
 }
 
-.contentconnexion:hover{
-    transform: scale(1.02);
-}
+
 
 .superform_container{
     height: 70%;
@@ -82,7 +80,7 @@ p{
     
 }
 
-.bt1{
+.bt6{
     height: 2.9em;
     width: 90%;
     align-items: center;
@@ -94,7 +92,7 @@ p{
 }
 
 
-.bt1{
+.bt6{
     background:white;
     box-shadow: 0px 0px 10px #bdc3c7;
     display: flex;   
@@ -102,7 +100,7 @@ p{
     align-items: center;
 }
 
-.bt1 a{
+.bt6 a{
     color:black;
     text-decoration: none;
     width: 100%;
@@ -110,9 +108,10 @@ p{
     display: flex;   
     justify-content: center;
     align-items: center;
+    font-size: 1.4em;
 }
 
-.bt1:hover{
+.bt6:hover{
     box-shadow: inset 0px 0px 10px #d1d8e0;
 
 }

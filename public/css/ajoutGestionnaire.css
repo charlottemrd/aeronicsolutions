@@ -1,7 +1,7 @@
 body{
     margin : 0;
     overflow: hidden;
-    background-image: url('../../images/pilots.jpg');
+    background-image: url('../images/pilots.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -62,7 +62,6 @@ p{
     transition: all 0.3s ease;
     opacity: 0.9;
 }
-
 
 
 .superform_container{
@@ -203,4 +202,13 @@ a{
 .align
 {
     text-align: center;
+}
+
+input:required:valid{
+    border: #4585d5 2px solid;
+}
+
+
+.erreurM p{
+    color: red;
 }

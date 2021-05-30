@@ -150,6 +150,8 @@ input:active{
   background-color: white;
   text-align: center;
   width: 15em;
+  font-size: 1.2em;
+
 }
 
 .gestionnaireM select{
@@ -166,6 +168,7 @@ input:active{
   background-color: white;
   text-align: center;
   width: 15em;
+  font-size: 1.2em;
 }
 
 .gestionnaireM  button:hover{
@@ -219,6 +222,7 @@ input:active{
   color: white;
   text-align: center;
   height: 3em;
+  font-size:1.2em;
 }
 
 .tableau_container tbody td {
