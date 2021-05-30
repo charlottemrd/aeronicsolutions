@@ -23,8 +23,9 @@ p,h3{
 .contenu p{
   font-weight: 400%;
   text-align: justify;
-  padding-left: 8px;
-  padding-right: 8px;
+  margin-right: 5%;
+  margin-left: 5%;
+
 }
 
 .test{
@@ -58,15 +59,19 @@ p,h3{
   background-color: #54a0ff;
   justify-content: center;
   margin : 0px;
+  
 }
 
 .contenu{
   width : 100%;
   text-align: center;
+
+
 }
 
 .image{
   width: 100%;
+
 }
 
 .image img{
