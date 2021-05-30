@@ -8,14 +8,15 @@ include '../model/requeteGestionnaire.php';
 if (isset($_POST['oui'])) {
 
     $code=$_SESSION['modifGestionnaire'];
-    $sql = "DELETE from gestionnaires 
-                WHERE icode = '$code'";
-    $reponse = $db->exec($sql);
+    $sqlGest = $db->prepare("DELETE from gestionnaires WHERE icode = '$code'");
+    $sqlGest->execute();
+
+    $sqlCode = $db->prepare("DELETE from icodes WHERE icode = '$code'");
+    $sqlCode->execute();
 
     header("location: gestionGestionnaireController.php");
 }
 else if (isset($_POST['non'])) {
-
     header("location: gestionGestionnaireController.php");
 }
 include '../view/supprimerGestionnaire.php';
