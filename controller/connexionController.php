@@ -33,10 +33,9 @@ if(isset($_POST['log'])){
             header("Location:connexionBannissementController.php");exit;
         }
         else {
-            $_SESSION['mail'] = $identifiant;
-            $_SESSION['utilisateur'] = $data['status'];
-        
             if(password_verify($lpassword, $data['password'])){
+                $_SESSION['mail'] = $identifiant;
+                $_SESSION['utilisateur'] = $data['status'];
                 header('Location: profilController.php');exit;
             }
             else {
