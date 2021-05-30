@@ -52,7 +52,7 @@
         <div class="ligne2_container">
             <div class="grand_test_container">
               <div class="text_test_container">
-                  <h3>Fréquence cardiaque</h3>
+                  <h3>Fréquence cardiaque : <?=$monTest['frequency']?> Bpm</h3>
                   <div class="invisible">
                   <h3 name="freqValue" id="freqValue" ><?=$monTest['frequency']?></h3>
                   </div>
