@@ -4,6 +4,7 @@ include '../model/database.php';
 include '../view/header.php';
 include '../view/footer.php';
 
+
 if (isset($_POST['modifier'])) {
     extract($_POST);
     global $db;
