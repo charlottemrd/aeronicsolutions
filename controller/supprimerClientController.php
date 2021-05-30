@@ -7,8 +7,11 @@ include '../model/requeteClient.php';
 
 if (isset($_POST['oui'])) {
     $code=$_SESSION['modifclient'];
-    $sql = "DELETE from clients WHERE icode = '$code'";
-    $reponse = $db->exec($sql);
+    $sqlClient = $db->prepare("DELETE from clients WHERE icode = '$code'");
+    $sqlClient->execute();
+
+    $sqlCode = $db->prepare("DELETE from icodes WHERE icode = '$code'");
+    $sqlCode->execute();
     header("Location: gestionClientController.php");
 }
 else if (isset($_POST['non'])) {
