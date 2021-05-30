@@ -218,9 +218,10 @@ new Chart(document.getElementById("line-chart"), {
 	type: 'line',
 	options: {},
 	data: {
-
         labels: ["", "",""],
 	datasets: [{
+    label: 'Fréquence cardiaque',
+
 	backgroundColor:'rgba(84,160,255,0.16)',
 	borderColor: 
 '#54a0ff',

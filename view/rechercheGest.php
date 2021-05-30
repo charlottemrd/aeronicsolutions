@@ -12,9 +12,7 @@
             <h1>Liste de vos clients</h1>
         </div>
         <form class="search_bar_container" method="post" >
-            <div id="barreRecherche" name="barreRecherche" class="barre">
                 <input class="searchbar" placeholder="Rechercher par nom" type="text" id="search" name="search" aria-label="Search through site content">
-            </div>
             <div class="barre_boutton">
                 <input type="submit" value="rechercher" name="bouttonRechercher" id="bouttonRechercher">
             </div>
@@ -94,6 +92,8 @@
                 <button type="submit" id="submit" name="submit">Soumettre</button>
             </div>
         </form>
+    </div>
+    <div class="espace">
     </div>
 </body>
 </html>

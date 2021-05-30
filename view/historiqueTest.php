@@ -17,7 +17,6 @@
         <?php } ?>
 
     </div>
-    <div class="espace_container">
         <div class="tbody_container">
             <table class="tableau_container">
                 <thead>
@@ -61,7 +60,6 @@
                 </tbody>
             </table>
         </div>
-    </div>
     <form method="post" class="form_message" >
         <div class="gestionnaireM">
             <select name="code" id="code" required >
@@ -81,5 +79,10 @@
         </div>
     </form>
 </div>
+
+<div class="espace">
+    
+</div>
+
 </body>
 </html>
