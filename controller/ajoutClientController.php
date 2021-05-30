@@ -1,4 +1,7 @@
 <?php session_start();
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 include 'redirectionSession.php';
 include '../view/header.php';
 include '../view/footer.php';
@@ -62,7 +65,7 @@ if (isset($_POST['modifier'])) {
             if($resultCode == 0){ //si l i code est deja utilisé  ok si =0
                 if($nbOfIcode == 0){ // si l icode existe dans la bdd
 
-                    $requetedeux = $db->prepare("INSERT INTO icodes(icode,status) VALUES (:icode,:status)");
+                    $requetedeux = $db->prepare("INSERT INTO icodes(icode,status,used) VALUES (:icode,:status,:used)");
                     $requetedeux->execute([
                         'icode' => $icode,
                         'status'=> 'client',
