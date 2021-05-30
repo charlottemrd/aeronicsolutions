@@ -15,7 +15,21 @@
     <div class="form_container">
         <input name="prenom"   type="text" id="prenom" placeholder="Prénom" required pattern="[a-zA-ZÀ-ÿ]+[^0-9]" maxlength="20" minlength="3"  title="Veuillez rentrer un prénom correct" value="<?php if (isset($_POST['prenom'])){ echo $_POST['prenom'];}?>">
         <input name="nom"   type="text" id="nom" placeholder="Nom"  required pattern="[a-Z]"  title="Le champ doit contenir au moins 3 lettres" title="Veuillez rentrer un nom correct" value="<?php if (isset($_POST['nom'])){ echo $_POST['nom'];}?>">
+        <?php
+        if ($_SESSION['utilisateur'] == 'client') { ?>
 
+        <input name="birthDate"  type="date" id="birthDate" required placeholder="Date de naissance"  value="<?php if (isset($_POST['birthDate'])){ echo  $_POST['birthDate'];}?>" >
+        <div class="genre">
+            <select name="genre" id="genre" required value="<?php if (isset($_POST['genre'])){ echo  $_POST['genre'];}?>">
+                <option value="" selected="selected" disabled="disabled">Genre</option>
+                <option value="Homme">Homme</option>
+                <option value="Femme">Femme</option>
+            </select>
+        </div>
+            <input name="compagnie" type="text" id="compagnie" placeholder="Compagnie aérienne" title="Veuillez rentrer une valeur correcte" required pattern="[a-Z]" pattern="[a-zA-ZÀ-ÿ]+[^0-9]" maxlength="20" minlength="3" value="<?php if (isset($_POST['compagnie'])){ echo $_POST['compagnie'];}?>">
+            <input name="icDoctor" type="text" id="icDoctor" placeholder="I-C Docteur"  required pattern="[0-9]+" >
+
+            <?php }?>
 
         <?php
         if ($_SESSION['utilisateur'] == 'gestionnaire') { ?>
@@ -27,20 +41,7 @@
         <input name="password" type="password" id="password" placeholder="Mot de passe" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Le mot de passe doit contenir au moins un chiffre, une majuscule, une minuscule et être composé d'au moins 8 charactères">
         <input name="cpassword" type="password" id="cpassword" placeholder="Confirmer mot de passe" required  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Le mot de passe doit contenir au moins un chiffre, une majuscule, une minuscule et être composé d'au moins 8 charactères">
 
-        <?php
-        if ($_SESSION['utilisateur'] == 'client') { ?>
-            <input name="compagnie" type="text" id="compagnie" placeholder="Compagnie aérienne" title="Veuillez rentrer une valeur correcte" required pattern="[a-Z]" pattern="[a-zA-ZÀ-ÿ]+[^0-9]" maxlength="20" minlength="3" value="<?php if (isset($_POST['compagnie'])){ echo $_POST['compagnie'];}?>">
 
-            <input name="icDoctor" type="text" id="icDoctor" placeholder="I-C Docteur"  required pattern="[0-9]+" >
-
-            <input name="birthDate"  type="date" id="birthDate" required placeholder="Date de naissance"  value="<?php if (isset($_POST['birthDate'])){ echo  $_POST['birthDate'];}?>" >
-            <div class="genre">
-                <select name="genre" id="genre" required value="<?php if (isset($_POST['genre'])){ echo  $_POST['genre'];}?>">
-                    <option value="" selected="selected" disabled="disabled">Genre</option>
-                    <option value="Homme">Homme</option>
-                    <option value="Femme">Femme</option>
-                </select>
-             <?php }?>
         <div class="CondUtilisations">
             <input class="inp-cbx" id="cbx" type="checkbox" style="display: none" required>
 

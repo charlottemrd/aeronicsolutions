@@ -47,7 +47,7 @@
                         corporelle, d'effectuer des reconnaissances de tonalité et bien d'autres choses encore.
                         De plus, la solution d'Aeronic est connecté à son fabuleux site internet permettant à tous ses usagers de
                         consulter leur résultats en temps réel et d'accéder à l'historique de tous leurs précédents tests. Pour plus
-                        d'Information, n'hésitez pas à consulter notre rubrique <a href="#">Nous découvrir.</a> </p>
+                        d'Information, n'hésitez pas à consulter notre rubrique <a href="decouvrezNousController.php">Nous découvrir.</a> </p>
                 </div>
             </div>
         </div>
