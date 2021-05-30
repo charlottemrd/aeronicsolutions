@@ -175,11 +175,12 @@ input:active{
     height: 100%;
     background-color:#54a0ff ;
     color: white;
-    border-radius: 1.05em;
-    border-top-style: hidden;
-    border-right-style: hidden;
-    border-left-style: hidden;
-    border-bottom-style: hidden;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    border-bottom-style: none;
+    font-size: 1.4em;
+
 }
 
 .bt4 input{
@@ -187,17 +188,27 @@ input:active{
     height: 100%;
     background-color:white ;
     color: black;
-    border-radius: 1.05em;
-    border-top-style: hidden;
-    border-right-style: hidden;
-    border-left-style: hidden;
+    border-top-style: hidden;   
+    border-right-style: hidden;   
+    border-left-style: hidden;   
     border-bottom-style: hidden;
+    font-size: 1.4em;
+    overflow: hidden;
+
+
+  }
+  .bt4{
+    box-shadow: 0px 0px 10px #d1d8e0;
+  }
+  
+.bt3:hover{
     box-shadow: 0px 0px 10px #bdc3c7;
-    text-align: center;
+
 }
 
-.bt4{
+.bt4:hover{
     box-shadow: 0px 0px 10px #bdc3c7;
+
 }
 
 a{

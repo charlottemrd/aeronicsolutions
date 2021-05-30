@@ -14,15 +14,15 @@
     </div>
     <div class="form_container">
         <br class="instruction_container1">
-            <h3>Vous êtes bien connecté au site</h3></br>
-            <h3>Bienvenu <?= $user['firstName']?> <?= $user['name']?> </h3>
+            <h3>Votre inscription a bien été enregistrée.</h3></br>
+            <h3>Bienvenu <?= $user['firstName']?> <?= $user['name']?>.</h3>
         </div>
 
         <div class= "changement">
-            <div class="bt1">
+            <div class="bt6">
                 <a href="accueilController.php">Accueil</a>
             </div>
-            <div class="bt2">
+            <div class="bt7">
                 <a href="profilController.php">Mon profil</a>
             </div>
         </div>
