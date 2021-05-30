@@ -34,7 +34,7 @@
             </div>
 
             <div class="information">
-                <h4>Genre </h4>
+                <h4>Centre Médical </h4>
                 <input name= "centre" id= "centre" type="text" required value=<?= $gestionnaire['center']  ?> autofocus/>
             </div>
 
