@@ -1,15 +1,15 @@
 body{
-  margin : 0;
-  overflow: hidden;
-  background-image: url("../pilots.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  height: 100vh;
+    margin : 0;
+    overflow: hidden;
+    background-image: url("../images/pilots.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
 }
 /* Style of the top navigation bar */
 @font-face {
