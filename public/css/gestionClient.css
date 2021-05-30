@@ -6,9 +6,9 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    justify-content: center;
-    align-items: center;
+  
     display: flex;
+    flex-direction: column;
     height: 100vh;
 }
 
@@ -30,12 +30,11 @@ p{
     border-collapse: collapse;
     border-spacing: 0;
     font: normal 13px,sans-serif;
-    width: 100%;
+    width:100%;
     border-collapse: collapse;
     border-radius: 1em;
     overflow: hidden;
     box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
-    margin-bottom : 5em;
 }
 
 .tableau_container thead{
@@ -90,11 +89,10 @@ p{
 }
 
 .contentGestion{
-    margin-top: -5em;
     border-radius: 1.5em;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-    width: 75%;
-    height: 70vh;
+    width: 80%;
+    height: 65%;
     font-family: "oumgouleh";
     font-size: 16px;
     background-color: white;
@@ -104,6 +102,30 @@ p{
     align-items: center;
     transition: all 0.3s ease;
     opacity: 0.9;
+    position: relative;
+    margin-left: 10%;
+    margin-top: 8em;
+
+
+}
+
+.gestion_container{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+
+}
+
+.plus_container {
+    margin-bottom: 2em;
+    margin-top: 1em;
+    height: 2%;
+    width: 2%;
+}
+.plus_container img{
+    height: 300%;
+    width: 100%;
 }
 
 .contentGestion:hover{
@@ -112,15 +134,16 @@ p{
 
 .title_container{
     height:15%;
-    width: 90%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     border-bottom: solid 1px #b2bec3;
+    background-color: #54a0ff;
 }
 
 .title_container h3 ,.title_partie h3{
-    color:#444444;
+    color: white;
     font-size: 1.5em;
 }
 
@@ -131,11 +154,8 @@ p{
 .gestion_container{
     height:75%;
     width: 100%;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
+    
     scrollbar-base-color: #9098A9;
-    margin-top: 5%;
 }
 
 .gestion_container h3, .gestion_container p{
@@ -143,12 +163,16 @@ p{
 }
 
 .gestionnaireM{
+    height: 10%;
     width: 100%;
-    height: 13%;
-    position: relative;
+    position: absolute;
+    bottom: 0;
+    left: 0;
     background-color: #54a0ff;
     display: flex;
     justify-content: center ;
+    align-items: center;
+
 }
 
 .gestionnaire{
@@ -157,17 +181,17 @@ border-style: none;
     background-color: #4585d5;
     font-size: 1.3em;
     color: white;
+
 }
 
 .gestionnaire:hover{
     background-color: #4585d5;
 }
 
-select, input,button{
+.gestionnaireM button{
     height: 80%;
-    margin-top:0.7%;
-    margin-left: 2%;
-    border-radius:0.4em;
+    margin:1%;
+    border-radius: 2.5em;
     border-top-style: hidden;
     border-right-style: hidden;
     border-left-style: hidden;
@@ -175,18 +199,57 @@ select, input,button{
     box-shadow: rgba(99, 99, 99, 0.5) 0px 0px 8px 0px;
     background-color: white;
     text-align: center;
-}
+    width: 15em;
+  }
+  
+  .gestionnaireM select{
+    height: 80%;
+    margin:1%;
+    border-top-left-radius: 2.5em;
+    border-bottom-left-radius: 2.5em;
+    
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+    box-shadow: rgba(99, 99, 99, 0.5) 0px 0px 8px 0px;
+    background-color: white;
+    text-align: center;
+    width: 15em;
+  }
+
+.tbody_container{
+    overflow-y:visible;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    width: 90%;
+    height: auto;
+    border-radius: 1em;
+    box-shadow: 0px 0px 10px #bdc3c7;
+    max-height: 80%;
+    margin-top: 3% ;
+
+  }
+  
 
 .ajout_client{
-    width: 100%;
+    width: 10%;
+    height:75% ;
+    border: red 2px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .ajout_client a{
     font-family: "oumgouleh";
-    color:#54a0ff;
+    color:white;
     text-decoration: none;
 }
 
 .ajout_client a:hover{
     color:#2c578d;
 }
+.espace{
+    min-height: 9em;
+  }
