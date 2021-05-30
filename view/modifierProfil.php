@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>modifier profil</title>
+    <title>Modifier profil</title>
     <meta charset="utf-8"/>
     <link rel="stylesheet" href="../public/css/editProfils/modifierProfil.css"/>
 </head>

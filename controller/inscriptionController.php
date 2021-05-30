@@ -7,7 +7,7 @@ include '../model/database.php';
 
         extract($_POST);
 
-        // condition à mettre dans un fichier à part, à appeler également dans modifierMdp.php
+
         if ($password == $cpassword) {
         
             global $db;

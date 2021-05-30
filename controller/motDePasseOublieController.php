@@ -6,8 +6,6 @@ include '../model/database.php';
 if (isset($_POST['envoi'])) { 
     extract($_POST);
     $_SESSION['mailoublie'] = $_POST['mail'];
-    ini_set('display_errors', 1);
-    error_reporting(E_ALL);
     $from = "solutionsaeronic@gmail.com";
     $to = $_POST['mail'];
     $subject = "Nouveau mot de passe Aeronic Solutions";
