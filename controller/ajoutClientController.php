@@ -65,7 +65,8 @@ if (isset($_POST['modifier'])) {
                     $requetedeux = $db->prepare("INSERT INTO icodes(icode,status) VALUES (:icode,:status)");
                     $requetedeux->execute([
                         'icode' => $icode,
-                        'status'=> 'client'
+                        'status'=> 'client',
+                         'used' =>1
                     ]);
 
                     $requete = $db->prepare("INSERT INTO clients(firstName,name,birthDate,kind,company,mail,password,doctor,icode) VALUES (:firstName,:name,:birthDate,:kind,:company,:mail,:password,:doctor,:icode)");

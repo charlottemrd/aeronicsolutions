@@ -54,10 +54,11 @@ if (isset($_POST['modifier'])) {
             if($resultCode == 0){ //si l i code est deja utilisé  ok si =0
                 if($nbOfIcode == 0){ // si l icode existe dans la bdd
 
-                    $requetedeux = $db->prepare("INSERT INTO icodes(icode,status) VALUES (:icode,:status)");
+                    $requetedeux = $db->prepare("INSERT INTO icodes(icode,status,used) VALUES (:icode,:status,:used)");
                     $requetedeux->execute([
                         'icode' => $icode,
-                        'status'=> 'gestionnaire'
+                        'status'=> 'gestionnaire',
+                        'used' =>1
                     ]);
 
                     $requete = $db->prepare("INSERT INTO gestionnaires(firstName,name,center,mail,password,icode) VALUES (:firstName,:name,:center,:mail,:password,:icode)");
