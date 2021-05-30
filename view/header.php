@@ -40,7 +40,7 @@
                     <a href="profilController.php">Mon profil</a>
                 </div>
                 <div class="bt1">
-                    <a href="#">Faire un test</a>
+                    <a href="faireTestController.php">Faire un test</a>
                 </div>
                 <div class="bt1">
                 <?php    if ($_SESSION['utilisateur']=='client'){ ?>

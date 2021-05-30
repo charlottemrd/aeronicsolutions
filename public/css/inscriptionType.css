@@ -180,7 +180,7 @@ input:required:valid{
 }
 
 input:required:invalid{
-  border: red 2px solid;
+  border: darkgrey 2px solid;
 }
 
 .erreurM p

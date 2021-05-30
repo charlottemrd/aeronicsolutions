@@ -216,6 +216,10 @@ input:required:valid{
     border: #4585d5 2px solid;
 }
 
+input:required:invalid{
+    border: darkgrey 2px solid;
+}
+
 
 .erreurM p{
     color: red;
