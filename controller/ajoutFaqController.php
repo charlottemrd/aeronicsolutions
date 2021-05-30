@@ -3,8 +3,6 @@ include 'redirectionSession.php';
 include '../model/database.php';
 include '../view/header.php';
 include '../view/footer.php';
-include '../model/requeteFaq.php';
-
 
 if (isset($_POST['modifier'])) {
     extract($_POST);
