@@ -32,6 +32,7 @@ include '../model/database.php';
             $f = $db->prepare("UPDATE icodes SET used=:used WHERE icode=:icode");
            
             if ($resultMail == 0) {
+                
                 if ($_SESSION['utilisateur'] == 'client') {
                     
                     $g = $db->prepare("SELECT * FROM gestionnaires WHERE icode = :icode");
@@ -58,7 +59,7 @@ include '../model/database.php';
                             'used' =>"1",
                             'icode' => $_SESSION['icode']
                             ]);
-                        header('Location: profilController.php');exit;
+                        header('Location: confirmationInscriptionController.php');exit;
                     }
                     else {
                         $_GET['inscriptionError']="L'icode que vous avez entré ne correspond à aucun médecin";
@@ -81,7 +82,7 @@ include '../model/database.php';
                         'used' =>"1",
                         'icode' => $_SESSION['icode']
                         ]);
-                    header('Location: profilController.php');exit;
+                    header('Location: confirmationInscriptionController.php');exit;
                 }
 
                 if ($_SESSION['utilisateur'] == 'administrateur') {
@@ -99,7 +100,7 @@ include '../model/database.php';
                         'used' =>"1",
                         'icode' => $_SESSION['icode']
                         ]); 
-                    header('Location: profilController.php');exit;
+                    header('Location: confirmationInscriptionController.php');exit;
                 }
             } 
             else {
