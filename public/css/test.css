@@ -82,7 +82,7 @@ h3{
 .doug_canva_container {
     width: 80%;
     height: 70%;
-    margin-left: 9%;
+    margin-left: 11%;
 }
 
 .n1 h1 {
@@ -103,6 +103,7 @@ h3{
     margin:0;
     right:50%;
     bottom:50%;
+    margin-left: 0.7%;
 } 
 
 .n3 h1 {
@@ -113,6 +114,7 @@ h3{
     margin:0;
     right:50%;
     bottom:50%;
+    margin-left: 0.7%;
 } 
 
 .line_chart_container {
