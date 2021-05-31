@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Conditions d'utilisations</title>
+  <title>Conditions d'utilisation</title>
    <meta charset="utf-8"/>
    <link rel="stylesheet" href="../public/css/footer.css"/>
    <link rel="stylesheet" href="../public/css/confidentialiteStyle.css"/>
@@ -9,7 +9,7 @@
 
 <body>	
 <div class="Conf">
-<h1> Qu'est-ce que les conditions d'utilisations ? </h1>
+<h1> Qu'est-ce que les conditions d'utilisation ? </h1>
 <p >
 	Les conditions générales d’utilisation sont essentielles car elles fixent les règles d’utilisation du site internet aux internautes. </br>
 	On y précise notamment ce qu’il est autorisé de faire sur le site internet, quelles sont leurs responsabilités des utilisateurs et quelles sont les sanctions prévues en cas de non-respect des conditions d’utilisation du site.
@@ -89,7 +89,7 @@
 	<div class="confidentialites">
 		<a href="confidentialite.php">Engagement de confidentialité</a>
 		<a href="cookies.php">Utilisation de cookies</a>
-		<a href="conditionsUtilisations.php">Conditions d'utilisations</a>
+		<a href="conditionsUtilisation.php">Conditions d'utilisation</a>
 		<a href="mentionsLegales.php">Mentions légales</a>
 	</div>
 	<div class="barreimage">
