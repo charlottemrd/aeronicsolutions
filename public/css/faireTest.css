@@ -111,7 +111,7 @@ p{
 
 
 .heart {
-    font-size: 2em;
+    font-size: 180%;
     animation: beat 0.25s infinite alternate;
     transform-origin: center;
     margin-right: 10%;
