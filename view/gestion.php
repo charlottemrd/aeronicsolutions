@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Mainstenance du site</title>
+    <title>Maintenance du site</title>
     <meta charset="utf-8"/>
     <link rel="stylesheet" href="../public/css/gestion.css"/>
 </head>
