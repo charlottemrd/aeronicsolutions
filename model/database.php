@@ -1,6 +1,6 @@
 <?php
     define('HOST','localhost');
-    define('DB_NAME','inscription');
+    define('DB_NAME','aeronicsolutions');
     define('USER','root');
     define('PASS','');
 
