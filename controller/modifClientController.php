@@ -16,9 +16,26 @@ if (isset($_POST['modifier'])) {
     $compagnie=$_POST['compagnie'];
     $mail=$_POST['mail'];
 
-    $sql = "UPDATE clients SET firstName = '$prenom', name='$nom', birthDate='$date', kind='$kind',company='$compagnie' ,mail='$mail' WHERE icode = '$code'";
-    $reponse = $db->exec($sql);
-    header("Location: gestionClientController.php");
+    $c = $db->prepare("SELECT mail FROM administrateurs WHERE mail = :mail");
+    $c->execute(['mail' => $mail]);
+    $resultMail = $c->rowCount();
+
+    $d = $db->prepare("SELECT mail FROM clients WHERE mail = :mail");
+    $d->execute(['mail' => $mail]);
+    $resultMail += $d->rowCount();
+
+    $e = $db->prepare("SELECT mail FROM gestionnaires WHERE mail = :mail");
+    $e->execute(['mail' => $mail]);
+    $resultMail += $e->rowCount();
+
+    if ($resultMail == 0) {
+        $sql = "UPDATE clients SET firstName = '$prenom', name='$nom', birthDate='$date', kind='$kind',company='$compagnie' ,mail='$mail' WHERE icode = '$code'";
+        $reponse = $db->exec($sql);
+        header("Location: gestionClientController.php");
+    }
+    else {
+        $_GET['modificationError']="L'email que vous avez entré est déjà utilisé";
+    }
 }
 else if (isset($_POST['annuler'])) {
     header("Location: gestionClientController.php");
