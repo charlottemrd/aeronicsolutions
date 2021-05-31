@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Graphique tests</title>
+    <title>Graphique Test</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.css">
     <link rel="stylesheet" href="../public/css/test.css">
     <meta charset="utf-8"/>
