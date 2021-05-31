@@ -40,10 +40,12 @@
 
         </div>
     </div>
+    <div class="erreurM">
+        <p><?php if (isset($_GET['modificationError'])){echo $_GET['modificationError'];}?></p>
+    </div>
     <div class="changement">
         <div class="bt3">
             <input class="modifier" name="modifier" type="submit" value="Modifier profil" >
-
         </div>
         <div class="bt4">
             <input class="annuler" name="annuler" type="reset" value="Annuler" onclick="window.location.href='gestionGestionnaireController.php'">
