@@ -15,7 +15,7 @@
     <div class="form_container">
         <br class="instruction_container1">
             <h3>Votre inscription a bien été enregistrée.</h3></br>
-            <h3>Bienvenu <?= $user['firstName']?> <?= $user['name']?>.</h3>
+            <h3>Bienvenue <?= $user['firstName']?> <?= $user['name']?>.</h3>
         </div>
 
         <div class= "changement">
