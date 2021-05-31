@@ -16,9 +16,7 @@ if (isset($_POST['envoi'])) {
     $headers = "De :" . $from;
     $headers = "MIME-Version: 1.0" . "\r\n";
     $headers .= "Content-type: text/html; charset=iso-8859-1\r\n";
-    //$envoi = mail($to, $subject, $message, $headers);
-
-    echo $message2;
+    $envoi = mail($to, $subject, $message, $headers);
 
     global $db;
     $mail = $_SESSION['mailoublie'];
