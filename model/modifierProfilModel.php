@@ -11,23 +11,23 @@ if (isset($_POST['modifier'])) {
         $compagnie=$_POST['compagnie'];
         $sql = "UPDATE clients SET firstName = '$prenom', name='$nom', birthDate='$date',company='$compagnie' WHERE mail = '$mail'";
         $reponse = $db->exec($sql);
-        header("Location: ../Controller/profilController.php");exit;
+        header("Location: ../controller/profilController.php");exit;
     }
 
     else if ($_SESSION['utilisateur']=='administrateur'){
         $sql = "UPDATE administrateurs SET firstName = '$prenom', name='$nom' WHERE mail = '$mail'";
         $reponse = $db->exec($sql);
-        header("Location: ../Controller/profilController.php");exit;
+        header("Location: ../controller/profilController.php");exit;
     }
 
     else if ($_SESSION['utilisateur']=='gestionnaire'){
         $cabinet=$_POST['cabinet'];
         $sql = "UPDATE gestionnaires SET firstName = '$prenom', name='$nom', center='$cabinet' WHERE mail = '$mail'";
         $reponse = $db->exec($sql);
-        header("Location: ../Controller/profilController.php");exit;
+        header("Location: ../controller/profilController.php");exit;
     }   
 }
 else if (isset($_POST['annuler'])) {
-    header('Location: ../Controller/profilController.php');exit;
+    header('Location: ../controller/profilController.php');exit;
 }
 ?>
