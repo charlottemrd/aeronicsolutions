@@ -10,7 +10,7 @@
 
 <div class="container">
     <div class="text_container">
-        <h1>Résultats de tests</h1>
+        <h1>Résultats de test</h1>
     <?php if($_SESSION['utilisateur']=='gestionnaire'){?>
     <H2>Voici les résultats du test du  <?=date("d-m-Y",strtotime($monTest['date']))?> - du patient <?=$monPilote['firstName']?>  <?=$monPilote['name']?> - référence du test : <?=$monTest['id']?></H2>
     <?php }
