@@ -204,3 +204,7 @@ a{
 {
     text-align: center;
 }
+
+.erreurM p {
+    color: red;
+}
