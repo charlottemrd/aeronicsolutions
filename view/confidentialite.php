@@ -50,7 +50,7 @@ Lisez notre Engagement de confidentialité vis-à-vis de notre clientèle pour o
 	<div class="confidentialites">
 		<a href="confidentialite.php">Engagement de confidentialité</a>
 		<a href="cookies.php">Utilisation de cookies</a>
-		<a href="conditionsUtilisation.php">Conditions d'utilisations</a>
+		<a href="conditionsUtilisation.php">Conditions d'utilisation</a>
 		<a href="mentionsLegales.php">Mentions légales</a>
 	</div>
 	<div class="barreimage">
