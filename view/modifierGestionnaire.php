@@ -9,7 +9,7 @@
 <body>
 <form method="POST" class="contentconnexion">
     <div class="title_container">
-        <h3>Modification du profil client - <?= $gestionnaire['firstName'], " ",$gestionnaire['name'] ?></h3>
+        <h3>Modification du profil gestionnaire - <?= $gestionnaire['firstName'], " ",$gestionnaire['name'] ?></h3>
     </div class>
     <div class="superform_container">
         <div class="form_container">
